@@ -138,7 +138,7 @@ a:hover { text-decoration-style: solid; text-decoration-color: var(--blue); }
 }
 .ledger dt, .ledger dd { padding: 9px 2px; border-bottom: 1px solid var(--faint); font-size: 15.5px; }
 .ledger dt { color: var(--ink-2); letter-spacing: 0.12em; }
-.ledger dd { border-left: 1px solid var(--faint); padding-left: 14px; }
+.ledger dd { border-left: 1px solid var(--faint); padding-left: 14px; overflow-wrap: anywhere; }
 .ledger dl > :last-child, .ledger dl > :last-child + dd { border-bottom: none; }
 .ledger .ledger-cap {
   display: flex; justify-content: space-between; align-items: baseline;

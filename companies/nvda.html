@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>英伟达(NVDA) · 加速计算三十一年 · 企业故事馆</title>
+<meta name="description" content="英伟达(NVIDIA,NASDAQ:NVDA)的传记:1993年三人创立,1999年IPO并发明GPU,2006年豪赌CUDA,2016年把DGX-1送给OpenAI,FY2026营收2,159亿美元、净利1,200亿。每件事都有出处。">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-book="nvda" data-book-name="英伟达">
+
+<header class="masthead-bar">
+  <a class="hall-name" href="../index.html">企业故事馆</a>
+  <span class="running-head">英伟达 · 卷首</span>
+</header>
+<div class="reading-rule"><i></i></div>
+
+<nav class="thumbs" aria-label="章节导航">
+  <a class="top-link" href="#cover" data-ch>回卷首</a>
+  <a href="#c1" data-ch>壹</a><a href="#c2" data-ch>贰</a><a href="#c3" data-ch>叁</a><a href="#c4" data-ch>肆</a><a href="#c5" data-ch>伍</a>
+  <a href="#zhangduo" data-ch>舵</a><a href="#chronicle" data-ch>谱</a><a href="#appendix" data-ch>跋</a>
+</nav>
+
+<main>
+  <section class="sheet cover" id="cover" data-pin="卷首">
+    <svg class="seal" viewBox="0 0 128 128" aria-hidden="true">
+      <g fill="none" stroke="#b93a1b">
+        <circle cx="64" cy="64" r="60" stroke-width="3.5"/><circle cx="64" cy="64" r="42" stroke-width="1.5"/>
+        <path id="seal-arc-nvda" d="M 64,12 a 52,52 0 1 1 -0.01,0" stroke="none"/>
+      </g>
+      <text fill="#b93a1b" font-size="10.5" letter-spacing="3" font-weight="700"><textPath href="#seal-arc-nvda" startOffset="2">企业故事馆 · 加速计算 · 馆藏北美卷</textPath></text>
+      <text x="64" y="60" text-anchor="middle" fill="#b93a1b" font-size="21" font-weight="900" font-family="Songti SC,serif">已 核</text>
+      <text x="64" y="82" text-anchor="middle" fill="#b93a1b" font-size="11.5" letter-spacing="2" font-family="Menlo,monospace">NVDA</text>
+    </svg>
+    <div class="code-row"><span class="code">NVDA · 纳斯达克</span><span>1999年1月22日上市 · 加州圣克拉拉(美国) · 创始人黄仁勋持股3.58%(2026年代理声明)</span></div>
+    <h1>英伟达</h1>
+    <p class="aka">NVIDIA Corporation · "1999年发明GPU"(公司自述);数据中心收入占比89.7%(FY2026)</p>
+    <p class="hook">1999年1月22日的IPO按招股文件只发行了3,500万股、每股12美元——总发行额<b>4,200万美元</b>,媒体常引的"6,000万以上"与SEC文件不符,本馆取SEC口径。<a class="ref" href="#n2">〔谱2〕</a>二十七年后,这家公司一个财年(截至2026年1月底)的收入是<b>2,159.38亿美元(+65%)、净利润1,200.67亿美元</b>——净利率约56%,数据中心的规模效应登峰造极。<a class="ref" href="#n8">〔谱8〕</a>从Denny's餐厅的餐桌(当事人口径)到AI时代的算力卖铲人,这条路的关键三步是:发明GPU(1999)、豪赌CUDA(2006)、把第一台DGX-1亲手送给OpenAI(2016)。</p>
+
+    <div class="ledger">
+      <p class="ledger-cap"><span>谱主 · 履历卡</span><span>截至二〇二六年九月十二日</span></p>
+      <dl>
+        <dt>谱 主</dt><dd>NVIDIA;创始人黄仁勋任总裁兼CEO至今(1993年起),持股3.58%(含信托与基金会,2026-03-23代理声明口径)<a class="ref" href="#n1">〔谱1〕</a></dd>
+        <dt>生 于</dt><dd>1993年4月加州注册(1998年4月特拉华重新注册);1999-01-22纳斯达克上市<a class="ref" href="#n1">〔谱1〕</a><a class="ref" href="#n2">〔谱2〕</a></dd>
+        <dt>营 生</dt><dd>加速计算平台:数据中心(89.7%)、游戏(7.4%)、专业可视化、汽车;Compute & Networking与Graphics两大报告分部<a class="ref" href="#n8">〔谱8〕</a></dd>
+        <dt>伤 疤</dt><dd>1995年NV1销售失败、一度裁员至约35人(媒体口径);FY2019游戏库存拨备2.70亿美元;2025年4月特供产品计提45.38亿美元<a class="ref" href="#n3">〔谱3〕</a><a class="ref" href="#n6">〔谱6〕</a></dd>
+        <dt>周 期</dt><dd>AI数据中心资本开支;先进芯片贸易政策变化(FY2026中国区收入占比降至9.1%)<a class="ref" href="#n7">〔谱7〕</a></dd>
+        <dt>现 状</dt><dd>FY2026营收2,159.38亿/净利1,200.67亿(均创纪录);2026-09-03公告拟约129.3亿美元收购Hugging Face(未交割)<a class="ref" href="#n8">〔谱8〕</a></dd>
+      </dl>
+    </div>
+
+    <div class="clipping"><span class="clip-tag">读法</span><p>这卷盯一条主线:这家公司三次把"没人要的技术"变成标准——GPU(游戏卡)、CUDA(没人知道能干嘛的并行计算)、DGX-1(送出去的第一台AI超算)。每一步在当时都被质疑烧钱,回头看全是护城河。按馆规第六则,谱内不谈当前股价。</p></div>
+  </section>
+
+  <section class="sheet chapter" id="c1" data-pin="第壹章 · 险棋">
+    <div class="ch-head"><span class="ch-no">第壹章</span><h2>NV1的教训</h2><span class="ch-years">1993–1999</span></div>
+    <div class="prose">
+      <p>1993年4月,公司在加州注册。三位创始人:<b>黄仁勋</b>(1963年2月生于台南,俄勒冈州立大学电气工程学士、斯坦福硕士;此前是AMD微处理器设计师、LSI Logic总监)、Chris Malachowsky(惠普、Sun工程师)、Curtis Priem(Sun图形加速器设计师、公司首任CTO)。<a class="c-src" href="#n1">〔谱1〕</a>"Denny's餐厅筹办"出自当事人口径,记疑。</p>
+      <p>第一款产品就差点要了命:1995年的NV1采用二次曲面渲染、集成世嘉土星手柄接口,销售失败;世嘉注资的NV2项目后来取消,公司一度裁员至约35人,1997年靠RIVA 128翻盘。<a class="c-src" href="#n3">〔谱3〕</a>1999年10月11日,GeForce 256发布,公司把它命名为<b>"全球第一颗GPU"</b>——一个营销词最终成了行业品类的名字。<a class="ref" href="#n3">〔谱3〕</a></p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">显卡的旧世界</span></div>
+      <ol>
+        <li><span class="who">3dfx、ATI</span><span class="why">九十年代显卡大战的主角——后来一个消亡、一个并入AMD</span></li>
+        <li><span class="who">世嘉</span><span class="why">NV1时代的注资方——一次失败的联姻,一笔救命的学费</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <section class="sheet chapter" id="c2" data-pin="第贰章 · CUDA">
+    <div class="ch-head"><span class="ch-no">第贰章</span><h2>2006:给游戏卡装上未来</h2><span class="ch-years">1999–2012</span></div>
+    <div class="prose">
+      <p>2006年,公司推出CUDA——让GPU做通用并行计算。这在当年是桩亏本买卖:研发烧钱、游戏卡用不上、客户看不懂。转折在2012年:深度学习研究者用两块GeForce GTX 580训练出AlexNet、夺得ImageNet冠军——公司10-K后来把这一刻称为AI的"大爆炸"时刻。<a class="c-src" href="#n4">〔谱4〕</a></p>
+      <p>2016年4月GTC发布DGX-1,当年8月首台亲手交付给马斯克的OpenAI(公司口径+媒体)。<a class="c-src" href="#n4">〔谱4〕</a>2018-2019年则是周期的另一面:加密货币退潮,FY2019第四财季营收同比-24%、全年库存拨备2.70亿美元,归因"渠道库存过剩"。<a class="ref" href="#n5">〔谱5〕</a></p>
+      <div class="quote">"2012年,AlexNet以NVIDIA GPU训练夺冠——现代AI的大爆炸时刻。"
+<span class="q-src">——公司10-K自述(节译)</span></div>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">两笔学费</span></div>
+      <ol>
+        <li><span class="who">挖矿潮</span><span class="why">FY2019的库存拨备2.70亿——游戏卡假需求的账单</span></li>
+        <li><span class="who">AlexNet三作者</span><span class="why">两块游戏卡改变公司命运的人——Hinton的学生们</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <section class="sheet chapter" id="c3" data-pin="第叁章 · 数据中心">
+    <div class="ch-head"><span class="ch-no">第叁章</span><h2>买网络、买不成CPU</h2><span class="ch-years">2020–2022</span></div>
+    <div class="prose">
+      <p>2020年,完成对Mellanox的收购(约69亿美元,公司公告口径)——网络技术补齐,数据中心整栈成型。<a class="c-src" href="#n5">〔谱5〕</a>同年9月13日,宣布以最高约400亿美元股票加现金收购Arm;2022年2月8日,因"重大监管挑战"双方终止,预付款不退,Q1 FY2023计提<b>13.53亿美元</b>终止费用。<a class="c-src" href="#n5">〔谱5〕</a></p>
+      <p>2022年8月26日,美国对先进计算芯片实施新的出口许可要求;公司8-K披露,Q3 FY2023指引中约<b>4亿美元</b>的中国潜在销售或受影响。<a class="c-src" href="#n6">〔谱6〕</a>此后中国区收入占比从FY2025的19.2%降至FY2026的9.1%——地缘政治成了财报的结构性变量。<a class="ref" href="#n7">〔谱7〕</a></p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">买不来的与挡不住的</span></div>
+      <ol>
+        <li><span class="who">Arm交易的四国监管</span><span class="why">400亿美元要约的终点是13.53亿分手费</span></li>
+        <li><span class="who">AMD(Instinct与自研Arm核路线)</span><span class="why">双线对位的宿敌——产品线对照为本馆推断</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <section class="sheet chapter" id="c4" data-pin="第肆章 · 周期">
+    <div class="ch-head"><span class="ch-no">第肆章</span><h2>Blackwell与45亿美元的计提</h2><span class="ch-years">2024–2025</span></div>
+    <div class="prose">
+      <p>2024年3月18日GTC发布Blackwell平台(B200/GB200,接替Hopper);Blackwell Ultra GB300于FY2026第二财季量产出货。<a class="c-src" href="#n7">〔谱7〕</a>2025年3月GTC又公布下一代Rubin平台,公司口径:预计FY2027下半年量产、单token成本较Blackwell降约10倍。<a class="ref" href="#n7">〔谱7〕</a></p>
+      <p>同一时期的另一条线:2025年4月,对华特供的H20亦须许可;8-K预告Q1 FY2026最高约55亿美元计提,实际计提<b>45.38亿美元</b>,另有约25亿美元H20订单无法出货;8月获部分许可,但FY2026仅确认约6,000万美元H20收入。<a class="c-src" href="#n6">〔谱6〕</a>公司对FY2027第一财季的指引干脆假设"中国数据中心计算收入为零"。<a class="ref" href="#n8">〔谱8〕</a></p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">政策的边界</span></div>
+      <ol>
+        <li><span class="who">出口许可制度</span><span class="why">从4亿季度影响到45.38亿计提——三年间量级翻了百倍</span></li>
+        <li><span class="who">谷歌TPU等定制芯片</span><span class="why">大客户自研路线——第三方普遍视为替代威胁</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <section class="sheet chapter" id="c5" data-pin="第伍章 · 尾声">
+    <div class="ch-head"><span class="ch-no">第伍章</span><h2>尾声:一年一代的帝国</h2><span class="ch-years">2026</span></div>
+    <div class="prose">
+      <p>FY2026(截至2026年1月)年报:营收<b>2,159.38亿美元(+65%)</b>、GAAP净利<b>1,200.67亿美元</b>,均创纪录;第四财季数据中心收入623亿。<a class="c-src" href="#n8">〔谱8〕</a>2026年9月3日,公告拟以约129.3亿美元收购Hugging Face(未交割)——算力帝国向模型生态伸手。<a class="ref" href="#n8">〔谱8〕</a></p>
+      <p>公司自述的节奏是"一年一代"产品(Hopper→Blackwell→Rubin),自述优势是GPU+NVLink网络+CUDA的全栈。第三方长期估计其占数据中心AI加速器主导份额(常见约七至九成,口径不一,非公司披露)。<a class="ref" href="#n9">〔谱9〕</a>下一卷看三样:Rubin的实际出货、Hugging Face交易的交割、以及"中国收入为零"假设的持续代价。</p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">还没交卷的</span></div>
+      <ol>
+        <li><span class="who">云厂自研ASIC</span><span class="why">最大的客户也是潜在的对手</span></li>
+        <li><span class="who">循环周期本身</span><span class="why">FY2027指引已写进"假设中国为零"——周期的边界被政策划定</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <section class="sheet-wide" id="zhangduo" data-pin="当家人">
+    <div class="report">
+      <div class="report-cap"><h3>当家人</h3><span class="cap-note">上市公司口径(公告实证)</span></div>
+      <table>
+        <thead><tr><th>当家人</th><th>任期</th><th>备注</th></tr></thead>
+        <tbody>
+          <tr><td>黄仁勋(总裁兼CEO)</td><td>1993 – 今</td><td>1963年2月生于台南;AMD与LSI履历;持股3.58%(2026代理声明);三十余年未换掌门</td></tr>
+          <tr><td>Chris Malachowsky(联合创始人)</td><td>1993 – 今</td><td>惠普、Sun工程师出身;长期留任(职务沿革见谱9)</td></tr>
+          <tr><td>Curtis Priem(联合创始人、首任CTO)</td><td>1993 – 2003</td><td>2003年退出董事会;其后向母校RPI捐赠公司股票(媒体口径)</td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="3">来源:FY2026 10-K、2026年代理声明(SEC EDGAR)、公司官网人物页。</td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <section class="sheet-wide" id="chronicle" data-pin="大事记">
+    <div class="chronicle-wrap">
+      <div class="chronicle-head"><h2>大事记 · 全书书脊</h2><span class="note">正文每一个〔谱N〕都落在这里;每一条都挂出处。</span></div>
+      <div class="legend"><span><span class="mark">核</span>已核对</span><span><span class="mark query">疑</span>存疑</span><span><span class="mark gap">缺</span>缺口</span></div>
+      <ol class="chronicle">
+        <li id="n1"><span class="c-date">1993.4</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">加州注册成立;创始人黄仁勋(1963年2月生,俄勒冈州立+斯坦福;AMD/LSI履历)、Malachowsky(惠普/Sun)、Priem(Sun,首任CTO);黄仁勋2026年代理声明持股3.58%(含信托与基金会,截至2026-03-23)。<a class="c-src" href="https://www.sec.gov">FY2026 10-K;2026年代理声明(SEC EDGAR)</a></div></li>
+        <li id="n2"><span class="c-date">1999.1.22</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">纳斯达克IPO(代码NVDA):按424B4发行3,500,000股@12.00美元,总发行额4,200万美元(公司净得约3,906万,未扣费用)——媒体常引"6,000万以上"与SEC口径不符,本馆取SEC。<a class="c-src" href="https://www.sec.gov">424B4招股文件(1999-01-22,SEC EDGAR)</a></div></li>
+        <li id="n3"><span class="c-date">1995-1999</span><span class="c-mark"><span class="mark query">疑</span></span><div class="c-body">1995年NV1上市(二次曲面渲染+世嘉手柄接口)销售失败,NV2取消,一度裁员至约35人,1997年RIVA 128翻盘;1999-10-11发布GeForce 256并命名"全球第一颗GPU"(公司新闻稿;10-K自述"1999年发明GPU")——NV1始末为当事人/媒体口径。<a class="c-src" href="https://nvidianews.nvidia.com">公司新闻稿;FY2026 10-K;媒体口径</a></div></li>
+        <li id="n4"><span class="c-date">2006-2016</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">2006年推出CUDA(FY2026 10-K);2012年AlexNet以两块GeForce GTX 580训练夺冠(原论文口径;10-K称AI"大爆炸"时刻);2016年4月GTC发布DGX-1、8月首台交付OpenAI(公司口径+媒体)。<a class="c-src" href="https://www.sec.gov">FY2026 10-K;GTC新闻稿</a></div></li>
+        <li id="n5"><span class="c-date">2018-2022</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">FY2019Q4营收22.05亿美元(-24%)、全年库存拨备2.70亿美元(挖矿退潮渠道库存过剩);2020年完成Mellanox收购(约69亿美元,公司公告口径)、09-13宣布Arm要约(最高约400亿美元),2022-02-08终止并计提13.53亿美元终止费用。<a class="c-src" href="https://www.sec.gov">FY2019 10-K/新闻稿;Q1 FY2023新闻稿;FY2026 10-K</a></div></li>
+        <li id="n6"><span class="c-date">2022-2025</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">2022-08-26先进芯片出口新许可要求,8-K称Q3 FY2023约4亿美元中国潜在销售或受影响;2025-04-09 H20亦须许可,Q1 FY2026实际计提45.38亿美元、约25亿美元订单无法出货,8月获部分许可,FY2026仅确认约6,000万美元H20收入。<a class="c-src" href="https://www.sec.gov">8-K(2022-08-31/2025-04-15);Q1 FY2026新闻稿;FY2026 10-K</a></div></li>
+        <li id="n7"><span class="c-date">2024-2025</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">2024-03-18 GTC发布Blackwell(B200/GB200),Blackwell Ultra GB300于FY2026Q2量产出货;2025-03 GTC公布Rubin平台(预计FY2027H2量产,单token成本较Blackwell降约10倍,公司口径);中国区(含香港)收入FY2025 250.48亿美元(19.2%)→FY2026 196.77亿(9.1%)。<a class="c-src" href="https://www.sec.gov">FY2026 10-K;GTC新闻稿</a></div></li>
+        <li id="n8"><span class="c-date">2026</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">FY2026年报(2026-02-25):营收2,159.38亿美元(+65%)、净利1,200.67亿美元,均创纪录;Q4数据中心收入623亿;FY2027Q1指引假设中国数据中心计算收入为零;2026-09-03公告拟约129.3亿美元收购Hugging Face(未交割)。<a class="c-src" href="https://www.sec.gov">FY2026 10-K/新闻稿;公司公告(2026-09-03)</a></div></li>
+        <li id="n9"><span class="c-date">缺口</span><span class="c-mark"><span class="mark gap">缺</span></span><div class="c-body">黄仁勋确切生日(2月17日仅媒体口径);"Denny's筹办"、NV1始末细节、AlexNet用GTX 580(原论文口径)未经SEC/官网直核;AI加速器份额七至九成为第三方估计区间;Rubin是否已实际出货未见公司确认;Malachowsky职务沿革与Priem捐赠金额——本馆未钉死。</div></li>
+        <li id="n10"><span class="c-date">2026.9.12</span><span class="c-mark"><span class="mark gap">缺</span></span><div class="c-body">本卷编竣。Rubin出货、Hugging Face交割、中国假设的代价——留给下一卷。<a class="c-src" href="../index.html">企业故事馆·待续</a></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sheet-wide" id="shuzi" data-pin="生产简报">
+    <div class="report">
+      <div class="report-cap"><h3>生产简报 · 八个切片</h3><span class="cap-note">亿美元 · 财年截至1月底 · 谱内不谈当前价格</span></div>
+      <table>
+        <thead><tr><th>切片</th><th>营收 / 净利润</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>FY2017</td><td>69.10 / 16.66</td><td>数据中心故事前夜</td></tr>
+          <tr><td>FY2019</td><td>117.16 / 41.41</td><td>挖矿退潮:Q4同比-24%</td></tr>
+          <tr><td>FY2020</td><td>109.18 / 27.96</td><td>负增长一年</td></tr>
+          <tr><td>FY2022</td><td>269.14 / 97.52</td><td>数据中心首超游戏</td></tr>
+          <tr><td>FY2024</td><td>609.22 / 297.60</td><td>Hopper周期兑现</td></tr>
+          <tr><td>FY2025</td><td>1,304.97 / 728.80</td><td>翻倍之年;45.38亿计提</td></tr>
+          <tr><td>FY2026</td><td>2,159.38 / 1,200.67</td><td>Blackwell量产;均创纪录</td></tr>
+          <tr><td>结构</td><td>数据中心占89.7%</td><td>游戏7.4%、可视化1.5%、汽车1.1%</td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="3">来源:各财年10-K与新闻稿(SEC EDGAR);stockanalysis.com交叉一致。</td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <section class="sheet appendix" id="appendix" data-pin="附录">
+    <div class="apx-head"><h2>附录 · 交代底细</h2><span class="apx-note">按馆规,一切考据过程压在书尾。</span></div>
+    <h3>缺口与置信度</h3>
+    <div class="gap-box">
+      <span class="gb-tag">以下诸事,本馆未能钉死,如实交代</span>
+      <ul>
+        <li><b>IPO募资口径</b>:SEC 424B4总发行额4,200万美元;媒体常引"6,000万以上",本馆取SEC。</li>
+        <li><b>创业叙事</b>:Denny's餐厅、裁员至35人、世嘉合作细节均当事人/媒体口径,无SEC或官网权威文本。</li>
+        <li><b>份额</b>:数据中心AI加速器"七至九成"为第三方估计区间,公司从未披露。</li>
+        <li><b>黄仁勋生日</b>:SEC文件只载年龄,"2月17日"系媒体口径。</li>
+      </ul>
+    </div>
+    <h3>返回研究的发现</h3>
+    <div class="report">
+      <table>
+        <thead><tr><th>发现</th><th>建议去向</th><th>为什么重要</th></tr></thead>
+        <tbody>
+          <tr><td>Hugging Face交易交割</td><td>事实层·跟踪8-K</td><td>129.3亿美元的生态落子</td></tr>
+          <tr><td>Rubin量产节奏</td><td>事实层·跟踪GTC</td><td>一年一代承诺的兑现</td></tr>
+          <tr><td>中国收入"归零"假设</td><td>事实层·跟踪季报</td><td>地缘变量的定价</td></tr>
+          <tr><td>云厂自研ASIC占比</td><td>逻辑层·专题</td><td>全栈优势的边界测试</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>史料清单</h3>
+    <ol class="src-list">
+      <li><span>FY2019–FY2026各年10-K、8-K(2022-08-31/2025-04-15等)、424B4(1999)、2026年代理声明(SEC EDGAR)——本卷第一来源。</span></li>
+      <li><span>公司新闻室(nvidianews.nvidia.com)GTC与产品新闻稿。</span></li>
+      <li><span>stockanalysis.com财务序列(与10-K交叉一致);AlexNet原论文(Krizhevsky et al., 2012)。</span></li>
+    </ol>
+    <footer class="colophon">
+      <p class="cb-title">版 权 页</p>
+      <p>《英伟达》一卷 · 企业故事馆馆藏北美卷 · 编于二〇二六年九月十二日 · 史实截至该日。</p>
+      <p>本卷谱主:NVIDIA(NASDAQ:NVDA);分五幕,大事记十条;全部来源见上。</p>
+      <p class="disclaimer">本馆内容为个人兴趣写作,不构成任何投资建议;人物、事件、数字以公司公告为准,若与公告相悖,以公告为准。引用媒体与文件均注明出处,如有侵权请告知即撤。</p>
+      <p class="back-shelf"><a href="../index.html">← 回到书架</a></p>
+    </footer>
+  </section>
+</main>
+<script src="../assets/site.js"></script>
+</body>
+</html>
