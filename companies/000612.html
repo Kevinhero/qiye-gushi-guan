@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>焦作万方(000612) · 一部写了六十年的厂史 · 企业故事馆</title>
+<meta name="description" content="焦作万方(000612.SZ)的传记:1966年建厂,1996年上市,六任当家人,四路资本,319亿的婚礼。每件事都有出处。">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-book="000612" data-book-name="焦作万方">
+
+<!--
+THESIS: 一部编年厂志——用六十年代工厂厂志的排印法(黑墨+朱砂
+套红、米纸、宋体、划线表格、校对符号)讲一家上市公司的一生;
+正文好读,每件事沿朱色〔谱N〕小注指回大事记。拒绝营销头图
+与卡片阵列。
+OWN-WORLD: 米纸/墨/套红印制,钢笔蓝 #2D4E8A 用于外链与
+缺口标记(〔疑〕仍为墨色虚线);宋体正文、楷体眉批;
+编年长表右对齐日期栏;状态即校对符号(核/疑/缺);无照片,
+仅线绘SVG(案卷章、成本流程图)。
+STORY: 读者取书、读六章传记、点朱注核出处;书签钉住读到
+的章节;大事记是全书书脊。
+FIRST VIEWPORT: 书眉细栏压顶;案卷代码行;巨幅宋体
+「焦作万方」配旋转朱印;一句引子;谱主划线履历卡。
+主行动:向下进入第壹章。
+FORM: 厂志·套红编年(自造清单第3位,seed 0930a07c)。
+FINISH: unreviewed and undocumented is unfinished; this build
+ends with the finish review, the verdict, DESIGN.md, and every
+shipping raster carrying its provenance.
+-->
+
+<header class="masthead-bar">
+  <a class="hall-name" href="../index.html">企业故事馆</a>
+  <span class="running-head">焦作万方 · 卷首</span>
+</header>
+<div class="reading-rule"><i></i></div>
+
+<nav class="thumbs" aria-label="章节导航">
+  <a class="top-link" href="#cover" data-ch>回卷首</a>
+  <a href="#c1" data-ch>壹</a>
+  <a href="#c2" data-ch>贰</a>
+  <a href="#c3" data-ch>叁</a>
+  <a href="#c4" data-ch>肆</a>
+  <a href="#c5" data-ch>伍</a>
+  <a href="#c6" data-ch>陆</a>
+  <a href="#zhangduo" data-ch>舵</a>
+  <a href="#chronicle" data-ch>谱</a>
+  <a href="#appendix" data-ch>跋</a>
+</nav>
+
+<button id="bookmark-pin" class="bm-pin" hidden title="清除书签">接着读:<span class="bm-ch"></span><span class="bm-hint"> · 点击清除</span></button>
+
+<main>
+  <!-- ============ 卷首 ============ -->
+  <section class="sheet cover" id="cover" data-pin="卷首">
+    <svg class="seal" viewBox="0 0 128 128" aria-hidden="true">
+      <g fill="none" stroke="#b93a1b">
+        <circle cx="64" cy="64" r="60" stroke-width="3.5"/>
+        <circle cx="64" cy="64" r="42" stroke-width="1.5"/>
+        <path id="seal-arc" d="M 64,12 a 52,52 0 1 1 -0.01,0" stroke="none"/>
+      </g>
+      <text fill="#b93a1b" font-size="10.5" letter-spacing="3" font-weight="700"><textPath href="#seal-arc" startOffset="2">企业故事馆 · 丙午建厂 · 馆藏第一卷</textPath></text>
+      <text x="64" y="60" text-anchor="middle" fill="#b93a1b" font-size="21" font-weight="900" font-family="Songti SC,serif">已 核</text>
+      <text x="64" y="82" text-anchor="middle" fill="#b93a1b" font-size="11.5" letter-spacing="2" font-family="Menlo,monospace">000612</text>
+    </svg>
+
+    <div class="code-row"><span class="code">000612.SZ</span><span>深交所 · 1996年9月26日挂牌 · 原代码0612</span></div>
+    <h1>焦作万方</h1>
+    <p class="aka">焦作万方铝业股份有限公司 · 河南焦作</p>
+    <p class="hook">一部写了六十年的厂史:名字换过,东家迎送过<b>五路资本</b>,当家人换了<b>六任</b>;太行山脚下那一排排电解槽的炉火,没有停过。</p>
+
+    <div class="ledger">
+      <p class="ledger-cap"><span>谱主 · 履历卡</span><span>截至二〇二六年九月九日</span></p>
+      <dl>
+        <dt>谱 主</dt><dd>焦作万方铝业股份有限公司,及其历任实际掌舵人</dd>
+        <dt>生 于</dt><dd>1966年,前身焦作市铝厂;1993年3月改组设立股份公司;1996年9月26日上市<a class="ref" href="#n1">〔谱1〕</a><a class="ref" href="#n3">〔谱3〕</a><a class="ref" href="#n7">〔谱7〕</a></dd>
+        <dt>营 生</dt><dd>电解铝42万吨/年(国家核定),氧化铝全部外购,自备电厂2×30万千瓦,铝加工15万吨<a class="ref" href="#n47">〔谱47〕</a></dd>
+        <dt>当家人</dt><dd>金保庆(上市时)→蒋英刚(中铝系)→周传良→霍斌→谢军(代)→喻旭春(锦江系,现任)<a class="ref" href="#zhangduo">〔见表〕</a></dd>
+        <dt>东 家</dt><dd>焦作国资(万方集团)→中国铝业→十年半无实控人(吉奥高、金投锦众、嘉益、和泰安成轮番坐庄)→锦江系·钭正刚(2025年3月起)<a class="ref" href="#n51">〔谱51〕</a></dd>
+        <dt>现 状</dt><dd>319.17亿元收购三门峡铝业,重组上市审核中;2026年上半年净利12.30亿元,半年赚过上一年全年<a class="ref" href="#n58">〔谱58〕</a><a class="ref" href="#n59">〔谱59〕</a></dd>
+      </dl>
+    </div>
+
+    <div class="bio">
+      <p class="bio-cap"><span>人物志 · 第一任当家人</span><span class="bio-years">1943.9 – ?</span></p>
+      <h4>金保庆:从团支部书记到董事长</h4>
+      <p>1943年9月生,焦作人,焦作矿业学院企管系毕业,大专学历,经济师、高级政工师(上市公告书讹作"政式师")。<b>1959年,十六岁</b>,进焦作市铝厂做工;此后是国营厂最标准的一条路——团支部书记、车间党支部书记、副厂长,多次获省部级劳动模范称号。<a class="ref" href="#n1">〔谱1〕</a>1993年股改时他已是公司法定代表人,1996年上市时为董事长兼总经理,持股8000股。任内两件大事:一是1997年推翻招股书募投、改投280kA预焙槽(第贰章);二是2002年8月为工程续建融资,放弃增发改配股,10:3、每股7.50元募2.28亿元全部投入工程。<a class="ref" href="#n61">〔谱61〕</a>2005年7月,他卸任总经理(乔桂玲接任,李东根卸总工程师线;新班子里有后来的董事长周传良);同年12月31日,董事会通过免去其董事职务,2006年2月8日乔桂玲接任董事长——公告未写原因,日子与中铝入主咬得很紧。<a class="ref" href="#n65">〔谱65〕</a>2006年之后,公开文件里再无金保庆。</p>
+    </div>
+
+    <div class="clipping">
+      <span class="clip-tag">读法</span>
+      <p>正文里的朱色小注(如<a class="ref" href="#n7">〔谱7〕</a>)可以点:一点,就跳到书尾《大事记》的第7条。每一条大事记都挂着出处。这是本馆的规矩:<b>故事可以讲得热闹,每一件事都得有个下落。</b>另外,本馆转述材料时会把口气分开:公司自己说的、别人说的、本馆推断的——推断都放在眉批和附录里,写明约几成把握。</p>
+    </div>
+  </section>
+
+  <!-- ============ 这台机器 ============ -->
+  <section class="sheet diagram" id="machine" data-pin="这台机器" aria-label="生意结构示意图">
+    <figure>
+      <svg class="draw" viewBox="0 0 640 252" role="img" aria-label="电解铝生意结构:氧化铝、电力、预焙阳极三路投入,进入280kA电解槽,铝液直供加工集群" style="width:100%;height:auto;display:block">
+        <rect data-draw x="16" y="18" width="168" height="52"/>
+        <text x="100" y="40" text-anchor="middle">氧化铝</text>
+        <text x="100" y="60" text-anchor="middle" font-size="11">全部外购 · 长单挂钩月均价</text>
+        <rect data-draw x="16" y="100" width="168" height="52"/>
+        <text x="100" y="122" text-anchor="middle">电力</text>
+        <text x="100" y="142" text-anchor="middle" font-size="11">自备电厂 2×30万千瓦</text>
+        <rect data-draw x="16" y="182" width="168" height="52"/>
+        <text x="100" y="204" text-anchor="middle">预焙阳极</text>
+        <text x="100" y="224" text-anchor="middle" font-size="11">外购</text>
+        <path data-draw class="accent" d="M 184,44 C 236,44 252,106 300,106"/>
+        <path data-draw d="M 184,126 L 300,126"/>
+        <path data-draw class="accent" d="M 184,208 C 236,208 252,146 300,146"/>
+        <rect data-draw x="300" y="88" width="168" height="76"/>
+        <text x="384" y="118" text-anchor="middle">280kA 预焙电解槽 ×3</text>
+        <text x="384" y="142" text-anchor="middle" class="accent" font-size="15">42万吨 / 年</text>
+        <path data-draw d="M 468,126 L 524,126"/>
+        <rect data-draw x="524" y="88" width="100" height="76"/>
+        <text x="574" y="116" text-anchor="middle" font-size="12">铝液直供</text>
+        <text x="574" y="138" text-anchor="middle" font-size="11">铝加工集群</text>
+        <text x="574" y="156" text-anchor="middle" font-size="11">15万吨</text>
+      </svg>
+      <figcaption>焦作万方这台机器(按2025年报口径绘制):一吨电解铝大约吃1.3万度电,氧化铝约占成本三五成。所以这本生意的胜负手,是电,和氧化铝的价。行业参考口径,公司未披露自家成本表。</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ 第壹章 ============ -->
+  <section class="sheet chapter" id="c1" data-pin="第壹章 · 炉火">
+    <div class="ch-head"><span class="ch-no">第壹章</span><h2>一九六六年,太行脚下起炉火</h2><span class="ch-years">1966–1996</span></div>
+    <div class="prose">
+      <p>故事的起点不在资本市场,在豫北。焦作这地方,北边是太行山,山下压着煤,土里埋着铝土矿,铁路通着晋煤外运的道口。在上世纪那套"靠山、分散、隐蔽"的建厂逻辑里,这是老天爷赏的铝饭碗。1966年,焦作市铝厂挂匾,<a class="ref" href="#n1">〔谱1〕</a>那一年进厂的学徒工里,有两个人:湛修东、梁留成。整整三十年后,以董事身份在公司的上市公告书里签下自己的名字。<a class="ref" href="#n1">〔谱1〕</a></p>
+      <div class="margin-note"><span class="mn-tag">眉批·一九五八年之谜</span>上市公告书里,监事会主席李清玉的简历写着"1958年加入焦作市铝厂",比建厂早了八年。也许大跃进年间筹过一回、下马了,1966年重建;也许是笔误。档案开口之前,本馆存疑。<a class="ref" href="#n2">〔谱2〕</a></div>
+      <p>这家小厂一干就是二十七年。到1995年,它已经长成总资产8.25亿元、四千五百名职工的"国家大二型企业",河南省有色金属行业的重点厂;<a class="ref" href="#n4">〔谱4〕</a>而它真正学会跟资本市场打交道,是在1993年:3月13日,河南省体改委一纸批文,焦作市铝厂联合三家单位,搞起了定向募集的股份制试点:铝厂以1.076亿元净资产折股,再加法人股、职工股,一套动作下来,"焦作万方铝业股份有限公司"有了法人身份。<a class="ref" href="#n3">〔谱3〕</a></p>
+      <p>1996年9月,公司以每股6.80元公开发行3201万股。那个年代的申购今天看来像出土文物:"全额存款、比例配售、余款转存":股民先把真金白银存进指定账户,53.12亿元申购资金扑向3201万股,中签比例4.157%。<a class="ref" href="#n6">〔谱6〕</a>9月26日,星期四,焦作万方在深交所挂牌,代码0612,募资净额2.11亿元到位。<a class="ref" href="#n7">〔谱7〕</a>上市那天的公司,是一家年产5.3万吨铝锭、三千多名职工、用着60KA自焙槽的典型老厂;董事长兼总经理金保庆,五十三岁,从厂里团支部书记一路干上来的省劳动模范。<a class="ref" href="#n7">〔谱7〕</a></p>
+      <div class="clipping">
+        <span class="clip-tag">花边</span>
+        <p>上市前一年的1995年,这家股份公司净资产收益率23.6%,还先给老股东每股私下派了0.3元现金:先分红、后上市,这在今天的A股是不可想象的一幕。<a class="ref" href="#n4">〔谱4〕</a></p>
+      </div>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">九十年代,全国有一百二十七家电解铝厂</span></div>
+      <ol>
+        <li><span class="who">抚顺铝厂(301厂)</span><span class="why">"中国第一铝",老大哥,那年头全国铝厂的番号都从它排起</span></li>
+        <li><span class="who">郑州铝厂</span><span class="why">氧化铝老大,后来成了中铝的家底——焦作万方日后的近邻与卖家</span></li>
+        <li><span class="who">贵州铝厂、兰州铝厂</span><span class="why">同代国企大厂,一样抱着高电耗的自焙槽</span></li>
+        <li><span class="who">河南神火、伊川电力、新安电力</span><span class="why">同省赶来的地方队——河南即将成为电解铝第一大省</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第贰章 ============ -->
+  <section class="sheet chapter" id="c2" data-pin="第贰章 · 转弯">
+    <div class="ch-head"><span class="ch-no">第贰章</span><h2>五百万买来的大转弯</h2><span class="ch-years">1997–2005</span></div>
+    <div class="prose">
+      <p>上市募来的钱,招股书写得明明白白:续建1.3万吨电解铝(还是60KA自焙槽)、上铝板带连铸连轧、做碳素制品。<a class="ref" href="#n8">〔谱8〕</a>倘若照章办事,焦作万方大概念沿着九十年代地方铝厂的老路再爬十年,然后被环保和电耗两把尺子慢慢量死。</p>
+      <p>转机出在1997年4月的股东大会上:公司把募投项目整个推翻,全部改投一个当时全国没人敢工业化的大家伙:280kA特大型预焙电解槽。这技术是"九五"国家重点科技攻关的成果,此前只有1997年的平果铝做过试验,全世界掌握这个量级的国家一只手数得过来。<a class="ref" href="#n8">〔谱8〕</a>董事长金保庆拍板,花了500万元技术使用费,买断这个行业第一家使用权。中国有色网的行业史里留了他一句评语:"军人出身、敢于第一个吃螃蟹。"<a class="ref" href="#n9">〔谱9〕</a></p>
+      <div class="quote">"鉴于《招股说明书》承诺投资项目技术含量不高,污染严重……建议变更募集资金投向,将原计划采用60KA自焙槽电解铝项目改为具有90年代国际先进技术水平的280KA大型预焙电解槽……该技术是国家重点科技攻关项目,并获得国家科技进步一等奖。"
+<span class="q-src">——2002年8月12日三届董事会十五次会议公告,对1997年那笔改道的官方复盘(巨潮资讯网)</span></div>
+<p>这一脚油门踩得很深:1997年底经国家计委报国务院立项,1998年列入国家经贸委重点工程,年产6.8万吨电解槽加4.2万吨碳素,2002年8月竣工验收。<a class="ref" href="#n10">〔谱10〕</a><a class="ref" href="#n11">〔谱11〕</a>中间还有两座里程碑:2001年1月18日,92台电解槽一次投产成功;<a class="ref" href="#n60">〔谱60〕</a>2002年8月竣工验收,张国成院士任验收专家组组长,工程获国家优质工程银质奖。<a class="ref" href="#n11">〔谱11〕</a>同年7月,"WF"牌铝锭在伦敦金属交易所注册——全国140余家铝企业中第11家;12月,配股10:3、每股7.50元募2.28亿元全部续投工程,又与金冠能源签下20年电力购销合同(5年上限30亿元,关联董事回避表决)。<a class="ref" href="#n61">〔谱61〕</a>2003年,完善工程把产能从6.8万吨一口气扩到13.6万吨,电解铝产能11.5→18.3→25.1万吨三连跳。<a class="ref" href="#n62">〔谱62〕</a>更重要的是路线:此后二十年,公司的全部产能都沿着280kA预焙槽这条线生长,直到今天的42万吨、三条线。<a class="ref" href="#n47">〔谱47〕</a>回头看,1997年那个股东大会,是这家公司六十年里回报率最高的一次开会。</p>
+      <div class="margin-note"><span class="mn-tag">眉批·自焙与预焙</span>自焙槽是老一代工艺:电耗高、烟尘大,阳极在槽子里"自己烧";预焙槽把阳极预先制好,槽体大型化,省电也干净——后来所有环保风暴里,自焙槽都是第一批被点名退场的。焦作万方等于在风暴来之前,提前换了船。</div>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">一场技术代际的赛跑</span></div>
+      <ol>
+        <li><span class="who">平果铝</span><span class="why">280kA的第一个试验者——焦作万方是第一个把它变成生产力的人</span></li>
+        <li><span class="who">百余家自焙槽老厂</span><span class="why">还在旧船上,后来在环保与成本的双重挤压里陆续谢幕</span></li>
+        <li><span class="who">进口技术方</span><span class="why">彼时大型槽技术握在少数国家手里;280kA国产化让中国成了"第三个掌握的国家"</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第叁章 ============ -->
+  <section class="sheet chapter" id="c3" data-pin="第叁章 · 中铝">
+    <div class="ch-head"><span class="ch-no">第叁章</span><h2>过路的中铝,留下的电厂</h2><span class="ch-years">2006–2013</span></div>
+    <div class="prose">
+      <p>2006年,两个大事件在同一年里改写了这家公司的家谱。第一件在股权簿上:中铝并非第一个被相中的买家——2004年8月,公司董事会公告披露,大股东循当地政府"以股权换发展"的思路,已与瑞士嘉能可等公司初步接触;<a class="ref" href="#n63">〔谱63〕</a>谈而未果之后,2005年12月7日,中铝、焦作市国资委、万方集团签下29%股权转让意向书,2006年9月18日正式过户:每股1.774元、总额2.47亿元。央企中铝成了控股股东,地方国企的儿子,过继给了国家队。<a class="ref" href="#n12">〔谱12〕</a>过户前四个月,公司董事会先免掉了金保庆的董事职务——2006年2月8日,乔桂玲(原温县常务副县长)接任董事长,同日完成。免职公告未写原因;日子与中铝入主咬得很紧,此为本馆推断,不是公告认定。<a class="ref" href="#n65">〔谱65〕</a></p>
+      <p>第二件在锅炉房里。其实伏笔埋在1996年:上市前三个月,公司刚和美国AES电力合建了"焦作爱依斯万方电厂"。<a class="ref" href="#n5">〔谱5〕</a>电解铝这本生意,三分本钱在电费,把命攥在别人电网里终归不踏实。2007年,公司出手7688.3万美元买下合资电厂70%股权;2008年11月28日,剩余股权过户,电厂更名"焦作万方电力",成了百分之百的自备电厂。<a class="ref" href="#n13">〔谱13〕</a><a class="ref" href="#n14">〔谱14〕</a>从此,"氧化铝外购+自备电+预焙槽"的三件套配齐,这家公司未来二十年的成本骨架,就是这一年搭起来的。</p>
+      <p>然后,金融危机来了。2008年铝价崩盘,公司净利腰斩到3.33亿元;2009年再砍四成,剩1.93亿元。疼,但没伤到骨头,连年亏损的名单上还没有它。<a class="ref" href="#n15">〔谱15〕</a><a class="ref" href="#n16">〔谱16〕</a>真正难受的是2012年:全行业过剩叠加自家老机组停产、被迫买每度贵约七分的网电,上市十六年,焦作万方头一回亏损,1536万元。<a class="ref" href="#n18">〔谱18〕</a></p>
+      <p>顺带补一笔这一时期的账本底细:2003年氧化铝长单锁价(公司公告原文:"氧化铝合同签订价格远低于目前市场价格……同时公司也没有限产计划");2004年,按国家环保总局精神关停两条65KA小电解槽生产线(4.7万吨产能)——该年年报后来被出具保留意见,2005年4月以重大会计差错更正调减2003年净利392.13万元。<a class="ref" href="#n63">〔谱63〕</a><a class="ref" href="#n64">〔谱64〕</a></p>
+      <p>2013年,公司一口气做了两件事回血:3月27日,第二台30万千瓦机组投产;10月,把万方电力整体吸收合并进上市公司。<a class="ref" href="#n19">〔谱19〕</a><a class="ref" href="#n20">〔谱20〕</a>同一时期,过继来的"国家队"家长开始悄悄搬走:中铝自2010年9月起减持,2015年3月把1亿股协议转让给洲际油气后继续瘦身,直到清仓离场。<a class="ref" href="#n17">〔谱17〕</a><a class="ref" href="#n23">〔谱23〕</a>中铝在这家公司前后不到十年,像一位过路的房东;但它卸任后留下的房子,很快变成四路资本抢夺的战场。</p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">国家队、美国房东与一个时代</span></div>
+      <ol>
+        <li><span class="who">中国铝业</span><span class="why">控股股东(2006–),后来渐行渐远;它的进出让焦作万方第一次尝到"被资本挑中"的滋味</span></li>
+        <li><span class="who">AES(美国)</span><span class="why">合资电厂的外方伙伴,分两次以美元计价退出</span></li>
+        <li><span class="who">中州铝厂</span><span class="why">就在焦作修武的氧化铝大厂——近到运费可以忽略,这家公司"氧化铝外购"的地利即在于此</span></li>
+        <li><span class="who">2008·金融危机</span><span class="why">时代级对手:铝价腰斩,全行业过冬</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第肆章 ============ -->
+  <section class="sheet chapter" id="c4" data-pin="第肆章 · 旋转门">
+    <div class="ch-head"><span class="ch-no">第肆章</span><h2>旋转门</h2><span class="ch-years">2013–2019</span></div>
+    <div class="prose">
+      <p>如果要给这一章配背景音,应该是旋转门开合的吱呀声。中铝搬走之后,这家公司的第一大股东交椅,六年里坐过五拨人。</p>
+      <p>第一个伸手的是一笔对赌。2014年8月,公司与西藏吉奥高签下整体安排:17亿元现金收购其万吉能源(蒙古、摩洛哥的油气勘探资产),吉奥高则须把卖股价款按8元/股买成焦作万方的股票,业绩承诺一路加码到2017年净利8.2亿元。<a class="ref" href="#n21">〔谱21〕</a>2014年9月29日,吉奥高持股207,451,957股——比中铝多出<b>整整42股</b>,踩着这条缝坐上了第一大股东。<a class="ref" href="#n22">〔谱22〕</a>本馆翻遍公告,这大概是A股控制权史上最窄的一次险胜。</p>
+      <div class="clipping">
+        <span class="clip-tag">花边 · 四十二股</span>
+        <p>2.07亿股对2.07亿股,差距42股——大约是一个散户的一手半。从这天起,焦作万方进入"无控股股东、无实际控制人"状态,这一状态一持续就是十年半。<a class="ref" href="#n22">〔谱22〕</a><a class="ref" href="#n51">〔谱51〕</a></p>
+      </div>
+      <p>对赌随即崩盘:油价暴跌,万吉能源的承诺成了空中楼阁,官司从2015年打到年底。焦作中院一锤定音:解除协议,吉奥高退还17亿元转让款外加利息。<a class="ref" href="#n25">〔谱25〕</a>欠债的吉奥高手里只有股票。2016年4月,它被冻结的2.11亿股挂上淘宝司法拍卖平台,起拍价18.7亿元,号称"淘宝股权第一拍";<a class="ref" href="#n26">〔谱26〕</a>拍卖没成,更荒诞的来了:吉奥高先跟杭州金投锦众签约卖股,两天后又跟苏州天澳签了一份"一女三嫁",交易所关注函雪片般飞来,法院最终裁决金投锦众的合同有效。<a class="ref" href="#n27">〔谱27〕</a>2016年8月5日,2.11亿股过户,金投锦众以15.96%登顶。注意这个名字背后的锦江系,它和这家公司的缘分,要到十年后才真正兑现。<a class="ref" href="#n29">〔谱29〕</a></p>
+      <p>座椅还没坐热,门外又挤进一个人:2016年11月到2017年2月,嘉益投资(实控人呼健)在二级市场三度举牌——A股的规矩:持股到5%就必须公告亮明身份,三度举牌即是一路买到15.64%——逼平金投锦众,深交所发函追问"你是否谋求控制权"。<a class="ref" href="#n30">〔谱30〕</a>第三位出场的是河南本地豪强:2017年7月26日,樟树市和泰安成成立,LP霍斌一人出资20亿;此人是伊电控股(伊川电力)的董事长,同省同行。<a class="ref" href="#n32">〔谱32〕</a>8月,和泰安成以10.87亿元接走洲际油气手里那1.05亿股,洲际油气全身而退;<a class="ref" href="#n33">〔谱33〕</a>11月13日的临时股东大会成了名场面:罢免一名董事,同时补选三名:李重阳(金投锦众方)、霍斌(和泰安成方)、朱雷(嘉益方),三方各得其一,像一次摆上台面的座次谈判。半个月后,和泰安成增持到16.65%,以0.24个百分点的微弱优势登顶。<a class="ref" href="#n35">〔谱35〕</a>2018年5月8日,霍斌本人当选董事长,坐进办公室:同行来当东家,河南铝业的地盘棋局,从此你中有我。<a class="ref" href="#n36">〔谱36〕</a></p>
+      <p>资本的门厅里热闹成这样,后厨的日子却过得颠簸:2016年微利0.99亿元勉强扭亏;2017年赶上"2+26"采暖季限产,9月21日起一台台关停电解槽,限产30%到位,全年只剩1.76亿元;<a class="ref" href="#n34">〔谱34〕</a>2018年,氧化铝、预焙阳极、煤价三线齐涨,公司亏掉4.42亿元,上市以来最重的一记闷棍;<a class="ref" href="#n37">〔谱37〕</a>2019年靠铝价回暖勉强回血1.07亿元,顺手恢复了停了几年的分红,每10股派0.1元,聊胜于无,但态度先表了。<a class="ref" href="#n38">〔谱38〕</a></p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">四路资本与一纸限产令</span></div>
+      <ol>
+        <li><span class="who">西藏吉奥高(刘坤芳)</span><span class="why">42股夺权的主角,也是17亿判决的债务人</span></li>
+        <li><span class="who">金投锦众(杭州金投+锦江系)</span><span class="why">2016年接盘登顶——锦江系在此埋下伏笔</span></li>
+        <li><span class="who">嘉益投资(呼健)</span><span class="why">三度举牌的门外人,最终未竟全功</span></li>
+        <li><span class="who">和泰安成(霍斌·伊电控股)</span><span class="why">同省同行入主,2018年亲自出任董事长</span></li>
+        <li><span class="who">"2+26"采暖季限产</span><span class="why">政策对手:焦作在列,限产30%,2017年利润直接打折</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第伍章 ============ -->
+  <section class="sheet chapter" id="c5" data-pin="第伍章 · 大水">
+    <div class="ch-head"><span class="ch-no">第伍章</span><h2>大水、瘟疫与新周期</h2><span class="ch-years">2020–2024</span></div>
+    <div class="prose">
+      <p>这一章的天气很不平静。2020年,瘟疫横扫全球,铝价却在下半年悄悄站起来:焦作万方那年赚了5.68亿元,同比暴增四倍多,成了"疫情年反而大赚"的行业样本:铝价回升,自备电的成本优势全部兑现。<a class="ref" href="#n39">〔谱39〕</a></p>
+      <p>2021年7月20日,两件事在同一天发生。第一件是股权簿上的:金投锦众把全部11.87%股份协议转给宁波中曼,即三门峡铝业的全资子公司,实控人钭正刚。锦江系把五年前借道金投锦众埋的伏笔,换成了自己的正规军。<a class="ref" href="#n40">〔谱40〕</a>第二件事在厂区:次日,7月21日,河南特大暴雨,山洪灌进厂区,电解槽全线紧急停运。这是公司五年来第二次被洪水逼停(上一回是2016年7月)。<a class="ref" href="#n41">〔谱41〕</a><a class="ref" href="#n28">〔谱28〕</a>那年上半年公司还预告净利最多5.2亿元,洪水吞掉了下半年,全年落定3.97亿元。<a class="ref" href="#n41">〔谱41〕</a></p>
+      <p>同一年的12月,还出了一桩 A股罕见的荒诞剧:2020年获批的定向增发(向特定投资者发股募资),和泰安成11月已全额缴款7.474亿元,却因为一名董事拒签《发行情况报告暨上市公告书》,主承销商只好终止发行、原路退款。七个多亿到账了,又退了回去。<a class="ref" href="#n42">〔谱42〕</a>股东间的暗流,纸上只留这一行字。</p>
+      <p>业绩面上,2022年铝价冲高,营收66.76亿元创下历史峰值,利润却只有3.03亿元:原料涨得比产品还快;<a class="ref" href="#n43">〔谱43〕</a>2023年成本回落,净利反弹96%到5.93亿元。<a class="ref" href="#n44">〔谱44〕</a>但舞台中央的戏不在损益表,在股东名册:2023年10月起,第一大股东和泰安成所持股份被全部司法冻结,11月2日霍斌辞任董事长,总经理谢军代行;此后一年多,和泰安成的持股被司法拍卖一路瓜分,从17.31%跌到0.76%。八年旋转门,以一场"清仓式"被动减持落幕。<a class="ref" href="#n45">〔谱45〕</a><a class="ref" href="#n49">〔谱49〕</a>接盘的力量早已等在门口:2024年4-5月,锦江集团全资子公司安晟控股二级市场扫货加大宗,与宁波中曼合计持股19.31%,第一大股东集团易主锦江系。<a class="ref" href="#n46">〔谱46〕</a></p>
+      <p>顺带一提,这段日子里公司还把家底盘出了新花样:42万吨核定产能里有7万吨指标长期闲置,2024年10月租给关联方宁夏宁创使用,2025年光指标许可费就收了5868万元:产能天花板时代,连"用不上的牌照"都能生息。<a class="ref" href="#n47">〔谱47〕</a></p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">头部时代的列强与两场大水</span></div>
+      <ol>
+        <li><span class="who">中国宏桥</span><span class="why">646万吨合规产能的行业巨无霸,2024年净利224亿元——同一个行业,两种体量</span></li>
+        <li><span class="who">神火股份、云铝股份、天山铝业</span><span class="why">迁往新疆、云南的产能大迁徙中,焦作万方是留在河南的少数</span></li>
+        <li><span class="who">中孚实业</span><span class="why">巩义同行,省内唯一的产能大过焦作万方的上市公司(约70万吨口径)</span></li>
+        <li><span class="who">河南"7·20"暴雨</span><span class="why">两度灌进厂区的天灾对手</span></li>
+        <li><span class="who">4500万吨产能天花板</span><span class="why">2017年划下的行业国界:不许新增,存量即牌照——焦作万方的42万吨由此成了稀缺品</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第陆章 ============ -->
+  <section class="sheet chapter" id="c6" data-pin="第陆章 · 婚礼">
+    <div class="ch-head"><span class="ch-no">第陆章</span><h2>三百一十九亿的婚礼</h2><span class="ch-years">2025–</span></div>
+    <div class="prose">
+      <p>先说喜事。2025年,铝价站上高位,而氧化铝(这家公司最大的成本项)从年初每吨约5700元一路崩到年中的3000元下方。产品涨、原料跌,两头的好处被这家"氧化铝全靠外购"的公司一人独占:全年净利10.71亿元,同比增82%,公司年报自称"历史最好业绩";分红也从每10股1.3元跳到3.25元。<a class="ref" href="#n55">〔谱55〕</a>2026年上半年更是赚了12.30亿元:半年,超过了上一年全年。<a class="ref" href="#n58">〔谱58〕</a></p>
+      <p>再说正事。2025年3月3日,公司停牌;8月22日,草案出炉:焦作万方拟以发行股份为对价,作价约319亿元,收购锦江集团等手中三门峡铝业99.4375%的股权。注意,标的体量是上市公司自身的好几倍,这笔交易构成"重组上市",俗称借壳。<a class="ref" href="#n50">〔谱50〕</a><a class="ref" href="#n54">〔谱54〕</a>三门峡铝业不是无名之辈:氧化铝权益产能1028万吨/年、全国第四,金属镓产量全国第二,2024年自家净利95.66亿元,还拍着胸脯承诺2026-2028年扣非净利合计不低于100.34亿元。<a class="ref" href="#n54">〔谱54〕</a>婚礼两边,一边是1966年的老电解铝厂,一边是氧化铝四强:电解铝的下游要抱住上游的原料,这门亲事,行业逻辑上是天作之合。</p>
+      <p>程序在2025年3月19日提前走了一步:锦江系提名的曹丽萍当选董事,董事会9席中锦江系占了5席,公司的实际控制人从"无"变更为钭正刚。从2014年9月那42股之差算起,这家公司在"无主之地"上整整漂了十年半,终于又有了户口本上的当家人。<a class="ref" href="#n51">〔谱51〕</a>4月,还有一桩意味深长的小事:焦作市投资集团受让了万方集团90%股权:1966年把这家厂建起来的焦作国资,以间接持股5.22%的方式,又回到了股东名册上。<a class="ref" href="#n52">〔谱52〕</a>8月18日,第十届董事会换届,锦江集团企业管理部总经理喻旭春出任董事长,付斌任总经理。<a class="ref" href="#n53">〔谱53〕</a></p>
+      <p>婚期还没定。2025年9月9日,临时股东会以91.15%的赞成率通过交易;9月20日,深交所受理;<a class="ref" href="#n56">〔谱56〕</a>2026年4月,作价微调至319.17亿元;此后是漫长的问询与回复,8月22日董事会通过延长决议有效期,9月7日股东会再批准延期。截至本卷编竣(2026年9月9日),交易仍在深交所审核,尚未过会。<a class="ref" href="#n57">〔谱57〕</a><a class="ref" href="#n59">〔谱59〕</a>至于这只股票值多少钱、行情往哪儿走,本馆一概不谈——馆规第六则:谱内不谈价格,故事讲到事实为止。<a class="ref" href="#n56">〔谱56〕</a></p>
+      <p>六十年,故事讲到这里:一座1966年的地方铝厂,换了六个当家人,迎送过中铝、吉奥高、金投锦众、嘉益、和泰安成五路资本,抗过两场大水、一次金融危机、一纸限产令,如今即将改姓"氧化铝四强"的锦江系。变的是名字与东家,不变的是太行脚下那片厂房里的炉火——以及这家公司给本馆留下的第一条馆训:在A股,活得不惊艳不难,难的是像电解槽一样,六十年不停槽。</p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">婚礼的宾主与尚未退场的变数</span></div>
+      <ol>
+        <li><span class="who">三门峡铝业(锦江系)</span><span class="why">氧化铝全国第四:1028万吨权益产能,本次重组的标的与新东家的主力</span></li>
+        <li><span class="who">福达合金往事</span><span class="why">2021年三门峡铝业155.6亿借壳福达合金未成——这场婚礼是第二次提亲</span></li>
+        <li><span class="who">深交所审核</span><span class="why">重组上市的最后关卡,两轮问询,尚未过会</span></li>
+        <li><span class="who">全国碳市场</span><span class="why">2025年3月电解铝被纳入,2026年起执行——自备煤电的碳账单,是下一个时代对手</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 当家人更替 ============ -->
+  <section class="sheet-wide" id="zhangduo" data-pin="当家人">
+    <div class="report">
+      <div class="report-cap"><h3>当家人更替</h3><span class="cap-note">谱主=公司+掌舵人,故单列一表</span></div>
+      <table>
+        <thead><tr><th>当家人</th><th>背后阵营</th><th>在任</th><th>备注</th></tr></thead>
+        <tbody>
+          <tr><td>金保庆</td><td>厂内出身(1959年入厂)</td><td>1993 – 2006.2</td><td>董事长兼总经理(至2002年)、省劳动模范;280kA转弯拍板人;2005年12月被免董事职务</td></tr>
+          <tr><td>乔桂玲</td><td>焦作市国资(原温县常务副县长,1968年生)</td><td>2006.2 – ?</td><td>与金保庆免职同日接任;卸任时点未查到</td></tr>
+          <tr><td>蒋英刚</td><td>中铝系</td><td>至迟2015年在任</td><td>2015年末判决书载其为法定代表人;起始未查到</td></tr>
+          <tr><td>周传良</td><td>职业经理人</td><td>2016.2 – 2018.5</td><td>第七届董事会董事长;后改任总经理</td></tr>
+          <tr><td>霍斌</td><td>和泰安成·伊电控股</td><td>2018.5 – 2023.11</td><td>同省同行入主;2023年股份冻结后辞任</td></tr>
+          <tr><td>谢军(代)</td><td>总经理代行</td><td>2023.11 – 2025.8</td><td>代行董事长、法定代表人</td></tr>
+          <tr><td>喻旭春</td><td>锦江集团</td><td>2025.8 – 今</td><td>锦江集团企业管理部总经理出身;总经理付斌</td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="4">万方集团时代(1996–2006)其余历任董事长姓名,公开渠道未查到,存档待补。来源:历届董事会公告。</td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ 大事记 ============ -->
+  <section class="sheet-wide" id="chronicle" data-pin="大事记">
+    <div class="chronicle-wrap">
+      <div class="chronicle-head">
+        <h2>大事记 · 全书书脊</h2>
+        <span class="note">正文每一个〔谱N〕都落在这里;每一条都挂出处。</span>
+      </div>
+      <div class="legend">
+        <span><span class="mark">核</span>已核对公告或可靠来源</span>
+        <span><span class="mark query">疑</span>来源间有出入,存疑</span>
+        <span><span class="mark gap">缺</span>史料缺口</span>
+      </div>
+      <ol class="chronicle">
+        <li id="n1"><span class="c-date">1966</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">前身焦作市铝厂建厂,后为国家大二型企业、河南省有色金属行业重点企业;湛修东、梁留成同 年进厂,三十年后以董事身份见于上市公告书。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/1996-09-20/50604.html">巨潮·1996上市公告书</a></div></li>
+        <li id="n2"><span class="c-date">1958–65</span><span class="c-mark"><span class="mark query">疑</span></span><div class="c-body">监事会主席李清玉简历载"1958年加入焦作市铝厂",与1966建厂说矛盾:或为大跃进筹建后停办,或为笔误,待考。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/1996-09-20/50604.html">巨潮·上市公告书</a></div></li>
+        <li id="n3"><span class="c-date">1993.3</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">豫体改字〔1993〕56号批准,焦作市铝厂等四家发起定向募集设立股份公司:净资产10759万元按1.5:1折股,另募法人股330万股、职工股1500万股;3月22日工商登记。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/1996-09-20/50604.html">巨潮·上市公告书</a></div></li>
+        <li id="n4"><span class="c-date">1995</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">铝厂总资产8.25亿元、职工4500余人;股份公司净利4731.8万元、EPS 0.51元、ROE 23.6%,向老股东每股派0.3元。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/1996-09-20/50604.html">巨潮·上市公告书</a></div></li>
+        <li id="n5"><span class="c-date">1996.3</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">与美国AES合建"焦作爱依斯万方电力有限公司"(中外合作电厂),自备电伏笔埋下。<a class="c-src" href="https://www.jzwfal.com/aboutus.html">公司官网沿革</a></div></li>
+        <li id="n6"><span class="c-date">1996.9</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">每股6.80元发行3201万股,"全额存款、比例配售、余款转存":53.12亿元申购,配售比例4.157%,募资净额2.11亿元到位。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/1996-09-20/50604.html">巨潮·上市公告书</a></div></li>
+        <li id="n7"><span class="c-date">1996.9.26</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">深交所挂牌,代码0612;上市时产能:铝锭5.3万吨/年、盘条5000吨、丝材2000吨、铝箔500吨;60KA自焙槽;职工3451人;董事长兼总经理金保庆。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/1996-09-20/50604.html">巨潮·上市公告书</a></div></li>
+        <li id="n8"><span class="c-date">1997.4</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">股东大会推翻招股书投向,募资全部改投280kA大型预焙槽(6.8万吨电解铝+4.2万吨碳素)——"九五"攻关成果、国家高科技产业化示范工程。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/2002-08-14/631975.PDF">巨潮·2002董事会公告</a></div></li>
+        <li id="n9"><span class="c-date">1997</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">以500万元技术使用费买断280kA技术第一家使用权;金保庆被行业史称为"敢于第一个吃螃蟹"。<a class="c-src" href="https://www.cnmn.com.cn/ShowNews1.aspx?id=425046">中国有色网·铝电解四十年</a></div></li>
+        <li id="n10"><span class="c-date">1997–98</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">项目经国家计委报国务院批准立项(1997年底),1998年列入国家经贸委重点工程。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/2002-08-14/631975.PDF">巨潮·2002董事会公告</a></div></li>
+        <li id="n60"><span class="c-date">2001.1.18</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">280kA示范工程92台电解槽一次投产成功。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/2002-08-14/631975.PDF">巨潮·2002公告</a></div></li>
+        <li id="n11"><span class="c-date">2002.8</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">280kA示范工程竣工验收;此后二十余年公司产能皆沿此路线生长。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/2002-08-14/631975.PDF">巨潮·2002董事会公告</a></div></li>
+        <li id="n61"><span class="c-date">2002.7-12</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">7月31日"WF"牌铝锭获LME注册(全国140余家铝企业中第11家);12月配股10:3、7.50元/股募约2.28亿元全部投入280kA完善工程;同月与金冠能源签20年电力购销合同(5年上限30亿元,关联董事回避)。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/2002-11-09/10067797.PDF">巨潮·配股说明书</a></div></li>
+        <li id="n62"><span class="c-date">2003</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">完善工程扩至13.6万吨;电解铝产能11.5→18.3→25.1万吨三连跳;氧化铝长单锁价(公告原文:"合同签订价格远低于目前市场价格……没有限产计划")。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/2003-09-03/12494220.html">巨潮·公告</a></div></li>
+        <li id="n63"><span class="c-date">2004</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">大股东循"以股权换发展"思路与瑞士嘉能可等接触股权转让(董事会公告披露);按国家环保总局精神关停65KA产线(4.7万吨);氧化铝上半年最高530美元/吨。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/2004-08-07/14405711.PDF">巨潮·董事会公告</a></div></li>
+        <li id="n64"><span class="c-date">2004-2005.4</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">2004年报被出具保留意见;2005年4月20日重大会计差错更正,调减2003年净利392.13万元。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/2005-04-20/15250868.html">巨潮·更正公告</a></div></li>
+        <li id="n65"><span class="c-date">2005.12-2006.2</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">12月31日董事会通过免去金保庆董事职务;2006年2月8日临时股东大会通过,同日乔桂玲(原温县常务副县长)任董事长;总经理线2005年7月已换乔桂玲(李东根卸任,新班子含周传良、赵院生等)。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/2006-01-05/16348047.html">巨潮·公告</a></div></li>
+        <li id="n12"><span class="c-date">2006</span><span class="c-mark"><span class="mark query">疑</span></span><div class="c-body">万方集团将约29%(1.39亿股)转让中国铝业:2006年9月18日过户,每股1.774元、总额2.47亿元,与股改同步实施——中铝成为控股股东(此前2005年12月7日三方已签合作意向书;2004年公司还曾披露与瑞士嘉能可等的"以股权换发展"接触)。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/2006-09-20/18356441.PDF">巨潮·过户公告</a><a class="c-src" href="http://static.cninfo.com.cn/finalpage/2005-12-13/16282421.html">巨潮·意向书公告</a></div></li>
+        <li id="n13"><span class="c-date">2007</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">以7688.3万美元收购AES所持合资电厂70%股权。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/2008-08-02/41763953.PDF">巨潮·2008董事会公告</a></div></li>
+        <li id="n14"><span class="c-date">2008.11.28</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">剩余股权过户,合资电厂成为全资自备电厂,更名"焦作万方电力",煤电铝三件套配齐。<a class="c-src" href="http://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=000612&amp;id=11995459">2025年报商誉注释</a></div></li>
+        <li id="n15"><span class="c-date">2008</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">金融危机铝价暴跌,净利3.33亿元(-51.3%),未亏损。<a class="c-src" href="https://data.eastmoney.com/stockcalendar/000612.html">东财·个股日历</a></div></li>
+        <li id="n16"><span class="c-date">2009</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">净利1.93亿元(-42.0%)。<a class="c-src" href="https://data.eastmoney.com/stockcalendar/000612.html">东财·个股日历</a></div></li>
+        <li id="n17"><span class="c-date">2010.9</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">中铝启动减持,离场序曲;2011年曾承诺五年内消除电解铝同业竞争。<a class="c-src" href="https://www.nbd.com.cn/articles/2015-12-30/974272.html">每日经济新闻</a></div></li>
+        <li id="n18"><span class="c-date">2012</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">上市后首亏:净利-1536万元(-104%),全行业困难+老机组停产买网电(网电较自备电贵约0.07元/度)。<a class="c-src" href="https://data.eastmoney.com/stockcalendar/000612.html">东财·个股日历</a></div></li>
+        <li id="n19"><span class="c-date">2013.3.27</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">第二台30万千瓦机组投产,自备电恢复。<a class="c-src" href="https://business.sohu.com/20130327/n370638055.shtml">搜狐财经</a></div></li>
+        <li id="n20"><span class="c-date">2013.10</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">吸收合并全资子公司万方电力,电力资产并入上市公司(公告2013-052)。<a class="c-src" href="http://stock.cngold.org/c/2013-10-14/c2188178.html">金投网·公告转载</a></div></li>
+        <li id="n21"><span class="c-date">2014.8.15</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">与西藏吉奥高签整体安排:17亿元现金购万吉能源100%(蒙古、摩洛哥油气勘探),吉奥高以价款按8元/股购入不超20%股份;业绩承诺2017年净利8.2亿元。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN201408150006669020.html">公司公告</a></div></li>
+        <li id="n22"><span class="c-date">2014.9.29</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">吉奥高持股207,451,957股,比中铝多42股,登上第一大股东;公司自此"无控股股东、无实际控制人"。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN201410070007222220.html">公司公告</a></div></li>
+        <li id="n23"><span class="c-date">2015</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">中铝五次减持:3月1亿股协议转让洲际油气(后者成第二大股东),年末余2958.2万股,其后清仓。<a class="c-src" href="https://www.nbd.com.cn/articles/2015-12-30/974272.html">每日经济新闻</a></div></li>
+        <li id="n24"><span class="c-date">2015</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">全年亏损6252万元(铝价下跌+联营赵固能源低迷)。<a class="c-src" href="https://data.eastmoney.com/stockcalendar/000612.html">东财·个股日历</a></div></li>
+        <li id="n25"><span class="c-date">2015.12.31</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">焦作中院一审判决:解除万吉能源转让协议,吉奥高返还17亿元转让款并赔偿利息。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN201601030012662286.html">公司公告</a></div></li>
+        <li id="n26"><span class="c-date">2016.4</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">吉奥高被冻结的2.11亿股挂上淘宝司法拍卖,起拍价18.7亿元,称"淘宝股权第一拍";后未成交。<a class="c-src" href="https://www.cs.com.cn/ssgs/gsxw/201604/t20160422_4953545.html">中国证券报</a></div></li>
+        <li id="n27"><span class="c-date">2016.5</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">"一女三嫁":吉奥高先与杭州金投锦众签约,两日后又与苏州天澳汇融签约;法院裁决金投锦众协议有效。<a class="c-src" href="http://ifinance.ifeng.com/15197933/news.shtml">凤凰财经</a></div></li>
+        <li id="n28"><span class="c-date">2016.7</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">暴雨洪水进厂,紧急停产(第一次);后获保险赔付。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN201607200016661949.html">公司公告</a></div></li>
+        <li id="n29"><span class="c-date">2016.8.5</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">金投锦众受让2.11亿股过户(约18.7亿元,15.96%),登顶第一大股东;6月公司收到17亿执行款,案件终结。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN201608050016943341.html">公司公告</a></div></li>
+        <li id="n30"><span class="c-date">2016.11–2017.2</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">嘉益投资(实控人呼健)三度举牌至15.64%,全部二级市场买入;深交所发函追问是否谋求控制权。<a class="c-src" href="https://www.chinanews.com.cn/m/cj/2017/02-22/8156748.shtml">中新网·羊城晚报</a></div></li>
+        <li id="n31"><span class="c-date">2017.4</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">四部委清理整顿电解铝违法违规项目,确立约4500万吨/年产能天花板:存量即牌照。<a class="c-src" href="https://www.ndrc.gov.cn/fgsj/tjsj/cyfz/zzyfz/200507/t20050714_1148467.html">发改委·铝工业布局(背景)</a></div></li>
+        <li id="n32"><span class="c-date">2017.7.26</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">樟树市和泰安成(有限合伙)成立:LP霍斌出资20亿元;霍斌为伊电控股董事长——同省同行入局。<a class="c-src" href="https://www.cs.com.cn/ssgs/gsxw/201709/t20170915_5475630.html">中证网</a></div></li>
+        <li id="n33"><span class="c-date">2017.8–10</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">和泰安成以10.87亿元受让洲际油气1.05亿股(8.77%),洲际油气退出。<a class="c-src" href="https://www.cs.com.cn/ssgs/gsxw/201709/t20170915_5475630.html">中证网</a></div></li>
+        <li id="n34"><span class="c-date">2017.9</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">"2+26"采暖季限产:9月21日起关停电解槽,限产30%到位至2018年3月;全年净利仅1.76亿元。<a class="c-src" href="http://pdf.dfcfw.com/pdf/H3_AP201809171196634792_1.pdf">东财研报·电解铝</a></div></li>
+        <li id="n35"><span class="c-date">2017.11.13</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">临时股东大会"三国杀":李重阳(金投锦众)、霍斌(和泰安成)、朱雷(嘉益)同日当选董事,三方各得一席;月末和泰安成16.65%登顶第一大股东。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN201711131034848569.html">公司决议公告</a></div></li>
+        <li id="n36"><span class="c-date">2018.5.8</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">霍斌当选第七届董事会董事长(周传良辞任,留任总经理)。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN201805081139371544.html">公司公告</a></div></li>
+        <li id="n37"><span class="c-date">2018</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">上市以来最大亏损:净利-4.42亿元,阳极、氧化铝、煤价三线齐涨。<a class="c-src" href="http://money.finance.sina.com.cn/corp/go.php/vFD_ProfitStatement/stockid/000612/ctrl/2018/displaytype/4.phtml">新浪财经·利润表</a></div></li>
+        <li id="n38"><span class="c-date">2019</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">净利1.07亿元微利;恢复分红,年度每10股派0.1元。<a class="c-src" href="http://money.finance.sina.com.cn/corp/go.php/vFD_ProfitStatement/stockid/000612/ctrl/2019/displaytype/4.phtml">新浪财经·利润表</a></div></li>
+        <li id="n39"><span class="c-date">2020</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">疫情年反而大赚:净利5.68亿元(+432.5%),铝价回升+自备电成本优势兑现。<a class="c-src" href="http://www.zqrb.cn/gscy/gongsi/2021-03-19/A1616152191243.html">证券日报</a></div></li>
+        <li id="n40"><span class="c-date">2021.7.20</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">金投锦众将全部11.87%(1.415亿股)协议转让宁波中曼——三门峡铝业全资子公司、钭正刚控制;锦江系持股平台转正。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN202107211505229385.html">简式权益变动书</a></div></li>
+        <li id="n41"><span class="c-date">2021.7.21</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">河南特大暴雨,山洪进厂,全线紧急停产(第二次);上半年曾预告净利4.9–5.2亿,全年落定3.97亿元(-30.2%)。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN202107211505230917.html">公司公告</a></div></li>
+        <li id="n42"><span class="c-date">2021.12.4</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">2020年获批的定增泡汤:和泰安成11月已全额缴款7.474亿元,因一名董事拒签《上市公告书》,主承销商终止发行、退款。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN202112031532635406.html">公司公告</a></div></li>
+        <li id="n43"><span class="c-date">2022</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">营收66.76亿元创历史峰值,净利仅3.03亿元(-23.6%)——原料涨得比产品快。<a class="c-src" href="https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=000612&amp;id=9173670">2022年报</a></div></li>
+        <li id="n44"><span class="c-date">2023</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">成本回落,净利5.93亿元(+95.7%)。<a class="c-src" href="https://file.finance.qq.com/finance/hs/pdf/2024/03/30/1219462242.PDF">2023年报摘要</a></div></li>
+        <li id="n45"><span class="c-date">2023.10–11</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">和泰安成全部股份被司法冻结及轮候冻结;11月2日霍斌辞任董事长("个人原因"),总经理谢军代行董事长、法定代表人。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN202311011607638412.html">公司公告</a></div></li>
+        <li id="n46"><span class="c-date">2024.4–5</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">锦江集团全资子公司安晟控股二级买入加大宗,与宁波中曼合计持股19.31%,第一大股东集团易主锦江系。<a class="c-src" href="https://static.cninfo.com.cn/finalpage/2025-03-06/1222720919.PDF">详式权益变动书(巨潮)</a></div></li>
+        <li id="n47"><span class="c-date">2024.10</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">7万吨闲置电解铝指标许可给关联方宁夏宁创使用(42万吨核定=35万吨运行+7万吨闲置),2025年确认指标许可费收入5868.2万元。<a class="c-src" href="http://notice.10jqka.com.cn/api/pdf/c84c747f463bb5a3.pdf">2024年报全文</a></div></li>
+        <li id="n48"><span class="c-date">2024</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">增收不增利:营收64.65亿元(+4.5%),净利5.89亿元(-0.7%);上半年氧化铝暴涨挤压利润;年度分红每10股1.3元。<a class="c-src" href="https://file.finance.qq.com/finance/hs/pdf/2025/03/29/1222940714.PDF">2024年报摘要</a></div></li>
+        <li id="n49"><span class="c-date">2025.1.17</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">和泰安成司法拍卖过户完成,持股降至约4.3%,后仅余0.76%——八年旋转门以"清仓式"被动减持落幕。<a class="c-src" href="https://finance.sina.com.cn/roll/2025-02-15/doc-ineknvuu6298597.shtml">上海证券报(新浪)</a></div></li>
+        <li id="n50"><span class="c-date">2025.3.3</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">停牌,筹划发行股份购买资产——三门峡铝业重组揭幕。<a class="c-src" href="https://m.jiemian.com/article/12421858.html">界面新闻</a></div></li>
+        <li id="n51"><span class="c-date">2025.3.19</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">锦江系提名曹丽萍当选董事,董事会9席占5席;实际控制人由"无"变更为钭正刚,结束十年半"无主"状态。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN202603131820553571.html">2025年报摘要</a></div></li>
+        <li id="n52"><span class="c-date">2025.4</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">焦作市投资集团受让万方集团90%股权(间接持股5.22%)——原始大股东回归焦作国资。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN202504111654843689.html">简式权益变动书</a></div></li>
+        <li id="n53"><span class="c-date">2025.8.18</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">第十届董事会换届:喻旭春(锦江集团企业管理部总经理)任董事长,付斌任总经理。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN202508181729950850.html">公司公告</a></div></li>
+        <li id="n54"><span class="c-date">2025.8.22</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">重组草案:拟发行股份作价约319亿元购买三门峡铝业99.4375%股权(氧化铝权益产能1028万吨/年、全国第四;金属镓全国第二;2024年归母净利95.66亿元;业绩承诺2026-28扣非合计不低于100.34亿元),构成重组上市。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN202508221732483232.html">收购报告书摘要</a></div></li>
+        <li id="n55"><span class="c-date">2025</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">历史最好业绩:营收64.95亿元,净利10.71亿元(+82.0%),EPS 0.898元;氧化铝自约5700元/吨跌至3000元下方+电解铝涨价;分红每10股3.25元(分红率约36%)。<a class="c-src" href="http://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=000612&amp;id=11995459">2025年报</a></div></li>
+        <li id="n56"><span class="c-date">2025.9</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">9月9日股东会91.15%赞成通过交易;9月20日深交所受理。<a class="c-src" href="https://stcn.com/article/detail/3330040.html">证券时报</a></div></li>
+        <li id="n57"><span class="c-date">2026.4–9</span><span class="c-mark"><span class="mark query">疑</span></span><div class="c-body">4月28日作价调至319.17亿元、发行股数微调;两轮审核问询;8月22日董事会、9月7日股东会先后通过延长决议有效期——截至编竣日交易仍在审核,尚未过会,存在不确定性。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN202609071829103520.html">2026年第二次临时股东会决议</a></div></li>
+        <li id="n58"><span class="c-date">2026H1</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">营收41.48亿元(+25.4%),净利12.30亿元(+129.6%)——半年超过2025全年;9月9日收盘11.39元,市值约136亿元。<a class="c-src" href="https://data.eastmoney.com/notices/detail/000612/AN202608280006757910.html">2026年半年报摘要</a></div></li>
+        <li id="n59"><span class="c-date">2026.9.9</span><span class="c-mark"><span class="mark gap">缺</span></span><div class="c-body">本卷编竣。重组结果、碳市场配额账单、三门峡铝业并表后的新故事——留给下一卷。<a class="c-src" href="../index.html">企业故事馆·待续</a></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 生产简报 ============ -->
+  <section class="sheet-wide" id="shuzi" data-pin="生产简报">
+    <div class="report">
+      <div class="report-cap"><h3>生产简报 · 近十年损益</h3><span class="cap-note">单位:亿元人民币 · 归母口径</span></div>
+      <table>
+        <thead><tr><th>年度</th><th>营业收入</th><th>归母净利润</th><th>当年大事(另见大事记)</th></tr></thead>
+        <tbody>
+          <tr><td>2016</td><td>39.26</td><td>0.99</td><td>洪水进厂;金投锦众登顶</td></tr>
+          <tr><td>2017</td><td>50.17</td><td>1.76</td><td>采暖季限产30%;三国杀改选</td></tr>
+          <tr class="neg"><td>2018</td><td>49.09</td><td>-4.42</td><td>上市以来最大亏损</td></tr>
+          <tr><td>2019</td><td>47.61</td><td>1.07</td><td>恢复分红(10派0.1)</td></tr>
+          <tr><td>2020</td><td>47.44</td><td>5.68</td><td>疫情年大赚+432%</td></tr>
+          <tr><td>2021</td><td>49.18</td><td>3.97</td><td>7·21洪水停产;定增泡汤</td></tr>
+          <tr><td>2022</td><td>66.76</td><td>3.03</td><td>营收历史峰值</td></tr>
+          <tr><td>2023</td><td>61.87</td><td>5.93</td><td>成本回落,净利+96%</td></tr>
+          <tr><td>2024</td><td>64.65</td><td>5.89</td><td>锦江系登顶;指标出租</td></tr>
+          <tr><td>2025</td><td>64.95</td><td>10.71</td><td>历史最好业绩;319亿重组</td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="4">2026上半年:营收41.48亿元,净利12.30亿元。来源:历年年报/利润表(见大事记各条)。</td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ 附录 ============ -->
+  <section class="sheet appendix" id="appendix" data-pin="附录">
+    <div class="apx-head"><h2>附录 · 交代底细</h2><span class="apx-note">按馆规,一切考据过程压在书尾。</span></div>
+
+    <h3>缺口与置信度</h3>
+    <div class="gap-box">
+      <span class="gb-tag">以下诸事,本馆未能钉死,如实交代</span>
+      <ul>
+        <li><b>1966–1992年建厂初期细节</b>(首座电解槽容量、投产日期、历任厂长):网络公开史料暂缺,待查《焦作市志》与厂志档案。</li>
+        <li><b>"1958年入厂"与"1966年建厂"的矛盾</b>:两说均出自1996年上市公告书原文,孰是孰非待档案开口。</li>
+        <li><b>金保庆被免职的原因与2006年后去向</b>:公告未披露;与中铝入主时间吻合为本馆推断。其1997-2000年二届董事会任期细节未查到(巨潮该时段公告缺档)。</li>
+        <li><b>金保庆的任期下限、万方集团时代其余董事长</b>:未查到。</li>
+        <li><b>2011、2013年净利精确值</b>与2008-2010年营收:未查到,正文未使用。</li>
+        <li><b>成本结构占比</b>(氧化铝35-40%、吨铝耗电1.3万度):行业参考口径,公司未披露自家成本表。</li>
+        <li><b>部分新闻</b>(界面、每经、上证报等)原文URL未留存,以标题与转载页可查证;行情数据来自腾讯前复权K线接口。</li>
+      </ul>
+    </div>
+
+    <h3>返回研究的发现</h3>
+    <div class="report">
+      <table>
+        <thead><tr><th>发现</th><th>建议去向</th><th>为什么重要</th></tr></thead>
+        <tbody>
+          <tr><td>1958年入厂与1966年建厂矛盾</td><td>事实层·待核</td><td>关系创业叙事起点</td></tr>
+          <tr><td>金保庆免职原因与2006年后去向</td><td>事实层·待核(档案/访谈)</td><td>改制换东家中的人事逻辑</td></tr>
+          <tr><td>金投锦众受让价18.7亿元(媒体口径)</td><td>事实层·待核公告</td><td>影响旋转门一幕的代价核算</td></tr>
+          <tr><td>2011、2013年净利精确值</td><td>事实层·待补年报</td><td>损益长序列不完整</td></tr>
+          <tr><td>公司口径成本结构未披露</td><td>逻辑层</td><td>影响利润机制的准确刻画</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>史料清单</h3>
+    <ol class="src-list">
+      <li><span>《焦作万方铝业股份有限公司股票上市公告书》(1996-09-20),巨潮资讯网存档——本卷早期史第一来源。</span></li>
+      <li><span>三届董事会十五次会议决议公告(2002-08-14),巨潮——280kA改道始末。</span></li>
+      <li><span>2011年公司债券上市公告书(新浪存档PDF)——股改与批文。</span></li>
+      <li><span>2008-08-02董事会公告(巨潮)——收购AES电厂70%股权。</span></li>
+      <li><span>2014-2026年历次公告:万吉能源协议、权益变动书、董事会决议、定增终止、收购报告书摘要等(东方财富公告库/巨潮)。</span></li>
+      <li><span>历年年度报告及摘要(2021-2026,新浪/巨潮/同花顺存档)。</span></li>
+      <li><span>中国有色网《我国铝电解技术40年发展回顾》——280kA与金保庆。</span></li>
+      <li><span>中新网转羊城晚报(2017-02-22)、中证网(2017-09-15)、每日经济新闻(2015-12-30)、凤凰财经(2017-02-15)、中国证券报(2016-04-22)、界面新闻(2025-03)、证券时报(2025-09-09)、上海证券报(2025-02-15)——股权旋转门各役。</span></li>
+      <li><span>观察者网《中国电解铝工业的技术追赶之路》、国资委《"中国第一铝"转型记》、中铝集团《写在新中国铝工业投产70周年之际》——行业史背景。</span></li>
+      <li><span>腾讯行情前复权K线接口、搜狐证券行情页——股价与市值。</span></li>
+      <li><span>公司官网(焦作万方)沿革与简介页。</span></li>
+    </ol>
+
+    <footer class="colophon">
+      <p class="cb-title">版 权 页</p>
+      <p>《焦作万方》一卷 · 企业故事馆馆藏第一卷 · 编于二〇二六年九月九日 · 史实截至该日。</p>
+      <p>本卷谱主:焦作万方(000612.SZ);分期六幕,大事记五十九条;全部来源见上。</p>
+      <p class="disclaimer">本馆内容为个人兴趣写作,不构成任何投资建议;人物、事件、数字以公司公告为准,若与公告相悖,以公告为准。引用媒体与文件均注明出处,如有侵权请告知即撤。</p>
+      <p class="back-shelf"><a href="../index.html">← 回到书架</a></p>
+    </footer>
+  </section>
+</main>
+
+<script src="../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>吉比特(603444) · 把赚到的钱分掉 · 企业故事馆</title>
+<meta name="description" content="吉比特(603444.SH)的传记:两位工程师各50万起家,一部《问道》同时在线近百万人,上市九年累计分红74.22亿元、是IPO净募资的8.25倍,一年分三次钱。每件事都有出处。">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-book="603444" data-book-name="吉比特">
+
+<!--
+THESIS: 一部编年厂志——黑墨正文、朱砂批注、米纸为地;讲一家
+游戏公司从五十万起家到一年三次分红的二十二年;每件事沿
+〔谱N〕小注指回大事记。拒绝营销头图与卡片阵列。
+OWN-WORLD: 米纸/墨/套红印制,钢笔蓝 #2D4E8A 用于外链与缺口
+标记(〔疑〕仍为墨色虚线);宋体正文、楷体眉批;编年长表右对
+齐日期栏;状态即校对符号(核/疑/缺);无照片,仅线绘SVG。
+STORY: 读者取书、读六章传记、点朱注核出处;大事记是书脊。
+FIRST VIEWPORT: 书眉;案卷代码行;巨幅宋体「吉比特」配旋转
+朱印;一句引子;谱主划线履历卡;向下进入第壹章。
+FORM: 厂志·套红编年(自造清单第3位,seed 0930a07c)。
+FINISH: unreviewed and undocumented is unfinished; this build
+ends with the finish review, the verdict, DESIGN.md, and every
+shipping raster carrying its provenance.
+-->
+
+<header class="masthead-bar">
+  <a class="hall-name" href="../index.html">企业故事馆</a>
+  <span class="running-head">吉比特 · 卷首</span>
+</header>
+<div class="reading-rule"><i></i></div>
+
+<nav class="thumbs" aria-label="章节导航">
+  <a class="top-link" href="#cover" data-ch>回卷首</a>
+  <a href="#c1" data-ch>壹</a>
+  <a href="#c2" data-ch>贰</a>
+  <a href="#c3" data-ch>叁</a>
+  <a href="#c4" data-ch>肆</a>
+  <a href="#c5" data-ch>伍</a>
+  <a href="#c6" data-ch>陆</a>
+  <a href="#zhangduo" data-ch>舵</a>
+  <a href="#chronicle" data-ch>谱</a>
+  <a href="#appendix" data-ch>跋</a>
+</nav>
+
+<button id="bookmark-pin" class="bm-pin" hidden title="清除书签">接着读:<span class="bm-ch"></span><span class="bm-hint"> · 点击清除</span></button>
+
+<main>
+  <!-- ============ 卷首 ============ -->
+  <section class="sheet cover" id="cover" data-pin="卷首">
+    <svg class="seal" viewBox="0 0 128 128" aria-hidden="true">
+      <g fill="none" stroke="#b93a1b">
+        <circle cx="64" cy="64" r="60" stroke-width="3.5"/>
+        <circle cx="64" cy="64" r="42" stroke-width="1.5"/>
+        <path id="seal-arc-444" d="M 64,12 a 52,52 0 1 1 -0.01,0" stroke="none"/>
+      </g>
+      <text fill="#b93a1b" font-size="10.5" letter-spacing="2" font-weight="700"><textPath href="#seal-arc-444" startOffset="2">企业故事馆 · 603444 · 馆藏第十七卷</textPath></text>
+      <text x="64" y="60" text-anchor="middle" fill="#b93a1b" font-size="21" font-weight="900" font-family="Songti SC,serif">已 核</text>
+      <text x="64" y="82" text-anchor="middle" fill="#b93a1b" font-size="11.5" letter-spacing="2" font-family="Menlo,monospace">603444</text>
+    </svg>
+
+    <div class="code-row"><span class="code">603444.SH</span><span>上交所 · 2017年1月4日挂牌 · 主板</span></div>
+    <h1>吉比特</h1>
+    <p class="aka">厦门吉比特网络技术股份有限公司 · 福建厦门 · 发行品牌:雷霆游戏</p>
+    <p class="hook">2004年,两位工程师在厦门各掏<b>50万元</b>创业;两年后,《问道》同时在线逼近<b>百万</b>人;2017年上市,募资9.6亿;此后九年,他们把赚到的钱大半分给股东——累计分红<b>74.22亿元</b>,是IPO净募资的<b>8.25倍</b>。这家公司没有工厂,没有对赌,没换过当家人,员工只有995人。</p>
+
+    <div class="ledger">
+      <p class="ledger-cap"><span>谱主 · 履历卡</span><span>截至二〇二六年九月九日</span></p>
+      <dl>
+        <dt>谱 主</dt><dd>厦门吉比特网络技术股份有限公司,及其工程师当家人</dd>
+        <dt>生 于</dt><dd>2004年3月,厦门;2017年1月4日上交所挂牌<a class="ref" href="#n1">〔谱1〕</a><a class="ref" href="#n6">〔谱6〕</a></dd>
+        <dt>营 生</dt><dd>网络游戏研发与发行,发行品牌"雷霆游戏";"问道"IP自2006年运营至今;2025年毛利率93.90%<a class="ref" href="#n2">〔谱2〕</a><a class="ref" href="#n16">〔谱16〕</a></dd>
+        <dt>当家人</dt><dd>卢竑岩(2004年至今,董事长兼总经理,持股29.72%);陈拓琳(董事,持股8.08%)<a class="ref" href="#n18">〔谱18〕</a><a class="ref" href="#zhangduo">〔见表〕</a></dd>
+        <dt>家 规</dt><dd>一年分三次红;2025年分红率78.41%;上市以来累计现金分红74.22亿元=IPO净募资8.25倍<a class="ref" href="#n17">〔谱17〕</a></dd>
+        <dt>现 状</dt><dd>2026年上半年营收37.27亿元、归母净利10.92亿元(+69.3%);境外收入9.29亿元(+85.8%)<a class="ref" href="#n19">〔谱19〕</a><a class="ref" href="#n16">〔谱16〕</a></dd>
+      </dl>
+    </div>
+
+    <div class="bio">
+      <p class="bio-cap"><span>人物志 · 当家人</span><span class="bio-years">1977 –</span></p>
+      <h4>卢竑岩:从光通信到回合制</h4>
+      <p>卢竑岩,1977年生。公开履历里没有传奇,只有两行:中兴通讯软件工程师;美国Salira Optical(光通信设备)开发工程师。<a class="ref" href="#n1">〔谱1〕</a>网传的"厦门大学"学历,本馆在招股书与年报里都没有查到,不录(见附录缺口)。2004年3月,他与苏华舟各出资50万元创立吉比特;2006年《问道》上线,同时在线逼近百万人。<a class="ref" href="#n2">〔谱2〕</a>此后二十二年,他的头衔没有变过:董事长兼总经理,持股29.72%<a class="ref" href="#n18">〔谱18〕</a>——A股里少见的一生只换年份、不换人。他的另一副面孔是"把账分掉":上市九年累计现金分红74.22亿元,是IPO净募资的8.25倍。<a class="ref" href="#n17">〔谱17〕</a>老搭档陈拓琳,1976年生,前博世北美软件工程师,2006年11月入股6%,现任董事,持股8.08%。<a class="ref" href="#n3">〔谱3〕</a><a class="ref" href="#n18">〔谱18〕</a>三个工程师,一间公司,二十二年间没有第三个人真正坐进过驾驶舱。</p>
+    </div>
+
+    <div class="clipping">
+      <span class="clip-tag">读法</span>
+      <p>正文里的朱色小注(如<a class="ref" href="#n6">〔谱6〕</a>)可以点:一点,就跳到书尾《大事记》的第6条。每一条大事记都挂着出处。这是本馆的规矩:<b>故事可以讲得热闹,每一件事都得有个下落。</b>另外两句话先放在卷首:产品表上"自研"与"代理"是两种生意,本馆逐条标清;按馆规第六则,谱内不谈价格——这一卷里没有今天的股价、市值和目标价,只有一本分了九年的分红账。</p>
+    </div>
+  </section>
+
+  <!-- ============ 这台机器 ============ -->
+  <section class="sheet diagram" id="machine" data-pin="这台机器" aria-label="生意结构示意图">
+    <figure>
+      <svg class="draw" viewBox="0 0 640 252" role="img" aria-label="游戏生意结构:自研产品线与代理选品两路投入,经雷霆游戏发行抵达玩家付费,毛利回流分红" style="width:100%;height:auto;display:block">
+        <rect data-draw x="16" y="18" width="168" height="52"/>
+        <text x="100" y="40" text-anchor="middle">自研 · 问道系IP</text>
+        <text x="100" y="60" text-anchor="middle" font-size="11">2006年端游至今仍在营</text>
+        <rect data-draw x="16" y="100" width="168" height="52"/>
+        <text x="100" y="122" text-anchor="middle">自研 · 新品类</text>
+        <text x="100" y="142" text-anchor="middle" font-size="11">一念逍遥 · 问剑长生 · 杖剑传说</text>
+        <rect data-draw x="16" y="182" width="168" height="52"/>
+        <text x="100" y="204" text-anchor="middle">代理选品</text>
+        <text x="100" y="224" text-anchor="middle" font-size="11">不思议迷宫 · 鬼谷八荒 · 摩尔庄园</text>
+        <path data-draw class="accent" d="M 184,44 C 236,44 252,106 300,106"/>
+        <path data-draw d="M 184,126 L 300,126"/>
+        <path data-draw class="accent" d="M 184,208 C 236,208 252,146 300,146"/>
+        <rect data-draw x="300" y="88" width="168" height="76"/>
+        <text x="384" y="114" text-anchor="middle">雷霆游戏 · 发行</text>
+        <text x="384" y="140" text-anchor="middle" class="accent" font-size="15">995人 · 研发551</text>
+        <path data-draw d="M 468,126 L 524,126"/>
+        <rect data-draw x="524" y="88" width="100" height="76"/>
+        <text x="574" y="114" text-anchor="middle" font-size="12">玩家付费</text>
+        <text x="574" y="136" text-anchor="middle" font-size="11">毛利率93.90%</text>
+        <text x="574" y="154" text-anchor="middle" font-size="11">分红74.22亿</text>
+      </svg>
+      <figcaption>吉比特这台机器(按2025年报口径绘制):没有工厂、没有库存,995人里551个是研发;2025年毛利率93.90%——一本几乎纯内容的生意,胜负手只有一个:下一款游戏还在不在。</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ 第壹章 ============ -->
+  <section class="sheet chapter" id="c1" data-pin="第壹章 · 问道">
+    <div class="ch-head"><span class="ch-no">第壹章</span><h2>五十万,和一部《问道》</h2><span class="ch-years">2004–2016</span></div>
+    <div class="prose">
+      <p>2004年的中国网游业,唱主角的是代理韩国游戏的巨头:盛大、九城,靠一款引进产品就能敲钟上市;研发商自建运营、自己抓渠道,是那个年代公认的"正路"。就是在这样的行情里,厦门冒出来一家反着来的公司。</p>
+      <p>2004年3月,卢竑岩(1977年生)与苏华舟各出资50万元,创立吉比特。<a class="ref" href="#n1">〔谱1〕</a>卢竑岩的履历干净得近乎寡淡:中兴通讯软件工程师,然后是美国的Salira Optical——一家光通信设备商——的开发工程师。一个纯技术的人,带起一个纯技术的班底。两年后,《问道》上线:回合制MMORPG,PCU峰值逼近百万。<a class="ref" href="#n2">〔谱2〕</a>真正值得圈点的是那笔分工:《问道》的研发归厦门,运营授权给光宇在线——技术人不碰渠道,先把自己会的那件事做到头部。</p>
+      <div class="margin-note"><span class="mn-tag">眉批·研发与运营分离</span>当年自建运营是行业主流,自建意味着要养市场、渠道、客服三摊人;吉比特把运营外包给光宇在线,自己只留研发——50万元的本钱,经不起摊大饼。这一分工养了公司十年,也埋下伏笔:等到自家发行品牌雷霆游戏成熟,主动权才真正收回来。</div>
+      <p>《问道》一火就是很多年,现金牛稳稳养家。2006年11月,第三个工程师上了船:陈拓琳,1976年生,前博世北美软件工程师,入股6%。<a class="ref" href="#n3">〔谱3〕</a>此后这家公司的故事里再没有资本局:没有对赌,没有举牌,没有旋转门——几个人持股、干活、分钱,一坐就是二十年。</p>
+      <p>到2015年前后,手游大潮把玩家从PC前拉走,端游IP集体面临"第二次开花"的考题。吉比特手里握着两个筹码:一款还活着的老端游,和一支被验证过的研发队伍。答案在2016年4月揭晓——那是第叁章的事了。</p>
+      <div class="clipping">
+        <span class="clip-tag">花边 · 五十万的两种花法</span>
+        <p>同一年代进场做游戏的,有人融几千万美元去做平台;吉比特的创始人们一人掏了50万元——本钱小,反而把"先活下来"刻进了公司的骨骼。此后它多年不并购、不跨界,直到上市。</p>
+      </div>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">代理起家的巨头与一条反着走的路</span></div>
+      <ol>
+        <li><span class="who">网易《梦幻西游》</span><span class="why">回合制赛道的定标准者——《问道》在它划定的玩法里找活路,而且找到了</span></li>
+        <li><span class="who">光宇在线</span><span class="why">《问道》的运营商:研发归厦门、运营归授权方,这笔分工养了吉比特十年</span></li>
+        <li><span class="who">盛大、九城</span><span class="why">2004年代的上一代王者,靠代理韩国游戏起家</span></li>
+        <li><span class="who">手游大潮</span><span class="why">时代对手:端游现金牛让位之前,留给准备期的时间不多了</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第贰章 ============ -->
+  <section class="sheet chapter" id="c2" data-pin="第贰章 · 敲钟">
+    <div class="ch-head"><span class="ch-no">第贰章</span><h2>一月四日,上交所敲钟</h2><span class="ch-years">2017</span></div>
+    <div class="prose">
+      <p>2016年12月20日,招股说明书挂网;半个月后,2017年1月4日,吉比特在上交所挂牌:发行价54.00元,发行1780万股,募资总额9.612亿元。<a class="ref" href="#n6">〔谱6〕</a>招股书里没有对赌条款,没有并购标的,没有跨界故事——一本目录清清楚楚的招股书,全部家当就是游戏,和做游戏的人。</p>
+      <p>那几年游戏公司挤进A股,主路是借壳与并购;像吉比特这样带着一款十几年老游戏、干干净净排队上主板的,是少数。同行里,世纪华通、三七互娱们走买量与并购的路,把营收盘子做得比它大得多;而论净利率的成色,这家厦门小公司自成一档——这是后来多年行业表上反复出现的对照。</p>
+      <p>上市当年,营收14.40亿元,归母净利6.10亿元,净利率四成出头。<a class="ref" href="#n7">〔谱7〕</a>此后三年,这条曲线没有回过头:2018年16.55亿、2019年21.70亿、2020年27.42亿,净利从7.23亿一路爬到10.46亿。<a class="ref" href="#n7">〔谱7〕</a>驱动它的不是资本运作,而是上一章埋下的那颗种子——《问道手游》。</p>
+      <div class="clipping">
+        <span class="clip-tag">花边 · 账本的一角</span>
+        <p>2017年1月4日,54.00元一股,1780万股——盘子小得像它的员工数。按馆规第六则,谱内不谈价格:这只股票后来值多少钱,本书一个字不提;但那笔9.612亿元的募资,和它日后74.22亿元的分红,是同一本账的两行。<a class="ref" href="#n6">〔谱6〕</a><a class="ref" href="#n17">〔谱17〕</a></p>
+      </div>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">借壳的时代与直通的人</span></div>
+      <ol>
+        <li><span class="who">借壳与并购的同行</span><span class="why">那几年游戏资产进A股的主通道,吉比特是少有的直通者</span></li>
+        <li><span class="who">世纪华通、三七互娱</span><span class="why">买量并购路线的代表,同场竞技的另一种活法</span></li>
+        <li><span class="who">2017年的IPO长龙</span><span class="why">排队多年的申请名单里,轻资产研发商是稀有品种</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第叁章 ============ -->
+  <section class="sheet chapter" id="c3" data-pin="第叁章 · 下山">
+    <div class="ch-head"><span class="ch-no">第叁章</span><h2>问道下山</h2><span class="ch-years">2016–2020</span></div>
+    <div class="prose">
+      <p>端游再长青,也架不住玩家换设备。2010年代上半叶,手游把整个行业的注意力从PC端搬走,"渠道为王""流量为王"的说法甚嚣尘上。对一家靠一款端游吃饭的研发商来说,问题只有一个:老IP怎么搬到新船上。</p>
+      <p>2016年4月,《问道手游》上线——自家IP、自家研发,把回合制端游的积累原样搬进手机。<a class="ref" href="#n4">〔谱4〕</a>八个月后,《不思议迷宫》上线,这一款是代理:别人研发,吉比特发行。<a class="ref" href="#n5">〔谱5〕</a>一个守成,一个探路。此后多年,这家公司的产品表上都写着同样的两个词:自研,代理。</p>
+      <div class="margin-note"><span class="mn-tag">眉批·自研与代理</span>产品表上这两个词是两种完全不同的生意:自研吃的是研发能力,毛利更厚、周期更长;代理吃的是选品眼光,赚的是发行的钱。吉比特两头下注,哪头出爆款都不奇怪——2021年的产品表,就是这个策略的收成。</div>
+      <p>问道手游把公司带进了四年连增:2017年14.40亿,2018年16.55亿,2019年21.70亿,2020年27.42亿;净利6.10亿、7.23亿、8.09亿、10.46亿。<a class="ref" href="#n7">〔谱7〕</a>四年翻倍,主要靠一款老IP的手游化,和一款小众独立向的代理——这家公司在这一程学到的事,后来写进了它每一年的打法里:不追风口,把选品做对。</p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">双寡头的阴影与换设备的玩家</span></div>
+      <ol>
+        <li><span class="who">腾讯、网易</span><span class="why">手游时代的双寡头,渠道与研发通吃;吉比特的每一款新品都在它们的阴影下找缝隙</span></li>
+        <li><span class="who">三七互娱</span><span class="why">买量路线的同龄人:流量采买换流水,和精品自研背道而驰</span></li>
+        <li><span class="who">独立游戏潮</span><span class="why">《不思议迷宫》踩中的品类风口,小众玩法第一次给公司挣到大钱</span></li>
+        <li><span class="who">PC端的黄昏</span><span class="why">时间对手:玩家换设备,不等人</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第肆章 ============ -->
+  <section class="sheet chapter" id="c4" data-pin="第肆章 · 一念">
+    <div class="ch-head"><span class="ch-no">第肆章</span><h2>一念逍遥,与两年的回撤</h2><span class="ch-years">2021–2024</span></div>
+    <div class="prose">
+      <p>2021年,问道手游进入成熟期,公司需要回答"下一条现金牛在哪里"。这一年它给出的答案一口气有四个:1月《鬼谷八荒》——PC端游,代理,注意不是自研;2月《一念逍遥》——自研,放置修仙;6月《摩尔庄园》——代理;再加上次年7月的《奥比岛》。<a class="ref" href="#n8">〔谱8〕</a><a class="ref" href="#n9">〔谱9〕</a><a class="ref" href="#n10">〔谱10〕</a><a class="ref" href="#n11">〔谱11〕</a></p>
+      <p>《一念逍遥》成了。2021年营收跳到46.19亿元、归母净利14.68亿元,比上一年整整多出七成;2022年营收51.68亿元,创上市以来峰值,净利14.61亿元与前一年持平。<a class="ref" href="#n9">〔谱9〕</a><a class="ref" href="#n11">〔谱11〕</a>放置修仙这个细分品类,被一家不到千人的公司做成了主力现金牛。</p>
+      <p>然后是所有游戏公司都躲不掉的那一课:老产品自然衰减。2023年营收回落到41.85亿元、净利11.25亿;2024年再落到36.96亿元、9.45亿。<a class="ref" href="#n12">〔谱12〕</a>2024年10月《封神幻想世界》上线<a class="ref" href="#n13">〔谱13〕</a>,但那一年的账本没等来它发力。峰值之后的两年,是这家公司上市以来最安静的两个财年。</p>
+      <div class="clipping">
+        <span class="clip-tag">花边 · 产品表的勘误</span>
+        <p>坊间常把《鬼谷八荒》记作吉比特自研——错,它是代理,研发在别人家;还有把《摸金校尉》算进来的——更是与吉比特无关。本馆的产品清单逐条标了自研与代理,这笔账在附录里再算一遍。<a class="ref" href="#n20">〔谱20〕</a></p>
+      </div>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">内容军备竞赛与产品自身的日落</span></div>
+      <ol>
+        <li><span class="who">米哈游《原神》</span><span class="why">2020年起把全行业的注押向内容,"精品化"从此有了量化的标杆</span></li>
+        <li><span class="who">三七互娱、世纪华通</span><span class="why">同一张行业表上的对照组:营收体量比吉比特大得多,净利率比吉比特低得多</span></li>
+        <li><span class="who">放置修仙品类</span><span class="why">《一念逍遥》踩中的细分赛道:轻操作、长线运营,小团队也能做</span></li>
+        <li><span class="who">产品的生命周期</span><span class="why">时间的对手:每一款游戏都有自己的日落,差别只在长短</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第伍章 ============ -->
+  <section class="sheet chapter" id="c5" data-pin="第伍章 · 出海">
+    <div class="ch-head"><span class="ch-no">第伍章</span><h2>杖剑出海</h2><span class="ch-years">2025–</span></div>
+    <div class="prose">
+      <p>2024年落到36.96亿元的低点后,这家公司要的要么是新爆款,要么是新市场。2025年,它两个都要了。</p>
+      <p>1月《问剑长生》上线,5月《杖剑传说》上线——半年里两款自研新作接连进场。<a class="ref" href="#n14">〔谱14〕</a><a class="ref" href="#n15">〔谱15〕</a>同时,出海明显提速:全年境外收入9.29亿元,同比增长85.8%。<a class="ref" href="#n16">〔谱16〕</a></p>
+      <p>这一年,营收62.05亿元、归母净利17.94亿元,双双创上市以来新高;毛利率93.90%。<a class="ref" href="#n16">〔谱16〕</a>年报里,公司给自己划了十二个字的线。</p>
+      <div class="quote">"立足精品化、差异化、全球化。"
+<span class="q-src">——2025年年度报告</span></div>
+      <p>势头带进了2026年:上半年营收37.27亿元,归母净利10.92亿元,同比增长69.3%——半年做了上个峰值年七成的生意。<a class="ref" href="#n19">〔谱19〕</a>出海的第一章刚刚写完:9.29亿元只是起点,下一章的对手名单里,添的都是全世界的名字。</p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">同一张行业表,两种活法</span></div>
+      <ol>
+        <li><span class="who">世纪华通、三七互娱</span><span class="why">买量并购路线的对照组:同行业,营收体量两种量级,净利率两种成色</span></li>
+        <li><span class="who">出海先行的中国厂商</span><span class="why">中国游戏卖向全球的大潮里,吉比特是刚上船的追赶者</span></li>
+        <li><span class="who">995人</span><span class="why">规模本身是对手:不足千人的盘子,做的是同行用数万人去做的事</span></li>
+        <li><span class="who">下一款游戏</span><span class="why">精品路线最大的对手,永远是自己的下一款产品</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第陆章 ============ -->
+  <section class="sheet chapter" id="c6" data-pin="第陆章 · 尾声">
+    <div class="ch-head"><span class="ch-no">第陆章</span><h2>把赚到的钱分掉</h2><span class="ch-years">尾声</span></div>
+    <div class="prose">
+      <p>先说这本书里最不像A股的部分。上市九年,吉比特累计现金分红74.22亿元——是IPO净募资的8.25倍;2025年分红率78.41%,一年分三次;2026年中期,每10股派100元,一次分掉7.2亿元。<a class="ref" href="#n17">〔谱17〕</a>"把赚到的钱分掉"在这家公司不是姿态,是惯例——账上的利润,像水电一样按季流回股东手里。</p>
+      <p>再说治理。卢竑岩,董事长兼总经理,2004年创业至今二十二年,持股29.72%;陈拓琳,董事,持股8.08%。<a class="ref" href="#n18">〔谱18〕</a>没有对赌,没有易主,没有旋转门——A股里一生只跟着一拨工程师走的公司,屈指可数。</p>
+      <p>然后是本馆的规矩:查不到的,直说。卢竑岩的学历,网传"厦门大学",公开文件里查无此事;"不加班文化"的报道,可靠出处未查到;《摸金校尉》与吉比特无关;联合创始人苏华舟后续去了哪里,公开信息没有答案。<a class="ref" href="#n20">〔谱20〕</a>这些缺口如实记档,不编。</p>
+      <p>二十二年,一家公司,一条路:研发精品游戏,发给愿意付费的玩家,把利润的大头分掉。至于《杖剑传说》能走多远、出海何时过十亿、下一款《问道》在哪里——故事讲到事实为止,后面的,留给下一卷。<a class="ref" href="#n21">〔谱21〕</a>馆规第六则:谱内不谈价格。这一卷通篇没有出现过今天的股价,只有一本分了九年的账。</p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">尾声里的四个影子</span></div>
+      <ol>
+        <li><span class="who">时间</span><span class="why">问道IP活了二十年,但没有人能保证下一款长青什么时候来</span></li>
+        <li><span class="who">A股的游戏同行</span><span class="why">大多数同行选择了并购、买量与跨界;它选择把红利吐回给股东</span></li>
+        <li><span class="who">苏华舟之谜</span><span class="why">联合创始人的下落,公开信息没有答案——传记里的空白也是传记</span></li>
+        <li><span class="who">误传</span><span class="why">摸金校尉、自研的鬼谷八荒、"厦大简历":误传跟着名号走,本馆逐条勘误</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 当家人更替 ============ -->
+  <section class="sheet-wide" id="zhangduo" data-pin="当家人">
+    <div class="report">
+      <div class="report-cap"><h3>当家人更替</h3><span class="cap-note">谱主=公司+掌舵人,故单列一表</span></div>
+      <table>
+        <thead><tr><th>当家人</th><th>背后阵营</th><th>在任</th><th>备注</th></tr></thead>
+        <tbody>
+          <tr><td>卢竑岩</td><td>创始人 · 中兴通讯/美国Salira Optical出身</td><td>2004.3 – 今</td><td>董事长兼总经理一肩挑二十二年;持股29.72%</td></tr>
+          <tr><td>陈拓琳</td><td>联合创始人 · 前博世北美软件工程师</td><td>2006.11 入股 – 今</td><td>董事;入股6%,现持股8.08%</td></tr>
+          <tr><td>苏华舟</td><td>联合创始人 · 与卢各出资50万元</td><td>2004.3 – ?</td><td>后续任职公开信息未查到,存档待补(见附录缺口)</td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="4">二十二年,这家公司没有发生过一次掌舵人更替——在A股谱系里近乎孤例。来源:招股书、2025年报。</td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ 大事记 ============ -->
+  <section class="sheet-wide" id="chronicle" data-pin="大事记">
+    <div class="chronicle-wrap">
+      <div class="chronicle-head">
+        <h2>大事记 · 全书书脊</h2>
+        <span class="note">正文每一个〔谱N〕都落在这里;每一条都挂出处。</span>
+      </div>
+      <div class="legend">
+        <span><span class="mark">核</span>已核对公告或可靠来源</span>
+        <span><span class="mark query">疑</span>来源间有出入,存疑</span>
+        <span><span class="mark gap">缺</span>史料缺口</span>
+      </div>
+      <ol class="chronicle">
+        <li id="n1"><span class="c-date">2004.3</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">卢竑岩(1977年生)与苏华舟各出资50万元,在厦门创立吉比特;卢的履历:中兴通讯软件工程师→美国Salira Optical开发工程师。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/2016-12-20/1202901936.PDF">巨潮·招股说明书</a></div></li>
+        <li id="n2"><span class="c-date">2006</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">《问道》端游上线:回合制MMORPG,PCU峰值近百万;研发归吉比特,运营授权光宇在线。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/2016-12-20/1202901936.PDF">巨潮·招股说明书</a></div></li>
+        <li id="n3"><span class="c-date">2006.11</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">陈拓琳(1976年生,前博世北美软件工程师)入股6%。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/2016-12-20/1202901936.PDF">巨潮·招股说明书</a></div></li>
+        <li id="n4"><span class="c-date">2016.4</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">《问道手游》上线,端游IP二次开花。<a class="c-src" href="https://data.eastmoney.com/notices/stock/603444.html">东财公告库·2025年报</a></div></li>
+        <li id="n5"><span class="c-date">2016.12</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">《不思议迷宫》上线,代理产品(别人研发,吉比特发行)。<a class="c-src" href="https://data.eastmoney.com/notices/stock/603444.html">东财公告库·2025年报</a></div></li>
+        <li id="n6"><span class="c-date">2017.1.4</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">上交所挂牌:发行价54.00元、发行1780万股、募资总额9.612亿元;招股说明书2016年12月20日刊载。<a class="c-src" href="http://static.cninfo.com.cn/finalpage/2017-01-03/1202984540.PDF">巨潮·上市公告书</a><a class="c-src" href="http://static.cninfo.com.cn/finalpage/2016-12-20/1202901936.PDF">巨潮·招股说明书</a></div></li>
+        <li id="n7"><span class="c-date">2017–2020</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">四年连增:营收14.40→16.55→21.70→27.42亿元;归母净利6.10→7.23→8.09→10.46亿元。<a class="c-src" href="https://datacenter-web.eastmoney.com/api/data/v1/get?reportName=RPT_LICO_FN_CPD&amp;filter=(SECURITY_CODE%3D%22603444%22)">东财·业绩API</a></div></li>
+        <li id="n8"><span class="c-date">2021.1</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">《鬼谷八荒》上线(PC端游)——代理产品,非自研,坊间常误记,本馆注。<a class="c-src" href="https://data.eastmoney.com/notices/stock/603444.html">东财公告库·2025年报</a></div></li>
+        <li id="n9"><span class="c-date">2021.2</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">《一念逍遥》上线(自研,放置修仙);当年营收46.19亿元、归母净利14.68亿元,跳升一个台阶。<a class="c-src" href="https://data.eastmoney.com/notices/stock/603444.html">东财公告库·2025年报</a><a class="c-src" href="https://datacenter-web.eastmoney.com/api/data/v1/get?reportName=RPT_LICO_FN_CPD&amp;filter=(SECURITY_CODE%3D%22603444%22)">东财·业绩API</a></div></li>
+        <li id="n10"><span class="c-date">2021.6</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">《摩尔庄园》上线,代理产品。<a class="c-src" href="https://data.eastmoney.com/notices/stock/603444.html">东财公告库·2025年报</a></div></li>
+        <li id="n11"><span class="c-date">2022.7</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">《奥比岛》上线;当年营收51.68亿元为上市以来峰值,归母净利14.61亿元与前一年持平。<a class="c-src" href="https://datacenter-web.eastmoney.com/api/data/v1/get?reportName=RPT_LICO_FN_CPD&amp;filter=(SECURITY_CODE%3D%22603444%22)">东财·业绩API</a></div></li>
+        <li id="n12"><span class="c-date">2023–2024</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">老产品自然衰减:营收41.85→36.96亿元;归母净利11.25→9.45亿元。<a class="c-src" href="https://datacenter-web.eastmoney.com/api/data/v1/get?reportName=RPT_LICO_FN_CPD&amp;filter=(SECURITY_CODE%3D%22603444%22)">东财·业绩API</a></div></li>
+        <li id="n13"><span class="c-date">2024.10</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">《封神幻想世界》上线。<a class="c-src" href="https://data.eastmoney.com/notices/stock/603444.html">东财公告库·2025年报</a></div></li>
+        <li id="n14"><span class="c-date">2025.1</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">《问剑长生》上线。<a class="c-src" href="https://data.eastmoney.com/notices/stock/603444.html">东财公告库·2025年报</a></div></li>
+        <li id="n15"><span class="c-date">2025.5</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">《杖剑传说》上线。<a class="c-src" href="https://data.eastmoney.com/notices/stock/603444.html">东财公告库·2025年报</a></div></li>
+        <li id="n16"><span class="c-date">2025</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">年报:营收62.05亿元、归母净利17.94亿元,双双创上市以来新高;境外收入9.29亿元(+85.8%);毛利率93.90%;员工995人,其中研发551人;年报自述"立足精品化、差异化、全球化"。<a class="c-src" href="https://data.eastmoney.com/notices/stock/603444.html">东财公告库·2025年报</a></div></li>
+        <li id="n17"><span class="c-date">2017–2026</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">上市以来累计现金分红74.22亿元,为IPO净募资的8.25倍;2025年分红率78.41%,一年三次分红;2026年中期10派100元(7.2亿元)。<a class="c-src" href="https://datacenter-web.eastmoney.com/api/data/v1/get?reportName=RPT_SHAREBONUS_DET&amp;filter=(SECURITY_CODE%3D%22603444%22)">东财·分红API</a></div></li>
+        <li id="n18"><span class="c-date">2004–今</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">卢竑岩任董事长兼总经理至今,持股29.72%;陈拓琳任董事,持股8.08%——二十二年无掌舵人更替。<a class="c-src" href="https://data.eastmoney.com/notices/stock/603444.html">东财公告库·2025年报</a></div></li>
+        <li id="n19"><span class="c-date">2026H1</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">营收37.27亿元,归母净利10.92亿元(+69.3%)。<a class="c-src" href="https://datacenter-web.eastmoney.com/api/data/v1/get?reportName=RPT_LICO_FN_CPD&amp;filter=(SECURITY_CODE%3D%22603444%22)">东财·业绩API</a></div></li>
+        <li id="n20"><span class="c-date">待考</span><span class="c-mark"><span class="mark gap">缺</span></span><div class="c-body">〔缺口〕本馆查不到而如实交代的:卢竑岩"厦门大学"学历传闻未在公开文件中查到;"不加班文化"报道未查到可靠出处;《摸金校尉》与吉比特无关;联合创始人苏华舟后续任职未查到。详见附录。<a class="c-src" href="#appendix">本卷·附录</a></div></li>
+        <li id="n21"><span class="c-date">2026.9.9</span><span class="c-mark"><span class="mark gap">缺</span></span><div class="c-body">〔编竣〕本卷编竣。《杖剑传说》能否长青、出海何时过十亿、下一款《问道》在哪里——留给下一卷。<a class="c-src" href="../index.html">企业故事馆·待续</a></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 生产简报 ============ -->
+  <section class="sheet-wide" id="shuzi" data-pin="生产简报">
+    <div class="report">
+      <div class="report-cap"><h3>生产简报 · 上市以来损益</h3><span class="cap-note">单位:亿元人民币 · 归母口径</span></div>
+      <table>
+        <thead><tr><th>年度</th><th>营业收入</th><th>归母净利润</th><th>当年大事(另见大事记)</th></tr></thead>
+        <tbody>
+          <tr><td>2017</td><td>14.40</td><td>6.10</td><td>1月4日上市;问道手游首个完整年</td></tr>
+          <tr><td>2018</td><td>16.55</td><td>7.23</td><td>问道手游持续贡献</td></tr>
+          <tr><td>2019</td><td>21.70</td><td>8.09</td><td>连续第三年增长</td></tr>
+          <tr><td>2020</td><td>27.42</td><td>10.46</td><td>四年连增收官</td></tr>
+          <tr><td>2021</td><td>46.19</td><td>14.68</td><td>一念逍遥;鬼谷八荒、摩尔庄园</td></tr>
+          <tr><td>2022</td><td>51.68</td><td>14.61</td><td>营收上市以来峰值;奥比岛</td></tr>
+          <tr><td>2023</td><td>41.85</td><td>11.25</td><td>老产品自然衰减</td></tr>
+          <tr><td>2024</td><td>36.96</td><td>9.45</td><td>上市以来营收低点;封神幻想世界</td></tr>
+          <tr><td>2025</td><td>62.05</td><td>17.94</td><td>营收净利双新高;问剑长生、杖剑传说;出海9.29亿</td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="4">2026上半年:营收37.27亿元,归母净利10.92亿元(+69.3%)。来源:东方财富数据中心API与2025年报(见大事记各条)。</td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ 附录 ============ -->
+  <section class="sheet appendix" id="appendix" data-pin="附录">
+    <div class="apx-head"><h2>附录 · 交代底细</h2><span class="apx-note">按馆规,一切考据过程压在书尾。</span></div>
+
+    <h3>缺口与置信度</h3>
+    <div class="gap-box">
+      <span class="gb-tag">以下诸事,本馆未能钉死,如实交代</span>
+      <ul>
+        <li><b>卢竑岩的学历</b>:网传"厦门大学",招股书、年报等公开文件未载,本馆不采信;其学历项待查权威档案。</li>
+        <li><b>"不加班文化"的报道</b>:流传甚广,可靠原始出处未查到,本卷不录。</li>
+        <li><b>《摸金校尉》</b>:与吉比特无关,常被误计入其产品表,特此勘误。</li>
+        <li><b>自研与代理的口径</b>:《鬼谷八荒》《不思议迷宫》《摩尔庄园》为代理产品,常被误作自研;口径以公司披露为准。</li>
+        <li><b>苏华舟</b>:联合创始人,2004年与卢竑岩各出资50万元;其后续任职与去向,公开信息未查到。</li>
+        <li><b>雷霆游戏品牌沿革</b>(成立年份、早期发行产品线):未查到系统公开材料,本卷未展开。</li>
+        <li><b>各年财务数据</b>来自东方财富数据中心API(业绩报表口径),与年报如有出入,以年报为准。</li>
+      </ul>
+    </div>
+
+    <h3>返回研究的发现</h3>
+    <div class="report">
+      <table>
+        <thead><tr><th>发现</th><th>建议去向</th><th>为什么重要</th></tr></thead>
+        <tbody>
+          <tr><td>卢竑岩"厦门大学"学历传闻</td><td>事实层·待核(档案/访谈)</td><td>创始人叙事的第一行,现无可靠出处</td></tr>
+          <tr><td>"不加班文化"报道</td><td>事实层·待核(原始报道)</td><td>组织文化的关键一笔,无出处不录</td></tr>
+          <tr><td>《摸金校尉》误传</td><td>事实层·已排除</td><td>产品清单的准确性</td></tr>
+          <tr><td>自研/代理口径(鬼谷八荒等)</td><td>事实层·已核(年报口径)</td><td>"自研占比"是这本生意的核心结构</td></tr>
+          <tr><td>苏华舟后续任职</td><td>事实层·待补</td><td>联合创始人下落不明</td></tr>
+          <tr><td>雷霆游戏品牌沿革</td><td>事实层·待补</td><td>发行端年表缺环</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>史料清单</h3>
+    <ol class="src-list">
+      <li><span>《厦门吉比特网络技术股份有限公司首次公开发行股票招股说明书》(2016-12-20),巨潮资讯网存档——本卷早期史第一来源。</span></li>
+      <li><span>《首次公开发行股票上市公告书》(2017-01-03),巨潮资讯网存档——发行与挂牌数据。</span></li>
+      <li><span>公司2025年年度报告(东方财富公告库)——产品线、员工结构、境外收入、毛利率、战略表述。</span></li>
+      <li><span>东方财富数据中心API:业绩报表(RPT_LICO_FN_CPD,SECURITY_CODE=603444)——历年营收与归母净利。</span></li>
+      <li><span>东方财富数据中心API:分红明细(RPT_SHAREBONUS_DET,SECURITY_CODE=603444)——历年分红与分红率。</span></li>
+    </ol>
+
+    <footer class="colophon">
+      <p class="cb-title">版 权 页</p>
+      <p>《吉比特》一卷 · 企业故事馆馆藏第十七卷 · 编于二〇二六年九月九日 · 史实截至该日。</p>
+      <p>本卷谱主:吉比特(603444.SH);分期六幕,大事记二十一条;全部来源见上。</p>
+      <p class="disclaimer">本馆内容为个人兴趣写作,不构成任何投资建议;人物、事件、数字以公司公告为准,若与公告相悖,以公告为准。引用媒体与文件均注明出处,如有侵权请告知即撤。</p>
+      <p class="back-shelf"><a href="../index.html">← 回到书架</a></p>
+    </footer>
+  </section>
+</main>
+
+<script src="../assets/site.js"></script>
+</body>
+</html>

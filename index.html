@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企业故事馆 · 把上市公司写成传记</title>
+<meta name="description" content="一座长在本地硬盘上的小馆:把上市公司写成有出处的故事。四十六家在架,按行业分架。">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.ind-group { margin-top: 40px; }
+.ind-title { font-size: 14px; font-weight: 900; letter-spacing: .28em; color: var(--red); padding-bottom: 8px; border-bottom: 1px solid var(--rule-strong); margin-bottom: 16px; }
+.ind-books { display: flex; flex-wrap: wrap; gap: 14px 18px; align-items: flex-end; }
+.gbook { display: flex; flex-direction: column; text-decoration: none; width: 92px; }
+.gbook .gcode { font-family: var(--mono); font-size: 9px; color: var(--red); letter-spacing: .1em; margin-bottom: 6px; }
+.gbook .gname { font-family: var(--serif); font-size: 14px; font-weight: 900; color: var(--ink); letter-spacing: .2em; writing-mode: vertical-rl; text-orientation: upright; height: 170px; padding: 10px 0; background: var(--paper-deep); border: 1px solid var(--rule-strong); border-radius: 2px 5px 5px 2px; display: flex; align-items: center; transition: transform .3s cubic-bezier(.16,1,.3,1); }
+.gbook:hover .gname { transform: translateY(-6px); border-color: var(--red); color: var(--red); }
+.gbook .gtag { font-family: var(--kai); font-size: 11px; color: var(--ink-2); margin-top: 8px; line-height: 1.6; }
+@media (max-width:560px) {
+  .gbook { width: 72px; }
+  .gbook .gname { height: 130px; font-size: 12px; }
+}
+</style>
+</head>
+<body data-book="index">
+
+<header class="masthead-bar">
+  <a class="hall-name" href="index.html">企业故事馆</a>
+  <span class="running-head">把上市公司写成传记 · 每件事都有出处</span>
+</header>
+<div class="reading-rule"><i></i></div>
+
+<main class="sheet">
+
+  <section class="cover" style="padding:72px 0 24px;">
+    <h1 style="font-size:clamp(48px,8vw,88px);font-weight:900;letter-spacing:.06em;line-height:1.2;">企业故事馆</h1>
+    <p style="margin-top:16px;font-size:17px;line-height:2;color:var(--ink-2);max-width:36em;">每家公司的一生,都值得像一部传记那样讲。本馆是本地硬盘上一座小馆,只守一条规矩——<b style="color:var(--red)">讲出来的每件事,都要能指回一条带出处的大事记。</b></p>
+    <div style="margin-top:24px;border-top:2px solid var(--ink);border-bottom:1px solid var(--faint);padding:10px 0;">
+      <span style="font-size:13px;letter-spacing:.2em;color:var(--ink-2);">馆藏四十六卷在架 · 按行业分架</span>
+    </div>
+  </section>
+
+  <section style="margin-top:36px;">
+
+    <div class="ind-group">
+      <div class="ind-title">有色金属</div>
+      <div class="ind-books">
+        <a class="gbook" href="companies/000612.html"><span class="gcode">000612.SZ</span><span class="gname">焦作万方</span><span class="gtag">电解铝 · 豫</span></a>
+        <a class="gbook" href="companies/000426.html"><span class="gcode">000426.SZ</span><span class="gname">兴业银锡</span><span class="gtag">银锡矿 · 蒙</span></a>
+        <a class="gbook" href="companies/000807.html"><span class="gcode">000807.SZ</span><span class="gname">云铝股份</span><span class="gtag">绿色水电铝 · 滇</span></a>
+        <a class="gbook" href="companies/000962.html"><span class="gcode">000962.SZ</span><span class="gname">东方钽业</span><span class="gtag">钽铌稀有金属 · 宁</span></a>
+      </div>
+    </div>
+
+    <div class="ind-group">
+      <div class="ind-title">能源与化工</div>
+      <div class="ind-books">
+        <a class="gbook" href="companies/000792.html"><span class="gcode">000792.SZ</span><span class="gname">盐湖股份</span><span class="gtag">钾锂 · 青</span></a>
+        <a class="gbook" href="companies/600096.html"><span class="gcode">600096.SH</span><span class="gname">云天化</span><span class="gtag">磷化工 · 滇</span></a>
+        <a class="gbook" href="companies/002170.html"><span class="gcode">002170.SZ</span><span class="gname">芭田股份</span><span class="gtag">磷复肥磷矿 · 粤</span></a>
+        <a class="gbook" href="companies/600989.html"><span class="gcode">600989.SH</span><span class="gname">宝丰能源</span><span class="gtag">煤制烯烃 · 宁</span></a>
+        <a class="gbook" href="companies/600938.html"><span class="gcode">600938.SH</span><span class="gname">中国海油</span><span class="gtag">海上油气 · 京</span></a>
+        <a class="gbook" href="companies/002001.html"><span class="gcode">002001.SZ</span><span class="gname">新和成</span><span class="gtag">精细化工 · 浙</span></a>
+      </div>
+    </div>
+
+    <div class="ind-group">
+      <div class="ind-title">半导体与信息技术</div>
+      <div class="ind-books">
+        
+        <a class="gbook" href="companies/688981.html"><span class="gcode">688981.SH</span><span class="gname">中芯国际</span><span class="gtag">晶圆代工 · 沪</span></a>
+        <a class="gbook" href="companies/600487.html"><span class="gcode">600487.SH</span><span class="gname">亨通光电</span><span class="gtag">光纤海缆 · 苏</span></a>
+        <a class="gbook" href="companies/300418.html"><span class="gcode">300418.SZ</span><span class="gname">昆仑万维</span><span class="gtag">互联网AI · 京</span></a>
+        <a class="gbook" href="companies/603444.html"><span class="gcode">603444.SH</span><span class="gname">吉比特</span><span class="gtag">雷霆游戏 · 闽</span></a>
+        <a class="gbook" href="companies/688017.html"><span class="gcode">688017.SH</span><span class="gname">绿的谐波</span><span class="gtag">谐波减速器 · 苏</span></a>
+        <a class="gbook" href="companies/000636.html"><span class="gcode">000636.SZ</span><span class="gname">风华高科</span><span class="gtag">MLCC · 粤</span></a>
+        <a class="gbook" href="companies/603986.html"><span class="gcode">603986.SH</span><span class="gname">兆易创新</span><span class="gtag">NOR闪存MCU · 京</span></a>
+        <a class="gbook" href="companies/600363.html"><span class="gcode">600363.SH</span><span class="gname">联创光电</span><span class="gtag">光电超导 · 赣</span></a>
+        <a class="gbook" href="companies/688801.html"><span class="gcode">688801.SH</span><span class="gname">燧原科技</span><span class="gtag">AI芯片 · 沪</span></a>
+      </div>
+    </div>
+
+    <div class="ind-group">
+      <div class="ind-title">算力与电子制造</div>
+      <div class="ind-books">
+        <a class="gbook" href="companies/300502.html"><span class="gcode">300502.SZ</span><span class="gname">新易盛</span><span class="gtag">光模块 · 川</span></a>
+        <a class="gbook" href="companies/002463.html"><span class="gcode">002463.SZ</span><span class="gname">沪电股份</span><span class="gtag">AI算力PCB · 苏</span></a>
+        <a class="gbook" href="companies/002384.html"><span class="gcode">002384.SZ</span><span class="gname">东山精密</span><span class="gtag">PCB与光模块 · 苏</span></a>
+        <a class="gbook" href="companies/601138.html"><span class="gcode">601138.SH</span><span class="gname">工业富联</span><span class="gtag">AI服务器代工 · 深</span></a>
+      </div>
+    </div>
+
+    <div class="ind-group">
+      <div class="ind-title">装备与造船</div>
+      <div class="ind-books">
+        <a class="gbook" href="companies/002111.html"><span class="gcode">002111.SZ</span><span class="gname">威海广泰</span><span class="gtag">空港装备 · 鲁</span></a>
+        <a class="gbook" href="companies/600150.html"><span class="gcode">600150.SH</span><span class="gname">中国船舶</span><span class="gtag">造船 · 沪</span></a>
+        <a class="gbook" href="companies/603011.html"><span class="gcode">603011.SH</span><span class="gname">合锻智能</span><span class="gtag">成形机床聚变装备 · 皖</span></a>
+      </div>
+    </div>
+
+    <div class="ind-group">
+      <div class="ind-title">新材料</div>
+      <div class="ind-books">
+        <a class="gbook" href="companies/002130.html"><span class="gcode">002130.SZ</span><span class="gname">沃尔核材</span><span class="gtag">热缩材料高速铜缆 · 深</span></a>
+        <a class="gbook" href="companies/000969.html"><span class="gcode">000969.SZ</span><span class="gname">安泰科技</span><span class="gtag">非晶钨钼磁材 · 京</span></a>
+        <a class="gbook" href="companies/002735.html"><span class="gcode">002735.SZ</span><span class="gname">王子新材</span><span class="gtag">3C包装 · 深</span></a>
+      </div>
+    </div>
+
+    <div class="ind-group">
+      <div class="ind-title">服饰与家居</div>
+      <div class="ind-books">
+        <a class="gbook" href="companies/001221.html"><span class="gcode">001221.SZ</span><span class="gname">悍高集团</span><span class="gtag">功能五金 · 粤</span></a>
+        <a class="gbook" href="companies/002832.html"><span class="gcode">002832.SZ</span><span class="gname">比音勒芬</span><span class="gtag">高尔夫服饰 · 粤</span></a>
+      </div>
+    </div>
+
+    <div class="ind-group">
+      <div class="ind-title">食品与餐饮</div>
+      <div class="ind-books">
+        <a class="gbook" href="companies/2150.html"><span class="gcode">2150.HK</span><span class="gname">奈雪的茶</span><span class="gtag">新式茶饮 · 深</span></a>
+        <a class="gbook" href="companies/002847.html"><span class="gcode">002847.SZ</span><span class="gname">盐津铺子</span><span class="gtag">休闲零食 · 湘</span></a>
+      </div>
+    </div>
+
+    <div class="ind-group">
+      <div class="ind-title">酒店与旅游</div>
+      <div class="ind-books">
+        <a class="gbook" href="companies/600754.html"><span class="gcode">600754.SH</span><span class="gname">锦江酒店</span><span class="gtag">酒店集团 · 沪</span></a>
+      </div>
+    </div>
+
+    <div class="ind-group">
+      <div class="ind-title">医药与生物科技</div>
+      <div class="ind-books">
+        <a class="gbook" href="companies/9926.html"><span class="gcode">9926.HK</span><span class="gname">康方生物</span><span class="gtag">双抗 · 粤</span></a>
+        <a class="gbook" href="companies/688331.html"><span class="gcode">688331.SH</span><span class="gname">荣昌生物</span><span class="gtag">ADC · 鲁</span></a>
+        <a class="gbook" href="companies/688266.html"><span class="gcode">688266.SH</span><span class="gname">泽璟制药</span><span class="gtag">肝癌靶向药 · 苏</span></a>
+        <a class="gbook" href="companies/688235.html"><span class="gcode">688235.SH</span><span class="gname">百济神州</span><span class="gtag">全球肿瘤药 · 三地上市</span></a>
+        <a class="gbook" href="companies/688578.html"><span class="gcode">688578.SH</span><span class="gname">艾力斯</span><span class="gtag">肺癌靶向药 · 沪</span></a>
+        <a class="gbook" href="companies/688506.html"><span class="gcode">688506.SH</span><span class="gname">百利天恒</span><span class="gtag">双抗ADC · 川</span></a>
+        <a class="gbook" href="companies/688180.html"><span class="gcode">688180.SH</span><span class="gname">君实生物</span><span class="gtag">PD-1 · 沪</span></a>
+        <a class="gbook" href="companies/novartis.html"><span class="gcode">NVS</span><span class="gname">诺华</span><span class="gtag">创新药 · 瑞士</span></a>
+      </div>
+    </div>
+
+    <div class="ind-group">
+      <div class="ind-title">金融与保险</div>
+      <div class="ind-books">
+        <a class="gbook" href="companies/601628.html"><span class="gcode">601628.SH</span><span class="gname">中国人寿</span><span class="gtag">寿险 · 京</span></a>
+        <a class="gbook" href="companies/601336.html"><span class="gcode">601336.SH</span><span class="gname">新华保险</span><span class="gtag">寿险 · 京</span></a>
+        <a class="gbook" href="companies/000567.html"><span class="gcode">000567.SZ</span><span class="gname">海德股份</span><span class="gtag">AMC · 琼</span></a>
+      </div>
+    </div>
+
+    <div class="ind-group">
+      <div class="ind-title">快递物流</div>
+      <div class="ind-books">
+        <a class="gbook" href="companies/600233.html"><span class="gcode">600233.SH</span><span class="gname">圆通速递</span><span class="gtag">加盟快递 · 沪</span></a>
+      </div>
+    </div>
+
+  </section>
+
+  <section style="margin-top:56px;border-top:2px solid var(--ink);padding-top:10px;">
+    <div style="font-size:14px;font-weight:900;letter-spacing:.28em;color:var(--red);padding-bottom:6px;">馆规 · 本馆怎样讲故事</div>
+    <ol style="list-style:none;counter-reset:r;margin-top:6px;">
+      <li style="display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--faint);"><span style="color:var(--red);font-weight:900;white-space:nowrap;min-width:3.4em;">第一则</span><span><b>主角是"公司加掌舵人"</b><br><span style="color:var(--ink-2);font-size:15px;">谱主不只是一串代码:是公司,和当时真正在做决定的人。换人,本身就是大事。</span></span></li>
+      <li style="display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--faint);"><span style="color:var(--red);font-weight:900;white-space:nowrap;min-width:3.4em;">第二则</span><span><b>一生分成几幕</b><br><span style="color:var(--ink-2);font-size:15px;">按转折点把全部历史分成三到八章,每幕有自己的名字;分期不是真理,是讲故事的座次。</span></span></li>
+      <li style="display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--faint);"><span style="color:var(--red);font-weight:900;white-space:nowrap;min-width:3.4em;">第三则</span><span><b>对手也是演员</b><br><span style="color:var(--ink-2);font-size:15px;">每一幕都要指认同场竞技的同行——他们不是背景板,是剧情的一半。</span></span></li>
+      <li style="display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--faint);"><span style="color:var(--red);font-weight:900;white-space:nowrap;min-width:3.4em;">第四则</span><span><b>笔下有据</b><br><span style="color:var(--ink-2);font-size:15px;">正文每件事都带一枚朱色小注,点开就落到大事记的某一条;大事记每一条都挂出处。查不到的,写进附录"缺口",不编。</span></span></li>
+      <li style="display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--faint);"><span style="color:var(--red);font-weight:900;white-space:nowrap;min-width:3.4em;">第五则</span><span><b>故事归故事,账本归附录</b><br><span style="color:var(--ink-2);font-size:15px;">正文只管好读;史料清单、置信度、免责声明,全部压在书尾,不打断听书。</span></span></li>
+      <li style="display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--faint);"><span style="color:var(--red);font-weight:900;white-space:nowrap;min-width:3.4em;">第六则</span><span><b>谱内不谈价格</b><br><span style="color:var(--ink-2);font-size:15px;">本馆谱内不出现当前股价、市值和目标价。这是原研究库事实层的铁律:先有事实和逻辑,价格是另一层的事,不进故事。</span></span></li>
+    </ol>
+    <p style="font-family:var(--kai);color:var(--ink-3);font-size:13.5px;margin-top:14px;">本馆内容为兴趣写作,不构成任何投资建议;数字以公司公告为准。</p>
+  </section>
+
+  <footer style="margin-top:56px;padding-top:18px;border-top:2px solid var(--ink);font-size:13.5px;color:var(--ink-2);line-height:2.1;">
+    <p style="font-weight:900;color:var(--ink);letter-spacing:.3em;font-size:15px;margin-bottom:6px;">版 权 页</p>
+    <p>企业故事馆 · 馆址:本机硬盘 · 开馆:二〇二六年九月 · 纯静态,离线可读。</p>
+    <p style="font-family:var(--kai);">本馆全部内容为个人兴趣写作,人物、事件以公司公告与公开报道为准;不构成投资建议。引用媒体与公告均注明出处,如有侵权请告知即撤。</p>
+  </footer>
+</main>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

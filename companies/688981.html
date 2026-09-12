@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中芯国际(688981) · 被告席上的追赶者 · 企业故事馆</title>
+<meta name="description" content="中芯国际(SMIC,688981.SH/0981.HK)的传记:张汝京建厂、与台积电的两轮诉讼、梁孟松的追赶、实体清单下的成熟制程扩产。每件事都有出处。">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-book="688981" data-book-name="中芯国际">
+
+<!--
+THESIS: 一部编年厂志——黑墨正文、朱砂批注、米纸为地;讲中国大
+陆晶圆代工一哥在诉讼与封锁两道铁丝网之间的二十六年;每件事
+沿〔谱N〕小注指回大事记。拒绝营销头图与卡片阵列。
+OWN-WORLD: 米纸/墨/套红印制,钢笔蓝 #2D4E8A 用于外链与缺口
+标记(〔疑〕仍为墨色虚线);宋体正文、楷体眉批;编年长表右对
+齐日期栏;状态即校对符号(核/疑/缺);无照片,仅线绘SVG。
+STORY: 读者取书、读六章传记、点朱注核出处;大事记是书脊。
+FIRST VIEWPORT: 书眉;案卷代码行;巨幅宋体「中芯国际」配旋转
+朱印;一句引子;谱主划线履历卡;向下进入第壹章。
+FORM: 厂志·套红编年(自造清单第3位,seed 0930a07c)。
+FINISH: unreviewed and undocumented is unfinished; this build
+ends with the finish review, the verdict, DESIGN.md, and every
+shipping raster carrying its provenance.
+-->
+
+<header class="masthead-bar">
+  <a class="hall-name" href="../index.html">企业故事馆</a>
+  <span class="running-head">中芯国际 · 卷首</span>
+</header>
+<div class="reading-rule"><i></i></div>
+
+<nav class="thumbs" aria-label="章节导航">
+  <a class="top-link" href="#cover" data-ch>回卷首</a>
+  <a href="#c1" data-ch>壹</a>
+  <a href="#c2" data-ch>贰</a>
+  <a href="#c3" data-ch>叁</a>
+  <a href="#c4" data-ch>肆</a>
+  <a href="#c5" data-ch>伍</a>
+  <a href="#c6" data-ch>陆</a>
+  <a href="#zhangduo" data-ch>舵</a>
+  <a href="#chronicle" data-ch>谱</a>
+  <a href="#appendix" data-ch>跋</a>
+</nav>
+
+<button id="bookmark-pin" class="bm-pin" hidden title="清除书签">接着读:<span class="bm-ch"></span><span class="bm-hint"> · 点击清除</span></button>
+
+<main>
+  <!-- ============ 卷首 ============ -->
+  <section class="sheet cover" id="cover" data-pin="卷首">
+    <svg class="seal" viewBox="0 0 128 128" aria-hidden="true">
+      <g fill="none" stroke="#b93a1b">
+        <circle cx="64" cy="64" r="60" stroke-width="3.5"/>
+        <circle cx="64" cy="64" r="42" stroke-width="1.5"/>
+        <path id="seal-arc-981" d="M 64,12 a 52,52 0 1 1 -0.01,0" stroke="none"/>
+      </g>
+      <text fill="#b93a1b" font-size="10.5" letter-spacing="3" font-weight="700"><textPath href="#seal-arc-981" startOffset="2">企业故事馆 · 晶圆代工 · 馆藏第十一卷</textPath></text>
+      <text x="64" y="60" text-anchor="middle" fill="#b93a1b" font-size="21" font-weight="900" font-family="Songti SC,serif">已 核</text>
+      <text x="64" y="82" text-anchor="middle" fill="#b93a1b" font-size="11.5" letter-spacing="2" font-family="Menlo,monospace">688981</text>
+    </svg>
+
+    <div class="code-row"><span class="code">688981.SH / 0981.HK</span><span>港交所2004年3月18日 · 科创板2020年7月16日 · 上海张江</span></div>
+    <h1>中芯国际</h1>
+    <p class="aka">中芯国际集成电路制造有限公司 · 中国大陆晶圆代工一哥</p>
+    <p class="hook">2000年,在德州仪器干了二十年的张汝京回到上海建厂;此后二十六年,这家公司一半的篇幅写在<b>被告席</b>上——两轮被台积电起诉,赔了<b>3.75亿美元加8%股份</b>;另一半写在<b>封锁线</b>上——2020年被列入美国实体清单,先进制程的路被焊死。它没有赢过诉讼,也没有拿到EUV,但2026年二季度,单季收入<b>首破30亿美元</b>。</p>
+
+    <div class="ledger">
+      <p class="ledger-cap"><span>谱主 · 履历卡</span><span>截至二〇二六年九月十日</span></p>
+      <dl>
+        <dt>谱 主</dt><dd>中芯国际,及历任掌舵人(张汝京、王宁国、邱慈云、赵海军+梁孟松联合CEO、董事长线江上舟→刘训峰)</dd>
+        <dt>生 于</dt><dd>2000年4月3日开曼注册、上海建厂;2004年3月18日港交所上市(同年纽约);2020年7月16日科创板上市(发行价27.46元,募资约532亿元,当年科创板最大IPO)<a class="ref" href="#n1">〔谱1〕</a><a class="ref" href="#n19">〔谱19〕</a></dd>
+        <dt>营 生</dt><dd>晶圆代工:8/12英寸厂布上海/北京/天津/深圳等;2025年末月产能105.875万片(折8英寸)、利用率93.5%;专利累计授权14,511件<a class="ref" href="#n21">〔谱21〕</a></dd>
+        <dt>伤 疤</dt><dd>台积电两轮诉讼:2005年和解1.75亿美元;2009年再和解2亿美元+发行约8%新股与认股权证(合计约10%);2020年12月18日列入实体清单,10nm及以下适用"推定拒绝"<a class="ref" href="#n7">〔谱7〕</a><a class="ref" href="#n8">〔谱8〕</a><a class="ref" href="#n17">〔谱17〕</a></dd>
+        <dt>制 程</dt><dd>官方确认:2015年28nm量产、2019年第一代14nm FinFET量产、N+1进入客户导入;N+2(7nm级)从未官方确认——华为麒麟9000s的第三方拆解指向它,推断口径<a class="ref" href="#n16">〔谱16〕</a></dd>
+        <dt>现 状</dt><dd>2025年营收93.27亿美元创新高;2026Q2单季30.06亿美元(+36.1%)、毛利率25.3%、利用率93.7%<a class="ref" href="#n21">〔谱21〕</a><a class="ref" href="#n22">〔谱22〕</a></dd>
+      </dl>
+    </div>
+
+    <div class="clipping">
+      <span class="clip-tag">读法</span>
+      <p>正文里的朱色小注(如<a class="ref" href="#n7">〔谱7〕</a>)可以点:一点,就跳到书尾《大事记》第7条——每一条大事记都挂着出处。<b>故事可以讲得热闹,每一件事都得有个下落。</b>晶圆代工的白话账:芯片公司画图纸,代工厂把图纸变成硅片上的电路;制程纳米数越小越先进,而每一代制程都要光刻机——最先进的EUV光刻机,中国一台都没买到过。按馆规第六则,谱内不谈股价。</p>
+    </div>
+  </section>
+
+  <!-- ============ 这台机器 ============ -->
+  <section class="sheet diagram" id="machine" data-pin="这台机器" aria-label="生意结构示意图">
+    <figure>
+      <svg class="draw" viewBox="0 0 640 252" role="img" aria-label="晶圆代工生意:客户设计经晶圆厂制造与封装测试,制程与产能利用率决定利润" style="width:100%;height:auto;display:block">
+        <rect data-draw x="16" y="18" width="168" height="52"/>
+        <text x="100" y="40" text-anchor="middle">客户芯片设计</text>
+        <text x="100" y="60" text-anchor="middle" font-size="11">华为们画图,不建厂</text>
+        <rect data-draw x="16" y="100" width="168" height="52"/>
+        <text x="100" y="122" text-anchor="middle">晶圆制造(本业)</text>
+        <text x="100" y="142" text-anchor="middle" font-size="11">月产能105.9万片(折8英寸)</text>
+        <rect data-draw x="16" y="182" width="168" height="52"/>
+        <text x="100" y="204" text-anchor="middle">设备与材料</text>
+        <text x="100" y="224" text-anchor="middle" font-size="11">EUV从未买到 · 国产化慢跑</text>
+        <path data-draw class="accent" d="M 184,44 C 236,44 252,106 300,106"/>
+        <path data-draw d="M 184,126 L 300,126"/>
+        <path data-draw class="accent" d="M 184,208 C 236,208 252,146 300,146"/>
+        <rect data-draw x="300" y="88" width="168" height="76"/>
+        <text x="384" y="114" text-anchor="middle">两个变量定利润</text>
+        <text x="384" y="138" text-anchor="middle" class="accent" font-size="13">制程 × 产能利用率</text>
+        <text x="384" y="156" text-anchor="middle" font-size="11">2026Q2利用率93.7%</text>
+        <path data-draw d="M 468,126 L 524,126"/>
+        <rect data-draw x="524" y="88" width="100" height="76"/>
+        <text x="574" y="112" text-anchor="middle" font-size="12">封锁下的</text>
+        <text x="574" y="134" text-anchor="middle" font-size="11">成熟制程扩产</text>
+        <text x="574" y="152" text-anchor="middle" font-size="11">满产就是答案</text>
+      </svg>
+      <figcaption>代工的账:毛利率随制程与利用率走——2022年38%的顶(缺芯涨价)与2024年18%的谷(下行周期),中间隔的只是两年(公司公告口径)。</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ 第壹章 ============ -->
+  <section class="sheet chapter" id="c1" data-pin="第壹章 · 建厂">
+    <div class="ch-head"><span class="ch-no">第壹章</span><h2>德州仪器的老兵回到上海</h2><span class="ch-years">1948–2004</span></div>
+    <div class="prose">
+      <p>张汝京,1948年生于南京、台湾长大,台大机械学士、水牛城硕士、南卫理公会大学电子工程博士;1977年加入德州仪器,干了二十年,在美国、意大利、日本、新加坡、台湾参与建设管理约十座集成电路厂——媒体后来说,他一个人就是半部建厂手册,称他"中国半导体教父"。<a class="ref" href="#n2">〔谱2〕</a>1997年他回台创办世大积体电路;世大被台积电并购后,2000年4月,他转道上海张江创办中芯国际——开曼注册(2000年4月3日)、上海设厂(12月21日),随后北京(2002)、天津(2003)、成都(2004)、深圳(2008)一路铺开。<a class="ref" href="#n1">〔谱1〕</a>"中芯"是否取"中国芯"之意,本馆未查到可靠一手出处——常见说法,记为存疑。<a class="ref" href="#n2">〔谱2〕</a></p>
+      <p>2004年3月18日,公司在港交所挂牌,同年在纽约上市(代码SMI)。<a class="ref" href="#n1">〔谱1〕</a>建厂的钱和人都来路复杂:国资背景资金加全球二手设备,数百名海外与台湾工程师——这是自媒体的叙事口径,本馆标注为【第三方说法】。<a class="ref" href="#n2">〔谱2〕</a>但有一点是公告确证的:这家公司从投产第一天起,头顶就悬着老东家台积电的眼睛——它的许多工程师,和台积电说着同一种方言。</p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">注定的官司</span></div>
+      <ol>
+        <li><span class="who">台积电</span><span class="why">同乡、同业、老东家——此后二十年的头号对手兼原告</span></li>
+        <li><span class="who">德州仪器</span><span class="why">张汝京的二十年母校,约十座芯片厂的练兵场</span></li>
+        <li><span class="who">上海张江</span><span class="why">2000年的这片农田,后来成了中国半导体的耶路撒冷</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第贰章 ============ -->
+  <section class="sheet chapter" id="c2" data-pin="第贰章 · 被告席">
+    <div class="ch-head"><span class="ch-no">第贰章</span><h2>两轮诉讼,3.75亿美元与8%股份</h2><span class="ch-years">2003–2009</span></div>
+    <div class="prose">
+      <p>2003年12月,台积电出手:起诉中芯侵犯专利、挪用商业秘密。2005年1月30日第一次和解:中芯不承认责任,分六年支付<b>1.75亿美元</b>,附交叉专利授权。<a class="ref" href="#n7">〔谱7〕</a>2006年8月,台积电再诉——这回告的是违反和解协议;中芯反诉,又在北京起诉台积电,两边法庭对轰。<a class="ref" href="#n7">〔谱7〕</a>2009年11月4日,加州陪审团裁定中芯败诉;11月9日,双方订立最终和解。<a class="ref" href="#n8">〔谱8〕</a></p>
+      <p>第二纸和解的条件,公告原文写得清楚:再付<b>2亿美元</b>(分期至2013年);终止2005年协议剩余约4000万美元付款义务;向台积电发行<b>1,789,493,218股新股</b>(约占当时已发行股本8%),外加3年期认股权证(6.96亿股,行权价1.30港元),合计约10%;台积电受维持现状、投票与转让限制,不派董事、不参与经营。<a class="ref" href="#n8">〔谱8〕</a>当年四季度,中芯为此确认经营开支2.696亿美元。<a class="ref" href="#n8">〔谱8〕</a></p>
+      <p>张汝京为和解付出了个人代价:2009年11月10日,他辞任执行董事、总裁兼CEO,公告口径是"追求其他个人兴趣";媒体报道的各种"心声"原话,本馆均未查到可核验来源,不作引述。<a class="ref" href="#n3">〔谱3〕</a>此后他也没有离开这一行:2014年创办上海新昇(300mm大硅片,国家02专项),2018年创办芯恩(青岛),2022年起任上海积塔执行董事——七十多岁,还在建厂。<a class="ref" href="#n2">〔谱2〕</a></p>
+      <div class="margin-note"><span class="mn-tag">眉批·买不来的一课</span>两轮诉讼的实质,是台积电用法律确认了技术代差与人才边界:你可以买设备、挖工程师,但用老东家的know-how建厂,代价由被告席结算。这一课后,中芯的每一代制程都要回答同一个问题:这次,是自己做的吗?</div>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">原告、陪审团与代价</span></div>
+      <ol>
+        <li><span class="who">台积电(原告)</span><span class="why">两轮诉讼、两纸和解——用专利和商业秘密法划下的护城河</span></li>
+        <li><span class="who">加州阿拉米达郡陪审团</span><span class="why">2009年11月4日的一纸裁定,把代价钉死</span></li>
+        <li><span class="who">张汝京</span><span class="why">以辞职为和解画押的人——离开中芯,没离开建厂</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第叁章 ============ -->
+  <section class="sheet chapter" id="c3" data-pin="第叁章 · 内斗与扭亏">
+    <div class="ch-head"><span class="ch-no">第叁章</span><h2>内斗、病逝与扭亏</h2><span class="ch-years">2009–2017</span></div>
+    <div class="prose">
+      <p>张汝京走后的两年,是这家公司治理最乱的两年:2011年6月27日,董事长江上舟病逝;<a class="ref" href="#n4">〔谱4〕</a>CEO王宁国(前应用材料全球执行副总裁)与大股东阵营的矛盾公开化,媒体称之"内斗";7月,王宁国辞任,张文义临危受命署理CEO;<a class="ref" href="#n5">〔谱5〕</a>8月5日,邱慈云接任CEO——他曾在台积电任运营高级总监、2001-2005年任中芯高级运营副总裁,是两边都信得过的人。<a class="ref" href="#n6">〔谱6〕</a></p>
+      <p>邱慈云的任期(2011-2017)是收拾残局的六年:2011-2013连续亏损,2014年起恢复盈利;2015年,28nm进入大量生产——公司的技术坐标系,第一次摸到了"主流"的边。<a class="ref" href="#n14">〔谱14〕</a>2015年3月,周子学接任董事长,张文义转名誉。<a class="ref" href="#n14">〔谱14〕</a>2017年,轮到下一棒:5月,赵海军(清华本博、芝加哥MBA,2010年加入、2013年任COO)升任CEO;10月16日,梁孟松加盟任联合CEO——台积电1992-2009年的资深研发处长、450余项专利的持有者,江湖人称"大陆芯片业最重要的一次人才引进"。<a class="ref" href="#n10">〔谱10〕</a></p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">对手是自己的治理</span></div>
+      <ol>
+        <li><span class="who">江上舟</span><span class="why">2011年病逝任上的董事长——内斗风暴眼里的定盘星倒了</span></li>
+        <li><span class="who">邱慈云</span><span class="why">两边都信得过的CEO:止亏、上市28nm,把公司从悬崖边拉回</span></li>
+        <li><span class="who">梁孟松</span><span class="why">带着台积电17年研发记忆来的人——下一章追赶的引擎</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第肆章 ============ -->
+  <section class="sheet chapter" id="c4" data-pin="第肆章 · 追赶">
+    <div class="ch-head"><span class="ch-no">第肆章</span><h2>梁孟松的追赶:14nm到N+1</h2><span class="ch-years">2017–2019</span></div>
+    <div class="prose">
+      <p>梁孟松与赵海军的"双CEO"制,是行业里罕见的安排:赵海军管产能与运营,梁孟松管技术攻坚。成果写在年报里:2019年,第一代14nm FinFET量产,四季度即贡献约1%的晶圆收入;同一份年报写下了下一站——"N+1研发进程稳定,已进入客户导入及产品认证阶段"。<a class="ref" href="#n16">〔谱16〕</a>这是官方口径里,N+1第一次被摆上日程表。</p>
+      <p>同一年的5月24日,公司宣布从纽交所自愿退市——公告理由平淡:ADS成交量低、合规成本高。<a class="ref" href="#n15">〔谱15〕</a>谁也没想到,这只是这家公司与美国资本市场缘分的暂停键:一年后,它将在回家与封锁之间,同时迎来两件大事。</p>
+      <div class="margin-note"><span class="mn-tag">眉批·N+1/N+2的黑箱</span>14nm之后,中芯的制程叙事进入"代号时代":N+1、N+2——官方从不把它们对应到纳米数。2023年8月华为Mate60搭载的麒麟9000s被TechInsights拆解指向"中芯N+2(7nm级)",中芯与华为均未确认——本馆以【第三方推断】标注:这是无声的证词,不是官宣的成绩单。<a class="ref" href="#n16">〔谱16〕</a></div>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">两代半的代差</span></div>
+      <ol>
+        <li><span class="who">台积电的3nm/2nm</span><span class="why">同期对手已量产3nm、推进2nm——中芯确认节点与它的代差约两到三代(推断口径)</span></li>
+        <li><span class="who">EUV禁运</span><span class="why">瓦森纳安排之下,ASML的EUV从未获对华出口许可——先进制程的物理天花板</span></li>
+        <li><span class="who">麒麟9000s</span><span class="why">2023年那颗没人认领的芯片——N+2最响的"无声证词"</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第伍章 ============ -->
+  <section class="sheet chapter" id="c5" data-pin="第伍章 · 封锁与回A">
+    <div class="ch-head"><span class="ch-no">第伍章</span><h2>回家与封锁,同一年</h2><span class="ch-years">2020–2022</span></div>
+    <div class="prose">
+      <p>2020年7月16日,中芯国际登陆科创板:发行价27.46元,初始发行16.86亿股(超额配售权悉数行使后19.38亿股),募资总额75.139亿美元口径(约合人民币532亿元)——当年科创板最大IPO;战略配售里有中国信科(不超过20亿元)、上海集成电路基金。<a class="ref" href="#n19">〔谱19〕</a>回家敲钟的热闹还没散,12月18日,美国商务部以国家安全为由,将公司及部分子公司列入实体清单:对10nm及以下先进制程(含EUV相关)适用"推定拒绝"。公司声明四个字,"坚决反对",再加一句坦白:对10nm以下先进工艺研发及产能建设"有重大不利影响"。<a class="ref" href="#n17">〔谱17〕</a></p>
+      <p>同一个冬天还有一出人事暗涌:12月15日,蒋尚义(前台积电研发副总裁、共同COO)出任副董事长;次日,梁孟松被曝"有条件辞任"——公告留下了那道裂缝;风波之后梁留任,2021年11月11日辞去执行董事,专任联合CEO至今。<a class="ref" href="#n18">〔谱18〕</a>董事长线也在换防:周子学之后,高永岗(2021年9月代理、2022年3月扶正,2009年即任非执董的老臣)接棒;2023年7月17日,化工系统出身的刘训峰(原上海华谊集团董事长)出任董事长至今。<a class="ref" href="#n20">〔谱20〕</a></p>
+      <p>战略选择随封锁定型:先进制程被焊死,就把成熟制程做到满——北京、上海临港、深圳、天津(2022年8月签西青项目框架协议)一路扩产。<a class="ref" href="#n13">〔谱13〕</a>2025年末月产能105.875万片(折8英寸),全年利用率93.5%——封锁线内的生意,靠"满产"两个字活着。<a class="ref" href="#n21">〔谱21〕</a></p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">清单上的对手</span></div>
+      <ol>
+        <li><span class="who">美国商务部实体清单</span><span class="why">"推定拒绝"四个字,焊死了10nm以下的路</span></li>
+        <li><span class="who">大基金一期二期</span><span class="why">一期限售股、二期投子公司——国家资本的两种姿势</span></li>
+        <li><span class="who">中国信科(14.97%)</span><span class="why">第一大股东联盟——科创板回家的压舱石</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第陆章 ============ -->
+  <section class="sheet chapter" id="c6" data-pin="第陆章 · 周期">
+    <div class="ch-head"><span class="ch-no">第陆章</span><h2>周期的答案:满产三十亿</h2><span class="ch-years">2022–2026</span></div>
+    <div class="prose">
+      <p>被封锁之后,这家公司的财务曲线反而像坐了一趟完整的过山车:2022年营收72.73亿美元、毛利率38%(缺芯涨价的顶);2023-2024年滑入下行周期,毛利率一度只有18%;2025年营收<b>93.27亿美元</b>创历史新高;2026年二季度,单季收入<b>30.06亿美元</b>(同比+36.1%),首破30亿,毛利率回升到25.3%,三季度指引继续向上。<a class="ref" href="#n21">〔谱21〕</a><a class="ref" href="#n22">〔谱22〕</a>2025年出货969.7万片(折8英寸)、研发7.74亿美元、员工19,952人。<a class="ref" href="#n21">〔谱21〕</a></p>
+      <p>二十六年,这家公司交出的不是赶超的故事,而是另一种:在被告席上赔掉3.75亿美元和8%股份,在封锁线上买不到一台EUV,却把成熟制程的产能利用率干到93%以上、把单季收入做到30亿美元。追赶者的账本不性感,但一直在记。下一卷写它,先看三样:国产设备的进场速度、N+2之后的下一站(如果有)、还有AI芯片的代工订单会不会把成熟制程再抬一个台阶。</p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">还没交卷的</span></div>
+      <ol>
+        <li><span class="who">国产设备链</span><span class="why">光刻、刻蚀、沉积的国产化速度——成熟制程的天花板</span></li>
+        <li><span class="who">联电、格芯</span><span class="why">同样被挡在EUV外的成熟制程同行——真正的赛段对手</span></li>
+        <li><span class="who">AI芯片订单</span><span class="why">算力缺货会不会流到成熟节点——周期的下一阵风</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 当家人更替 ============ -->
+  <section class="sheet-wide" id="zhangduo" data-pin="当家人">
+    <div class="report">
+      <div class="report-cap"><h3>当家人更替</h3><span class="cap-note">CEO线与董事长线分列;联合CEO制为行业罕见</span></div>
+      <table>
+        <thead><tr><th>当家人</th><th>职务</th><th>在任</th><th>备注</th></tr></thead>
+        <tbody>
+          <tr><td>张汝京</td><td>创始人、CEO</td><td>2000 – 2009.11</td><td>德州仪器20年、约10座厂;两轮诉讼后辞任;此后连续创业(新昇、芯恩、积塔)</td></tr>
+          <tr><td>江上舟</td><td>董事长</td><td>至2011.6</td><td>2011年6月27日病逝任上</td></tr>
+          <tr><td>王宁国</td><td>CEO</td><td>2009.11 – 2011.7</td><td>前应用材料全球执行副总裁;"内斗"风波中辞任</td></tr>
+          <tr><td>张文义</td><td>董事长(署理CEO)</td><td>2011.7 – 2015.3</td><td>临危受命;后转名誉董事长</td></tr>
+          <tr><td>邱慈云</td><td>CEO</td><td>2011.8 – 2017.5</td><td>台积电运营高级总监出身;2014年扭亏,2015年28nm量产;后转非执行副董事长</td></tr>
+          <tr><td>周子学</td><td>董事长</td><td>2015.3 – 2021</td><td>—</td></tr>
+          <tr><td>赵海军</td><td>CEO/联合CEO</td><td>2017.5 – 今</td><td>清华本博+芝加哥MBA;管产能与运营</td></tr>
+          <tr><td>梁孟松</td><td>联合CEO</td><td>2017.10 – 今</td><td>台积电17年资深研发处长、450余项专利;14nm/N+1攻坚;2020年"有条件辞任"风波后留任</td></tr>
+          <tr><td>蒋尚义</td><td>副董事长</td><td>2020.12 – 2021.11</td><td>前台积电研发副总裁/共同COO;与梁孟松风波同期</td></tr>
+          <tr><td>高永岗</td><td>董事长</td><td>2021.9(代理)/2022.3 – 2023.7</td><td>2009年即任非执董、2014年起CFO的老臣</td></tr>
+          <tr><td>刘训峰</td><td>董事长</td><td>2023.7 – 今</td><td>化工系统出身(原上海华谊集团董事长)</td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="4">来源:港交所历次公告(见大事记)。梁孟松三星任职经历(2011-2014)公告未载,未核验。</td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ 大事记 ============ -->
+  <section class="sheet-wide" id="chronicle" data-pin="大事记">
+    <div class="chronicle-wrap">
+      <div class="chronicle-head">
+        <h2>大事记 · 全书书脊</h2>
+        <span class="note">正文每一个〔谱N〕都落在这里;每一条都挂出处。</span>
+      </div>
+      <div class="legend">
+        <span><span class="mark">核</span>已核对公告或可靠来源</span>
+        <span><span class="mark query">疑</span>来源间有出入,存疑</span>
+        <span><span class="mark gap">缺</span>史料缺口</span>
+      </div>
+      <ol class="chronicle">
+        <li id="n1"><span class="c-date">2000-2004</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">2000年4月3日开曼注册、张汝京创办并任总裁,12月21日设中芯上海;子公司:北京(2002.7)、天津(2003.11)、成都(2004.8)、深圳(2008.3);2004年3月18日港交所挂牌,同年纽约上市(SMI)。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2010/0429/ltn201004291302_c.pdf">2009年报(港交所)</a></div></li>
+        <li id="n2"><span class="c-date">人物档案</span><span class="c-mark"><span class="mark query">疑</span></span><div class="c-body">张汝京:1948年生于南京、台湾长大;台大机械、水牛城硕士、南卫理公会博士;德州仪器20年(约10座厂);1997年创办世大、2000年创办中芯、2009年辞任;2014年新昇、2018年芯恩、2022年积塔。"中芯=中国芯"之说未查到一手出处;创业资金与人才叙事为自媒体口径(【第三方说法】)。<a class="c-src" href="https://dzxxxy.qdu.edu.cn/info/1100/2269.htm">青岛大学简历页</a></div></li>
+        <li id="n3"><span class="c-date">2009.11.10</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">张汝京辞任执行董事、总裁兼CEO(公告口径"追求其他个人兴趣";媒体流传"心声"原话未查到,不引述);王宁国接任。年报显示张辞任后曾以"荣誉董事长及/或首席科学顾问"身份留任服务期。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2009/1110/ltn20091110014_c.pdf">港交所公告</a></div></li>
+        <li id="n4"><span class="c-date">2011.6.27</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">董事长江上舟病逝。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2011/0629/ltn20110629119_c.pdf">港交所公告</a></div></li>
+        <li id="n5"><span class="c-date">2011.7</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">"内斗"风波:王宁国辞任CEO(任职期间公告曾澄清"9个月内约100名中层离职属正常");张文义任董事长并署理CEO。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2011/0715/ltn20110715630_c.pdf">港交所公告</a></div></li>
+        <li id="n6"><span class="c-date">2011.8.5</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">邱慈云接任CEO(伯克利博士;台积电运营高级总监、2001-2005中芯高级运营副总裁);2017年5月10日卸任转非执行副董事长。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2011/0805/ltn20110805611_c.pdf">港交所公告</a></div></li>
+        <li id="n7"><span class="c-date">2003-2006</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">台积电第一轮诉讼:2003年12月起诉(专利+商业秘密);2005年1月30日首次和解——不承认责任,6年分期1.75亿美元,含交叉授权;2006年8月25日台积电再诉(违反和解协议),中芯9月反诉、11月在北京起诉台积电。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2009/1110/ltn20091110243_c.pdf">2009和解公告</a></div></li>
+        <li id="n8"><span class="c-date">2009.11.9</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">最终和解(加州陪审团11月4日裁中芯败诉后):再付2亿美元(分期至2013);终止2005协议剩余约4000万美元义务;发行1,789,493,218股新股(约8%)加3年期认股权证(6.96亿股、行权价1.30港元),合计约10%;台积电受维持现状/投票/转让限制,不派董事;2009Q4确认经营开支2.696亿美元。"自媒体径称10%股权"不准确。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2009/1110/ltn20091110243_c.pdf">港交所·和解公告</a></div></li>
+        <li id="n10"><span class="c-date">2017</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">双CEO制成型:5月10日赵海军任CEO(清华本博+芝加哥MBA,2010年加入、2013年COO);10月16日梁孟松任联合CEO(台积电1992-2009资深研发处长、450余项专利);其三星任职经历(2011-2014)公告未载,未核验。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2017/1016/ltn20171016268_c.pdf">港交所公告</a></div></li>
+        <li id="n13"><span class="c-date">产能布局</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">8/12英寸厂:上海张江(200/300mm)、北京亦庄(300mm一二期)、天津西青(200mm,2022年8月26日签新项目框架协议)、深圳坪山(200mm);子公司含北方/南方/京城/东方(临港)/西青;2025-2026年推进发行A股购买中芯北方49%少数股权。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0326/2026032601295_c.pdf">2025年度业绩(港交所)</a></div></li>
+        <li id="n14"><span class="c-date">2014-2015</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">邱慈云任期成绩:2011-2013连续亏损后2014年起恢复盈利;2015年28nm进入大量生产;2015年3月周子学接任董事长。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2016/0330/ltn201603301090_c.pdf">2015年度业绩</a></div></li>
+        <li id="n15"><span class="c-date">2019.5.24</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">宣布自纽交所自愿退市(理由:ADS成交量低、合规成本高)。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2019/0524/ltn20190524887_c.pdf">港交所公告</a></div></li>
+        <li id="n16"><span class="c-date">2019</span><span class="c-mark"><span class="mark query">疑</span></span><div class="c-body">制程里程碑:第一代14nm FinFET量产(Q4贡献约1%晶圆收入),"第二代FinFET平台持续客户导入","N+1研发进程稳定,已进入客户导入及产品认证阶段"。N+2(7nm级)从未官方确认;2023年8月华为Mate60麒麟9000s被TechInsights拆解指向中芯N+2——【第三方推断】,双方均未确认。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2020/0331/2020033101467_c.pdf">2019年度业绩</a></div></li>
+        <li id="n17"><span class="c-date">2020.12.18</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">美国商务部以国家安全为由将公司及部分子公司/联营列入实体清单,对10nm及以下(含EUV)适用"推定拒绝";公司声明"坚决反对",称对10nm以下先进工艺研发及产能建设有重大不利影响。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2020/1220/2020122000190_c.pdf">港交所公告</a></div></li>
+        <li id="n18"><span class="c-date">2020.12-2021.11</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">蒋尚义12月15日任副董事长;次日曝梁孟松"有条件辞任",后留任;2021年11月11日梁辞执行董事、专任联合CEO;蒋尚义同期(11月11日)辞任副董事长。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2020/1216/2020121600268_c.pdf">港交所公告</a></div></li>
+        <li id="n19"><span class="c-date">2020.7.16</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">科创板上市:发行价27.46元,初始发行16.8562亿股(超配后19.38463亿股),募资总额75.139亿美元口径(约合人民币532亿元,当年科创板最大IPO);战略配售含中国信科(≤20亿元)、上海集成电路基金(≤5亿元)。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2020/0715/2020071500068_c.pdf">港交所公告</a></div></li>
+        <li id="n20"><span class="c-date">董事长线</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">周子学(2015.3-2021)→高永岗(2021.9代理、2022.3.17任董事长;2009年即任非执董、2014年起CFO)→刘训峰(2023.7.17至今;化工系统出身,原上海华谊集团董事长)。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2023/0717/2023071700252_c.pdf">港交所公告</a></div></li>
+        <li id="n21"><span class="c-date">2025</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">年度答卷:营收93.268亿美元(创新高)、毛利率21.0%、归母净利6.851亿美元;出货969.7万片折8英寸、利用率93.5%;年末月产能105.875万片;研发7.74亿美元;员工19,952人;专利累计授权14,511件;股东:中国信科系14.97%、大基金一期(经鑫鑫香港)4.79%。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0326/2026032601295_c.pdf">2025年度业绩(港交所)</a></div></li>
+        <li id="n22"><span class="c-date">2026.8.13</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">2026Q2:单季收入30.056亿美元(环比+20.0%、同比+36.1%,首破30亿)、毛利率25.3%、本期利润7.332亿美元、月产能109.65万片、利用率93.7%;Q3指引环比+2%~4%、毛利率26%~28%。<a class="c-src" href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0813/2026081300354_c.pdf">2026Q2业绩(港交所)</a></div></li>
+        <li id="n23"><span class="c-date">缺口</span><span class="c-mark"><span class="mark gap">缺</span></span><div class="c-body">世大被并购金额(50/51亿美元两说)、张汝京台湾户籍注销与罚款(自媒体)、N+1/N+2节点对应、麒麟9000s代工、台积电清仓时间、EUV禁运一手文件、全球排名核验——未查到,记录在案。</div></li>
+        <li id="n24"><span class="c-date">2026.9.10</span><span class="c-mark"><span class="mark gap">缺</span></span><div class="c-body">本卷编竣。国产设备进场速度、N+2之后的下一站、AI订单的成熟制程红利——留给下一卷。<a class="c-src" href="../index.html">企业故事馆·待续</a></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 生产简报 ============ -->
+  <section class="sheet-wide" id="shuzi" data-pin="生产简报">
+    <div class="report">
+      <div class="report-cap"><h3>生产简报 · 近七年损益</h3><span class="cap-note">百万美元 · IFRS口径 · 归母净利</span></div>
+      <table>
+        <thead><tr><th>年度</th><th>营收</th><th>毛利率</th><th>归母净利</th><th>当年大事(另见大事记)</th></tr></thead>
+        <tbody>
+          <tr><td>2019</td><td>3,115.7</td><td>20.6%</td><td>234.7</td><td>14nm量产;纽交所退市</td></tr>
+          <tr><td>2020</td><td>3,907.0</td><td>23.6%</td><td>715.6</td><td>科创板上市;实体清单</td></tr>
+          <tr><td>2021</td><td>5,443.1</td><td>30.8%</td><td>1,701.8</td><td>缺芯涨价周期</td></tr>
+          <tr><td>2022</td><td>7,273.3</td><td>38.0%</td><td>1,817.9</td><td>毛利率顶点</td></tr>
+          <tr><td>2023</td><td>6,321.6</td><td>19.3%</td><td>902.5</td><td>下行周期;麒麟9000s之秋(推断)</td></tr>
+          <tr><td>2024</td><td>8,029.9</td><td>18.0%</td><td>492.7</td><td>毛利率低谷</td></tr>
+          <tr><td>2025</td><td>9,326.8</td><td>21.0%</td><td>685.1</td><td>营收新高;利用率93.5%</td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="5">2026Q2:单季收入30.056亿美元(首破30亿)、毛利率25.3%、利用率93.7%。来源:历年度业绩公告(港交所,见大事记各条)。</td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ 附录 ============ -->
+  <section class="sheet appendix" id="appendix" data-pin="附录">
+    <div class="apx-head"><h2>附录 · 交代底细</h2><span class="apx-note">按馆规,一切考据过程压在书尾。</span></div>
+
+    <h3>缺口与置信度</h3>
+    <div class="gap-box">
+      <span class="gb-tag">以下诸事,本馆未能钉死,如实交代</span>
+      <ul>
+        <li><b>"中芯=中国芯"</b>之名与创业资金/人才叙事:常见说法与自媒体口径,未获一手出处,正文已标【第三方说法】。</li>
+        <li><b>张汝京辞职"心声"原话</b>:未查到可核验来源;官方口径为"追求其他个人兴趣"。</li>
+        <li><b>世大被并购金额</b>:50亿与51亿美元两说;"禁业3年/5年"等媒体口径互相矛盾。</li>
+        <li><b>N+1/N+2的节点对应、麒麟9000s代工</b>:公司从未确认;TechInsights拆解为第三方推断。</li>
+        <li><b>台积电持股清仓时间、EUV禁运一手文件、全球纯代工排名</b>:未查到本次可达来源。</li>
+        <li><b>自媒体叙事</b>(对话、金额的文学化加工):仅作线索,未直接引用。</li>
+      </ul>
+    </div>
+
+    <h3>返回研究的发现</h3>
+    <div class="report">
+      <table>
+        <thead><tr><th>发现</th><th>建议去向</th><th>为什么重要</th></tr></thead>
+        <tbody>
+          <tr><td>N+2产能与良率的第三方证据</td><td>事实层·跟踪拆解报告</td><td>先进制程真实水平的唯一旁证</td></tr>
+          <tr><td>国产设备在各产线的进场比例</td><td>事实层·招标与验收跟踪</td><td>成熟制程扩张的可持续性</td></tr>
+          <tr><td>中芯北方49%少数股权收购进展</td><td>事实层·跟踪A股公告</td><td>股权结构与利润归属</td></tr>
+          <tr><td>AI订单向成熟制程外溢的证据</td><td>逻辑层·跟踪季度指引</td><td>周期下一台阶的关键变量</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>史料清单</h3>
+    <ol class="src-list">
+      <li><span>港交所公告PDF(2009和解、历次董事变更、2019-2026年度与季度业绩、科创板发行、实体清单声明等30余份)——本卷第一来源。</span></li>
+      <li><span>中芯国际官网(公司介绍、管理层、工厂布局)。</span></li>
+      <li><span>青岛大学、宁波东方理工的张汝京官方简历页。</span></li>
+      <li><span>TechInsights对麒麟9000s的拆解结论(经广泛国际报道转引,原报告未直采)。</span></li>
+      <li><span>自媒体叙事(腾讯新闻/搜狐/网易)——仅作线索,凡引用处均已标注。</span></li>
+    </ol>
+
+    <footer class="colophon">
+      <p class="cb-title">版 权 页</p>
+      <p>《中芯国际》一卷 · 企业故事馆馆藏第十一卷 · 编于二〇二六年九月十日 · 史实截至该日。</p>
+      <p>本卷谱主:中芯国际(688981.SH/0981.HK);分期六幕,大事记二十四条;全部来源见上。</p>
+      <p class="disclaimer">本馆内容为个人兴趣写作,不构成任何投资建议;人物、事件、数字以公司公告为准,若与公告相悖,以公告为准。引用媒体与文件均注明出处,如有侵权请告知即撤。</p>
+      <p class="back-shelf"><a href="../index.html">← 回到书架</a></p>
+    </footer>
+  </section>
+</main>
+
+<script src="../assets/site.js"></script>
+</body>
+</html>

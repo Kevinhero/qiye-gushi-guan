@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>诺华(NVS) · 一颗药丸的伦理学 · 企业故事馆</title>
+<meta name="description" content="诺华(Novartis,NVS)的传记:1996年史上最大合并,格列卫从费城染色体到神奇的子弹,印度专利战与《我不是药神》,纯创新药的孤注一掷。每件事都有出处。">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-book="novartis" data-book-name="诺华">
+
+<!--
+THESIS: 一部编年厂志——黑墨正文、朱砂批注、米纸为地;讲一家瑞士
+药企怎样用一颗橙色的药丸改写癌症治疗、又因它的定价站上伦理
+的被告席;每件事沿〔谱N〕小注指回大事记。拒绝营销头图与卡片
+阵列。
+OWN-WORLD: 米纸/墨/套红印制,钢笔蓝 #2D4E8A 用于外链与缺口
+标记(〔疑〕仍为墨色虚线);宋体正文、楷体眉批;编年长表右对
+齐日期栏;状态即校对符号(核/疑/缺);无照片,仅线绘SVG。
+STORY: 读者取书、读六章传记、点朱注核出处;大事记是书脊。
+FIRST VIEWPORT: 书眉;案卷代码行;巨幅宋体「诺华」配旋转朱印;
+一句引子;谱主划线履历卡;向下进入第壹章。
+FORM: 厂志·套红编年(自造清单第3位,seed 0930a07c)。
+FINISH: unreviewed and undocumented is unfinished; this build
+ends with the finish review, the verdict, DESIGN.md, and every
+shipping raster carrying its provenance.
+-->
+
+<header class="masthead-bar">
+  <a class="hall-name" href="../index.html">企业故事馆</a>
+  <span class="running-head">诺华 · 卷首</span>
+</header>
+<div class="reading-rule"><i></i></div>
+
+<nav class="thumbs" aria-label="章节导航">
+  <a class="top-link" href="#cover" data-ch>回卷首</a>
+  <a href="#c1" data-ch>壹</a>
+  <a href="#c2" data-ch>贰</a>
+  <a href="#c3" data-ch>叁</a>
+  <a href="#c4" data-ch>肆</a>
+  <a href="#c5" data-ch>伍</a>
+  <a href="#c6" data-ch>陆</a>
+  <a href="#zhangduo" data-ch>舵</a>
+  <a href="#chronicle" data-ch>谱</a>
+  <a href="#appendix" data-ch>跋</a>
+</nav>
+
+<button id="bookmark-pin" class="bm-pin" hidden title="清除书签">接着读:<span class="bm-ch"></span><span class="bm-hint"> · 点击清除</span></button>
+
+<main>
+  <!-- ============ 卷首 ============ -->
+  <section class="sheet cover" id="cover" data-pin="卷首">
+    <svg class="seal" viewBox="0 0 128 128" aria-hidden="true">
+      <g fill="none" stroke="#b93a1b">
+        <circle cx="64" cy="64" r="60" stroke-width="3.5"/>
+        <circle cx="64" cy="64" r="42" stroke-width="1.5"/>
+        <path id="seal-arc-nvs" d="M 64,12 a 52,52 0 1 1 -0.01,0" stroke="none"/>
+      </g>
+      <text fill="#b93a1b" font-size="10.5" letter-spacing="3" font-weight="700"><textPath href="#seal-arc-nvs" startOffset="2">企业故事馆 · 巴塞尔药业 · 馆藏第九卷</textPath></text>
+      <text x="64" y="60" text-anchor="middle" fill="#b93a1b" font-size="21" font-weight="900" font-family="Songti SC,serif">已 核</text>
+      <text x="64" y="82" text-anchor="middle" fill="#b93a1b" font-size="11.5" letter-spacing="2" font-family="Menlo,monospace">NVS</text>
+    </svg>
+
+    <div class="code-row"><span class="code">NVS / NVS.SW</span><span>纽交所(SIX:NVSN) · 1996年12月20日开始运营 · 总部瑞士巴塞尔</span></div>
+    <h1>诺华</h1>
+    <p class="aka">Novartis AG · 瑞士巴塞尔 · 名取拉丁语"新技艺",中文自称"承诺中华"</p>
+    <p class="hook">三家用染料起家的巴塞尔老厂(嘉基1758、汽巴1859、山德士1886),在1996年合并成当时<b>世界史上最大的公司合并</b>。它最著名的一颗橙色药丸——格列卫,把一种白血病的五年生存率从31%拉到90%,FDA只用了<b>72天</b>就放行;也把"救命药该卖多少钱"这个问题,一路吵到了<b>印度最高法院和中国电影银幕</b>上。</p>
+
+    <div class="ledger">
+      <p class="ledger-cap"><span>谱主 · 履历卡</span><span>截至二〇二六年九月十日</span></p>
+      <dl>
+        <dt>谱 主</dt><dd>诺华公司(Novartis AG),及历任CEO(瓦斯拉、江慕忠、万思瀚)</dd>
+        <dt>生 于</dt><dd>1996年3月7日宣布汽巴-嘉基与山德士合并,7月17日获欧盟批准,12月20日开始运营;前身三家创立于1758/1859/1886年<a class="ref" href="#n1">〔谱1〕</a></dd>
+        <dt>营 生</dt><dd>纯创新药(2023年分拆山德士仿制药业务后):2025年净销售额545.3亿美元;核心产品诺欣妥、可善挺、Kisqali、乐可为等;7.7万员工、约120国<a class="ref" href="#n16">〔谱16〕</a></dd>
+        <dt>成名作</dt><dd>格列卫(伊马替尼):2001年5月10日FDA批准(受理到放行72天),CML五年生存率31%→90%;2013年印度专利战败诉;2018年《我不是药神》(票房31亿元)以此案为原型<a class="ref" href="#n7">〔谱7〕</a><a class="ref" href="#n9">〔谱9〕</a><a class="ref" href="#n12">〔谱12〕</a></dd>
+        <dt>战 略</dt><dd>瘦身成纯创新药公司:2015年160亿美元购GSK肿瘤业务、2019年分拆爱尔康、2023年分拆山德士;2025年120亿美元收购Avidity<a class="ref" href="#n14">〔谱14〕</a></dd>
+        <dt>中 国</dt><dd>全球第二大市场:2025年中国区收入42亿美元(+8%);1886年嘉基在华卖染料起,超120款创新药/适应症在华获批<a class="ref" href="#n13">〔谱13〕</a></dd>
+      </dl>
+    </div>
+
+    <div class="clipping">
+      <span class="clip-tag">读法</span>
+      <p>正文里的朱色小注(如<a class="ref" href="#n7">〔谱7〕</a>)可以点:一点,就跳到书尾《大事记》第7条——每一条大事记都挂着出处。<b>故事可以讲得热闹,每一件事都得有个下落。</b>制药业的白话账:十年研发、九死一生、专利期独卖——专利悬崖(专利到期后仿制药涌入)是每家药企的宿命,诺华2026年正迎来自称"史上最大规模"的到期潮。按馆规第六则,谱内不谈股价。本卷主角是一颗药丸:它的疗效是医学,它的定价是伦理,它的专利是法律——三本账,本馆分开记。</p>
+    </div>
+  </section>
+
+  <!-- ============ 这台机器 ============ -->
+  <section class="sheet diagram" id="machine" data-pin="这台机器" aria-label="生意结构示意图">
+    <figure>
+      <svg class="draw" viewBox="0 0 640 252" role="img" aria-label="创新药机器:实验室研发经临床与审批,专利期内独卖,专利悬崖后让位仿制药" style="width:100%;height:auto;display:block">
+        <rect data-draw x="16" y="18" width="168" height="52"/>
+        <text x="100" y="40" text-anchor="middle">研发 103亿美元/年</text>
+        <text x="100" y="60" text-anchor="middle" font-size="11">2025年核心研发投入</text>
+        <rect data-draw x="16" y="100" width="168" height="52"/>
+        <text x="100" y="122" text-anchor="middle">临床试验 · 监管</text>
+        <text x="100" y="142" text-anchor="middle" font-size="11">十年 · 九死一生</text>
+        <rect data-draw x="16" y="182" width="168" height="52"/>
+        <text x="100" y="204" text-anchor="middle">上市销售 545.3亿美元</text>
+        <text x="100" y="224" text-anchor="middle" font-size="11">诺欣妥77.5亿 · 可善挺66.7亿</text>
+        <path data-draw class="accent" d="M 184,44 C 236,44 252,106 300,106"/>
+        <path data-draw d="M 184,126 L 300,126"/>
+        <path data-draw class="accent" d="M 184,208 C 236,208 252,146 300,146"/>
+        <rect data-draw x="300" y="88" width="168" height="76"/>
+        <text x="384" y="114" text-anchor="middle">专利期独卖</text>
+        <text x="384" y="138" text-anchor="middle" class="accent" font-size="14">20年时钟</text>
+        <text x="384" y="156" text-anchor="middle" font-size="11">唯一的变现窗口</text>
+        <path data-draw d="M 468,126 L 524,126"/>
+        <rect data-draw x="524" y="88" width="100" height="76"/>
+        <text x="574" y="112" text-anchor="middle" font-size="12">专利悬崖</text>
+        <text x="574" y="134" text-anchor="middle" font-size="11">仿制药涌入</text>
+        <text x="574" y="152" text-anchor="middle" font-size="11">2026:诺欣妥到期</text>
+      </svg>
+      <figcaption>创新药的账:研发投入是确定的,专利期是有限的,所以每一款新药都要在窗口里挣回一辈子的研发费——定价的贪婪与救命的慈悲,源自同一张损益表(2025年报口径)。</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ 第壹章 ============ -->
+  <section class="sheet chapter" id="c1" data-pin="第壹章 · 染料厂">
+    <div class="ch-head"><span class="ch-no">第壹章</span><h2>染料厂的三百年与一次大合并</h2><span class="ch-years">1758–1996</span></div>
+    <div class="prose">
+      <p>诺华的家谱要从染缸说起。巴塞尔这座城市的三家药厂,前身都是染料与化工行:嘉基(Johann Rudolf Geigy贸易公司,1758年)、汽巴(Alexander Clavel生产丝染品红,1859年,后改组为巴塞尔化学工业公司CIBA)、山德士(Kern &amp; Sandoz化学公司,1886年)。<a class="ref" href="#n1">〔谱1〕</a>十九世纪,合成染料是化工工业的门票——拜耳、赫斯特、汽巴,全是同一条街上出来的;染料卖着卖着,副产品成了药品,化学公司慢慢变成了药厂。1970年,汽巴与嘉基先并成汽巴-嘉基;1996年3月7日,汽巴-嘉基再与山德士宣布合并——诺华官网自述这是"当时世界史上最大公司合并"。<a class="ref" href="#n1">〔谱1〕</a></p>
+      <p>新公司取名Novartis,拉丁语novae artes,"新技艺";中文译名"诺华"被公司解释为"承诺中华"——一个面向中国市场的吉利话。<a class="ref" href="#n1">〔谱1〕</a>1996年7月17日欧盟放行,12月20日正式运营。第一任CEO丹尼尔·瓦斯拉(Daniel Vasella,伯尔尼大学医学博士)从合并之日起掌舵,直到2010年。<a class="ref" href="#n14">〔谱14〕</a>顺带一笔:合并那几年,诺华把农药业务与阿斯利嘉合并拆出了先正达(Syngenta,2000年)——多年后先正达被中国化工买走,那是另一卷书的事了。</p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">同一条街上的百年邻居</span></div>
+      <ol>
+        <li><span class="who">汽巴 · 嘉基 · 山德士</span><span class="why">三家染料起家的巴塞尔老厂,1996年拧成一股</span></li>
+        <li><span class="who">罗氏</span><span class="why">同城的另一家巴塞尔药厂——百年邻居、百年对手</span></li>
+        <li><span class="who">先正达</span><span class="why">2000年被拆出去的农药业务——诺华瘦身史的第一刀</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第贰章 ============ -->
+  <section class="sheet chapter" id="c2" data-pin="第贰章 · 费城染色体">
+    <div class="ch-head"><span class="ch-no">第贰章</span><h2>从费城染色体到神奇的子弹</h2><span class="ch-years">1960–2001</span></div>
+    <div class="prose">
+      <p>这个故事的科学线,始于1960年的费城:宾大的两位研究者Nowell与Hungerford在慢性粒细胞白血病(CML)患者的细胞里,发现了一条缩短的异常染色体——费城染色体;后来证实,它是一段易位形成的BCR-ABL融合基因,编码一种失控的酪氨酸激酶,像一根卡住的油门,让白细胞无限增殖。<a class="ref" href="#n7">〔谱7〕</a>四十年科学接力之后,轮到公司接棒:1990年代,汽巴-嘉基的团队(尼古拉斯·莱登领衔)筛选出了伊马替尼;美国俄勒冈的肿瘤医生布莱恩·德鲁克把它推上临床——药厂化学家与临床医生的合作,成就了后来的格列卫。<a class="ref" href="#n7">〔谱7〕</a></p>
+      <p>2001年,FDA档案写下了制药史上罕见的速度:2月27日受理新药申请,<b>5月10日批准——72天</b>,加速审批通道。<a class="ref" href="#n8">〔谱8〕</a>当年5月,《时代》周刊把它印上封面,称抗癌的"神奇的子弹"——这是第一个针对癌细胞特定分子靶点设计的口服药,癌症治疗从"化疗轰炸"进入"靶向狙击"时代。<a class="ref" href="#n8">〔谱8〕</a>疗效是史诗级的:美国CML患者的五年生存率,1993年31%→2009年59%→2023年约<b>90%</b>——一种曾经的绝症,被一颗橙色的药丸变成了慢病。<a class="ref" href="#n8">〔谱8〕</a>德鲁克、莱登与萨耶尔斯因此拿了2009年拉斯克临床医学奖。<a class="ref" href="#n8">〔谱8〕</a></p>
+      <div class="quote">"神奇的子弹"(a magic bullet for cancer)。
+<span class="q-src">——《时代》周刊2001年5月封面报道,对格列卫的定语</span></div>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">对手是一种绝症</span></div>
+      <ol>
+        <li><span class="who">慢性粒细胞白血病</span><span class="why">故事真正的反派:五年生存率31%→90%,是这一章的比分</span></li>
+        <li><span class="who">Nowell与Hungerford</span><span class="why">1960年在费城看到那条短染色体的两个人</span></li>
+        <li><span class="who">FDA的加速审批</span><span class="why">72天放行——监管机构为一个明显更好的药改了脾气</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第叁章 ============ -->
+  <section class="sheet chapter" id="c3" data-pin="第叁章 · 定价">
+    <div class="ch-head"><span class="ch-no">第叁章</span><h2>三万美元到九万美元:定价的被告席</h2><span class="ch-years">2001–2013</span></div>
+    <div class="prose">
+      <p>药救了命,价签成了另一个故事。格列卫2001年在美国的定价约<b>3万美元/年</b>;此后年年上调,2012年涨到约<b>9.2万美元/年</b>(当年收入47亿美元)——涨价的速度,远超通胀,也超出许多病人的承受力。2013年,百余位CML专家在《血液》(Blood)杂志联名发表公开信,批评包括格列卫在内的抗癌药定价"难以持续"——医生们公开批评自己开的药,在业内是破天荒的事。<a class="ref" href="#n9">〔谱9〕</a></p>
+      <p>真正的判决来自印度。诺华为伊马替尼的β晶型在印度申请专利被拒后,一路上诉七年;2013年4月1日,印度最高法院两法官法庭终审判决诺华<b>败诉</b>——法院认定该晶型不满足印度专利法第3(d)条"显著疗效增进"的标准,并明确该条款的立法目的就是防止"常青化"(evergreening:用小改进延长专利独卖期)。<a class="ref" href="#n10">〔谱10〕</a>判决落槌,印度仿制的伊马替尼(每月177-266美元,对比诺华印度定价2666美元/月)合法化——此后,印度的病人们吃上了便宜药,而"诺华诉印度"成了全球药品可及性运动的教科书案例。<a class="ref" href="#n10">〔谱10〕</a></p>
+      <div class="margin-note"><span class="mn-tag">眉批·两本账都对</span>格列卫的研发者值得一切敬意,这是科学账;药价把病人分成吃得起和吃不起的两群,这是伦理账。印度法院保护的是本国病人的吃药权,诺华捍卫的是专利体系的回收逻辑——本案没有圣人,只有两套都自洽的制度相撞。本馆两本账并录,不裁断。</div>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">法院与联名信</span></div>
+      <ol>
+        <li><span class="who">印度最高法院</span><span class="why">2013年4月1日的败诉判决——第3(d)条从此闻名世界</span></li>
+        <li><span class="who">百余位CML专家</span><span class="why">2013年Blood公开信:开药的医生集体向药价开火</span></li>
+        <li><span class="who">印度仿制药厂</span><span class="why">每月177美元的平替——合法,且致命地便宜</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第肆章 ============ -->
+  <section class="sheet chapter" id="c4" data-pin="第肆章 · 药神">
+    <div class="ch-head"><span class="ch-no">第肆章</span><h2>《我不是药神》:中国银幕上的诺华</h2><span class="ch-years">2018</span></div>
+    <div class="prose">
+      <p>2018年7月,一部中国电影把这个故事搬上了银幕。《我不是药神》(文牧野导演处女作、徐峥主演)改编自陆勇案:陆勇本人是慢粒白血病患者,2004年起为约一千名病友从印度代购格列卫仿制药,2015年检察机关撤诉——"药神"的原型。<a class="ref" href="#n12">〔谱12〕</a>片中,正版药化名"格列宁"(约4万元一瓶)、印度仿制药约5千元,制药公司化名"瑞士诺瓦公司",连"起诉印度政府"的情节都对应着诺华的真实官司。票房<b>31.00亿元</b>,当年现象级——一部现实题材电影,把"救命药为什么这么贵"问给了整个国家。<a class="ref" href="#n12">〔谱12〕</a></p>
+      <p>电影的现实回响来得很快:2018年,中国宣布抗癌药零关税,医保准入谈判提速;此后,包括格列卫在内的多种抗癌药通过国家医保谈判大幅降价进入报销目录。<a class="ref" href="#n12">〔谱12〕</a>一部电影没有改变专利法,但它改变了定价的舆论土壤——这大概是"格列宁"三个字在现实里挣到的最大一笔回报。</p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">银幕内外</span></div>
+      <ol>
+        <li><span class="who">陆勇</span><span class="why">"药神"原型——为千名病友代购印度药的慢粒患者</span></li>
+        <li><span class="who">文牧野与徐峥</span><span class="why">把专利战拍成31亿元票房的人</span></li>
+        <li><span class="who">"瑞士诺瓦公司"</span><span class="why">银幕上的诺华影子——电影没有点名,观众都懂</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第伍章 ============ -->
+  <section class="sheet chapter" id="c5" data-pin="第伍章 · 瘦身">
+    <div class="ch-head"><span class="ch-no">第伍章</span><h2>瘦身:砍掉一切,只留创新药</h2><span class="ch-years">2015–2025</span></div>
+    <div class="prose">
+      <p>2015年,诺华做了一笔漂亮的换仓:以160亿美元现金(含至多15亿里程碑款)买下GSK的肿瘤业务,同时把自家疫苗业务(除流感)以71亿美元卖给GSK——进退出清,一天完成。<a class="ref" href="#n14">〔谱14〕</a>2019年4月,眼科器械公司爱尔康分拆上市;2023年10月,承载着百年名字的仿制药业务山德士(Sandoz)也分拆出去——诺华从此是一家<b>纯创新药公司</b>,只剩"专利期里的原研药"这一门生意。<a class="ref" href="#n14">〔谱14〕</a></p>
+      <p>掌舵这场转型的是第三任CEO万思瀚(Vasant Narasimhan):哈佛医学院出身、做过医生,2005年加入诺华,2018年接任时就职时41岁("38岁上任"的流传说法不实)。<a class="ref" href="#n15">〔谱15〕</a>他的采购单还在加长:2023年收购Chinook(至多35亿美元),2025年Regulus(17亿美元),2025年10月更是以约<b>120亿美元</b>收购Avidity Biosciences(RNA肌病管线,预计2026年上半年交割)。<a class="ref" href="#n14">〔谱14〕</a>账本上看转型是成功的:2025年净销售额545.3亿美元、净利润139.7亿美元,自由现金流176亿美元。<a class="ref" href="#n16">〔谱16〕</a>但CEO自己把下一场硬仗说得很直白——2026年,诺华迎来"史上最大规模专利到期":头号产品诺欣妥(2025年销售77.48亿美元)的美国仿制药已经开卖,2025年四季度单季就拖累整体增速15个百分点。<a class="ref" href="#n17">〔谱17〕</a></p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">悬崖与买手</span></div>
+      <ol>
+        <li><span class="who">专利悬崖</span><span class="why">诺欣妥的美国仿制药——2026年"史上最大规模到期"的主角</span></li>
+        <li><span class="who">GSK</span><span class="why">2015年那笔肿瘤/疫苗对倒的对手盘</span></li>
+        <li><span class="who">Avidity</span><span class="why">120亿美元买来的RNA肌病管线——转型后的最大一注</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 第陆章 ============ -->
+  <section class="sheet chapter" id="c6" data-pin="第陆章 · 中国">
+    <div class="ch-head"><span class="ch-no">第陆章</span><h2>中国:从卖染料到第二大市场</h2><span class="ch-years">1886–2026</span></div>
+    <div class="prose">
+      <p>诺华与中国的生意,比大多数人想象的老:1886年,嘉基就开始在华推广染料;1913年,汽巴、山德士相继开展业务;1938年,汽巴在上海设办事处。<a class="ref" href="#n13">〔谱13〕</a>改革开放后的节点是1987年——北京汽巴-嘉基制药成立,随后昌平工厂落地;1996年合并同年,北京诺华制药成立;2006年张江研发中心、2016年上海园区,2024年又收购信瑞诺医药(肾病)、在海盐奠基放射药基地(投资6亿元,2026年投运)。<a class="ref" href="#n13">〔谱13〕</a></p>
+      <p>今天,中国是诺华的全球第二大市场:2025年中国区收入<b>42亿美元(+8%)</b>;1987年以来超120款创新药或新适应症在华获批,2022年起新药开发"100%与全球同步",2017年以来近40款药进入国家医保。<a class="ref" href="#n13">〔谱13〕</a>从染料到药神再到医保谈判桌,这家瑞士公司在中国的一百四十年,几乎就是一部中国近代医药市场的缩影——下一章怎么写,要看2026年那道专利悬崖,和中国人自己的创新药(见本馆第八卷康方生物)追上来的速度。</p>
+    </div>
+    <aside class="cast">
+      <div class="cast-cap"><h3>本幕对手演员</h3><span class="cap-note">一百四十年的甲方</span></div>
+      <ol>
+        <li><span class="who">中国患者与医保局</span><span class="why">从《药神》的舆论场到谈判桌——定价权的天平在移动</span></li>
+        <li><span class="who">中国生物科技公司</span><span class="why">康方生物们(本馆第八卷)——从买方市场到同台竞速</span></li>
+        <li><span class="who">进博会</span><span class="why">诺华是"全勤生"——中国市场的新仪式感</span></li>
+      </ol>
+    </aside>
+  </section>
+
+  <!-- ============ 当家人更替 ============ -->
+  <section class="sheet-wide" id="zhangduo" data-pin="当家人">
+    <div class="report">
+      <div class="report-cap"><h3>当家人更替</h3><span class="cap-note">CEO谱系(瑞士公司治理:董事长另有其人,本表以CEO为掌舵口径)</span></div>
+      <table>
+        <thead><tr><th>当家人</th><th>在任</th><th>备注</th></tr></thead>
+        <tbody>
+          <tr><td>Daniel Vasella(瓦斯拉)</td><td>1996 – 2010</td><td>伯尔尼大学医学博士;合并首任CEO,1999年兼董事长至2013年;格列卫时代的掌舵人</td></tr>
+          <tr><td>Joseph Jimenez(江慕忠)</td><td>2010 – 2018.2</td><td>美国经理人;2015年GSK肿瘤交易操盘</td></tr>
+          <tr><td>Vasant Narasimhan(万思瀚)</td><td>2018 – 今</td><td>1976年生,哈佛医学院出身;2018年就任时41岁;爱尔康/山德士分拆、纯创新药转型与2025年120亿美元Avidity收购的主导者</td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="3">中国区总裁:现任李尧(Leo Lee,2024年5月由诺华日本总裁调任);更早尹旭东(2019年在任)。完整历任名单未查到,缺口。来源:公司官网、澎湃。</td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ 大事记 ============ -->
+  <section class="sheet-wide" id="chronicle" data-pin="大事记">
+    <div class="chronicle-wrap">
+      <div class="chronicle-head">
+        <h2>大事记 · 全书书脊</h2>
+        <span class="note">正文每一个〔谱N〕都落在这里;每一条都挂出处。</span>
+      </div>
+      <div class="legend">
+        <span><span class="mark">核</span>已核对公告或可靠来源</span>
+        <span><span class="mark query">疑</span>来源间有出入,存疑</span>
+        <span><span class="mark gap">缺</span>史料缺口</span>
+      </div>
+      <ol class="chronicle">
+        <li id="n1"><span class="c-date">1758-1996</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">三家前身:嘉基(1758)、汽巴(1859)、山德士(1886),巴塞尔染料与化工资起;1970年汽巴嘉基合并;1996年3月7日宣布合并,7月17日欧盟批准,12月20日运营——"当时世界史上最大公司合并"(官网自述);"600亿美元"交易额未查到原文,存疑;名称Novartis=拉丁语"新技艺"。<a class="c-src" href="https://www.novartis.com/about/30-years-novartis-powered-250-years-innovation">诺华官网</a></div></li>
+        <li id="n2"><span class="c-date">2000</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">农药业务与阿斯利嘉合并拆出先正达(Syngenta);澄清:诺华与杜邦、赫司特无关(1999年赫司特与罗纳-普朗克合并成安万特)。<a class="c-src" href="https://en.wikipedia.org/wiki/Novartis">英文维基</a></div></li>
+        <li id="n5"><span class="c-date">1960</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">Nowell与Hungerford发现费城染色体;后证实为BCR-ABL融合基因编码的酪氨酸激酶(CML致病驱动)。<a class="c-src" href="https://en.wikipedia.org/wiki/Philadelphia_chromosome">英文维基</a></div></li>
+        <li id="n7"><span class="c-date">1990s</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">研发接力:汽巴-嘉基团队(Nicholas Lydon领衔)筛选出伊马替尼;俄勒冈Brian Druker主导临床;1998年7月16日按PCT递交印度专利申请(1602/MAS/1998)。<a class="c-src" href="https://en.wikipedia.org/wiki/Imatinib">英文维基·Imatinib</a></div></li>
+        <li id="n8"><span class="c-date">2001.2-5</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">FDA 2月27日受理NDA 21-335、5月10日批准(加速审批)——受理到批准72天;《时代》5月封面"神奇的子弹";疗效:CML五年生存率1993年31%→2009年59%→2023年约90%;Druker/Lydon/Sawyers获2009年拉斯克奖。<a class="c-src" href="https://accessdata.fda.gov/drugsatfda_docs/appletter/2001/21335ltr.pdf">FDA原始批件</a></div></li>
+        <li id="n9"><span class="c-date">2001-2013</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">定价争议:美国年定价2001年约3万美元→2012年约9.2万美元(当年收入47亿美元);印度定价2666美元/月 vs 印度仿制药177-266美元/月;2013年百余位CML专家Blood公开信批"难以持续"。<a class="c-src" href="https://en.wikipedia.org/wiki/Imatinib">英文维基·Imatinib</a></div></li>
+        <li id="n10"><span class="c-date">2013.4.1</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">诺华诉印度(β晶型专利案)终审败诉:印度最高法院认定不满足3(d)条"显著疗效增进",立法目的在防"常青化";七年诉讼终局,全球药品可及性运动的标志案件。<a class="c-src" href="https://en.wikipedia.org/wiki/Novartis_v._Union_of_India_and_Others">英文维基·案件页</a></div></li>
+        <li id="n11"><span class="c-date">2019</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">基因疗法Zolgensma定价212.5万美元——当时全球最贵药(维基口径)。<a class="c-src" href="https://en.wikipedia.org/wiki/Novartis">英文维基</a></div></li>
+        <li id="n12"><span class="c-date">2018.7</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">《我不是药神》上映:文牧野导演、徐峥主演,改编自陆勇案(2004年起为约千名病友代购印度仿制药,2015年检方撤诉);片中"格列宁"影射格列卫、"瑞士诺瓦公司"影射诺华;票房31.00亿元;同年抗癌药零关税、医保谈判提速。<a class="c-src" href="https://zh.wikipedia.org/wiki/我不是药神">中文维基·影片页</a></div></li>
+        <li id="n13"><span class="c-date">1886-2026</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">中国业务:1886嘉基在华卖染料;1987北京汽巴-嘉基制药成立;1996北京诺华制药;2006张江研发中心;2024收购信瑞诺、海盐放射药基地(6亿元,2026投运);中国为全球第二大市场,2025年收入42亿美元(+8%);超120款创新药/适应症获批,近40款进医保;现任中国区总裁李尧(2024.5)。<a class="c-src" href="https://www.novartis.com.cn/novartis-in-china/novartis-china-milestones">诺华中国官网</a></div></li>
+        <li id="n14"><span class="c-date">2015-2025</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">瘦身与并购:2015年160亿美元购GSK肿瘤业务(同时71亿美元售疫苗业务);2019年4月爱尔康分拆;2023年10月山德士分拆(纯创新药公司);2023年Chinook(至多35亿)、2025年Regulus(17亿)、2025年10月Avidity(约120亿美元,预计2026上半年交割)。<a class="c-src" href="https://www.novartis.com/sites/novartis_com/files/q4-2025-media-release-en.pdf">诺华Q4-2025新闻稿</a></div></li>
+        <li id="n15"><span class="c-date">2018</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">万思瀚(Vasant Narasimhan,1976年8月26日生)接任CEO——哈佛医学院出身、就任时41岁;"38岁上任"流传说法不实。<a class="c-src" href="https://en.wikipedia.org/wiki/Vasant_Narasimhan">英文维基</a></div></li>
+        <li id="n16"><span class="c-date">2025</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">财务与产品:净销售额545.3亿美元、净利润139.7亿美元(核心研发103亿、自由现金流176亿);产品线:诺欣妥77.48亿(-1%)、可善挺66.68亿(+9%)、Kisqali 47.83亿(+58%)、Kesimpta 44.26亿、Pluvicto 19.94亿、乐可为11.98亿(+59%);7.7万+员工、约120国。<a class="c-src" href="https://www.novartis.com/investors/financial-data/annual-results">诺华年报数据</a></div></li>
+        <li id="n17"><span class="c-date">2026</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">专利悬崖:CEO口径"史上最大规模专利到期"——诺欣妥美国仿制药2025Q4已拖累整体增速15个百分点;管理层预计2026年仍低个位数增长。<a class="c-src" href="https://www.novartis.com/sites/novartis_com/files/q4-2025-media-release-en.pdf">Q4-2025新闻稿</a></div></li>
+        <li id="n18"><span class="c-date">行业坐标</span><span class="c-mark"><span class="mark">核</span></span><div class="c-body">2025年全球生物医药营收排名:强生941.9亿(1)、国药813.1亿(2,流通为主)、罗氏803.1亿(3)、礼来651.8亿(4)、默沙东650.1亿(5)、辉瑞625.8亿(6)、艾伯维611.6亿(7)、阿斯利康587.4亿(8)、诺华545.3亿(9)。<a class="c-src" href="https://en.wikipedia.org/wiki/List_of_largest_biomedical_companies_by_revenue">英文维基·榜单</a></div></li>
+        <li id="n19"><span class="c-date">缺口</span><span class="c-mark"><span class="mark gap">缺</span></span><div class="c-body">合并金额"600亿美元"、格列卫上市价"2.4万美元起"说、2020年美国和解金(6.78亿vs6.42亿美元两口径)、希腊行贿案结局、中国区历任总裁完整名单——未查到或口径不一,记录在案。</div></li>
+        <li id="n20"><span class="c-date">2026.9.10</span><span class="c-mark"><span class="mark gap">缺</span></span><div class="c-body">本卷编竣。诺欣妥悬崖的深浅、Avidity交割、中国同步开发的成色——留给下一卷。<a class="c-src" href="../index.html">企业故事馆·待续</a></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 生产简报 ============ -->
+  <section class="sheet-wide" id="shuzi" data-pin="生产简报">
+    <div class="report">
+      <div class="report-cap"><h3>生产简报 · 近七年损益</h3><span class="cap-note">亿美元 · 诺华IFRS口径 · 净利润含一次性项目</span></div>
+      <table>
+        <thead><tr><th>年度</th><th>净销售额</th><th>净利润(IFRS)</th><th>当年大事(另见大事记)</th></tr></thead>
+        <tbody>
+          <tr><td>2019</td><td>474.5</td><td>117.4</td><td>研发94.0亿美元</td></tr>
+          <tr><td>2020</td><td>486.6</td><td>80.7</td><td>疫情年</td></tr>
+          <tr><td>2021</td><td>516.3</td><td>240.2</td><td>含罗氏股权出售等一次性收益</td></tr>
+          <tr><td>2022</td><td>505.5</td><td>69.6</td><td>核心净利133.5亿美元</td></tr>
+          <tr><td>2023</td><td>454.4</td><td>85.7</td><td>山德士列终止经营</td></tr>
+          <tr><td>2024</td><td>503.2</td><td>119.4</td><td>核心净利157.6亿美元</td></tr>
+          <tr><td>2025</td><td>545.3</td><td>139.7</td><td>核心研发103亿;自由现金流176亿</td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="4">来源:诺华官网年报数据与20-F(见大事记各条);IFRS净利润受分拆与一次性项目影响,波动大,阅读时对照"核心净利"口径。</td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ 附录 ============ -->
+  <section class="sheet appendix" id="appendix" data-pin="附录">
+    <div class="apx-head"><h2>附录 · 交代底细</h2><span class="apx-note">按馆规,一切考据过程压在书尾。</span></div>
+
+    <h3>缺口与置信度</h3>
+    <div class="gap-box">
+      <span class="gb-tag">以下诸事,本馆未能钉死,如实交代</span>
+      <ul>
+        <li><b>1996年合并金额"600亿美元"</b>:多家转述,官网与维基均未给数,存疑待证。</li>
+        <li><b>格列卫上市定价</b>:Blood专家信口径3万美元/年(2001);"2.4万美元起"为流传口径,并列。</li>
+        <li><b>嘉基创立年</b>:中国官网1758(贸易行)与英文维基1857(公司化)两口径;汽巴-嘉基合并年官网1970与维基1971并列。</li>
+        <li><b>2020年美国和解金</b>:维基正文6.78亿美元与司法部标题6.42亿+并列;另2010年Trileptal和解4.225亿美元。</li>
+        <li><b>希腊行贿指控(2006-2015)</b>:处理结果未查到。</li>
+        <li><b>中国区历任总裁</b>:完整名单未查到,仅确认尹旭东(2019)、张颖、李尧(2024.5起)。</li>
+        <li><b>员工数</b>:官网7.7万+、维基75,883(2024)、中国官网约7.8万——时点不同。</li>
+      </ul>
+    </div>
+
+    <h3>返回研究的发现</h3>
+    <div class="report">
+      <table>
+        <thead><tr><th>发现</th><th>建议去向</th><th>为什么重要</th></tr></thead>
+        <tbody>
+          <tr><td>诺欣妥仿制药冲击的季度量化</td><td>事实层·跟踪季报</td><td>"史上最大悬崖"的成色</td></tr>
+          <tr><td>Kisqali/乐可为等新梯队的放量</td><td>事实层·年报</td><td>悬崖之后的新柱石</td></tr>
+          <tr><td>Avidity交割与RNA管线进展</td><td>事实层·2026</td><td>120亿美元豪注的兑票</td></tr>
+          <tr><td>中国区"全球同步开发"的证据链</td><td>逻辑层·跟踪获批节奏</td><td>第二大市场的护城河</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>史料清单</h3>
+    <ol class="src-list">
+      <li><span>诺华官网(合并30周年、高管简历、Q4-2025新闻稿、年报数据、产品销售页)与诺华中国官网(里程碑、中国业务)——本卷第一来源。</span></li>
+      <li><span>FDA原始批件与数据库(NDA 21-335,2001年5月10日批准信)。</span></li>
+      <li><span>英文维基百科:Novartis、Imatinib、Philadelphia chromosome、Novartis v. Union of India、Vasant Narasimhan、Daniel Vasella、最大生物医药公司榜单等条目。</span></li>
+      <li><span>中文维基百科《我不是药神》(票房31.00亿元、陆勇案细节)。</span></li>
+      <li><span>澎湃新闻(中国区收入42亿美元、海盐基地、中国区总裁更替等报道)。</span></li>
+      <li><span>诺华20-F(2015/2019年度报告,GSK交易与分拆口径)。</span></li>
+    </ol>
+
+    <footer class="colophon">
+      <p class="cb-title">版 权 页</p>
+      <p>《诺华》一卷 · 企业故事馆馆藏第九卷 · 编于二〇二六年九月十日 · 史实截至该日。</p>
+      <p>本卷谱主:诺华(Novartis AG,NVS);分期六幕,大事记二十条;全部来源见上。</p>
+      <p class="disclaimer">本馆内容为个人兴趣写作,不构成任何投资建议与医疗建议;药物信息以监管机构批准的说明书与公司公告为准。引用媒体与文件均注明出处,如有侵权请告知即撤。</p>
+      <p class="back-shelf"><a href="../index.html">← 回到书架</a></p>
+    </footer>
+  </section>
+</main>
+
+<script src="../assets/site.js"></script>
+</body>
+</html>
