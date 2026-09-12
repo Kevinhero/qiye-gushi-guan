@@ -155,7 +155,7 @@ a:hover { text-decoration-style: solid; text-decoration-color: var(--blue); }
 .ch-years { margin-left: auto; font-family: var(--mono); font-size: 13.5px; color: var(--ink-2); white-space: nowrap; letter-spacing: 0.06em; }
 @media (max-width: 560px) { .ch-years { display: none; } }
 
-.prose p { text-indent: 2em; margin-bottom: 2px; }
+.prose p { text-indent: 2em; margin-bottom: 2px; overflow-wrap: anywhere; }
 .prose p + p { margin-top: 10px; }
 .prose .lead-in { text-indent: 0; }
 .prose strong { font-weight: 900; }
