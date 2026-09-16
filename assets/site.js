@@ -126,3 +126,154 @@
     }, { passive: true });
   }
 })();
+
+/* ============ 阅读状态:已读 / 收藏 / 隐藏 ============ */
+(function () {
+  "use strict";
+  var KEY = "csg.reader.v1";
+  function load() {
+    try { return JSON.parse(localStorage.getItem(KEY)) || { read: {}, fav: {}, hidden: {} }; }
+    catch (e) { return { read: {}, fav: {}, hidden: {} }; }
+  }
+  function save(s) {
+    try { localStorage.setItem(KEY, JSON.stringify(s)); } catch (e) {}
+  }
+  var state = load();
+  function idFromHref(href) {
+    var m = String(href || "").match(/companies\/([^\/?#]+)\.html/);
+    return m ? m[1] : null;
+  }
+  function toggle(bucket, id) {
+    if (state[bucket][id]) delete state[bucket][id]; else state[bucket][id] = 1;
+    save(state);
+  }
+
+  /* —— 卷内页:在书眉注入三枚印章按钮 —— */
+  var bookId = document.body.getAttribute("data-book");
+  var bar = document.querySelector(".masthead-bar");
+  if (bookId && bar) {
+    var wrap = document.createElement("span");
+    wrap.className = "reader-tools";
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", "阅读状态");
+    var defs = [
+      { b: "read", on: "已读", off: "未读" },
+      { b: "fav", on: "★ 已藏", off: "☆ 收藏" },
+      { b: "hidden", on: "已隐藏", off: "隐藏" }
+    ];
+    var btns = {};
+    defs.forEach(function (d) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "reader-btn";
+      b.addEventListener("click", function () {
+        toggle(d.b, bookId);
+        render();
+      });
+      btns[d.b] = b;
+      wrap.appendChild(b);
+    });
+    bar.appendChild(wrap);
+    var render = function () {
+      defs.forEach(function (d) {
+        var on = !!state[d.b][bookId];
+        btns[d.b].textContent = on ? d.on : d.off;
+        btns[d.b].classList.toggle("on", on);
+        btns[d.b].setAttribute("aria-pressed", on ? "true" : "false");
+      });
+    };
+    render();
+  }
+
+  /* —— 书架页:卡片角标 + 筛选条 —— */
+  var books = document.querySelectorAll("a.gbook");
+  if (books.length) {
+    var items = [];
+    books.forEach(function (a) {
+      var id = idFromHref(a.getAttribute("href"));
+      if (!id) return;
+      var tag = document.createElement("span");
+      tag.className = "reader-mark";
+      a.appendChild(tag);
+      items.push({ id: id, el: a, tag: tag });
+    });
+
+    var bar2 = document.createElement("div");
+    bar2.className = "reader-filter";
+    bar2.setAttribute("role", "toolbar");
+    bar2.setAttribute("aria-label", "书架筛选");
+    var showHidden = false;
+    var tabs = [
+      { k: "all", t: "全部" },
+      { k: "unread", t: "未读" },
+      { k: "fav", t: "收藏" },
+      { k: "read", t: "已读" },
+      { k: "hidden", t: "已隐藏" }
+    ];
+    var cur = "all";
+    var tabBtns = {};
+    tabs.forEach(function (t) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "reader-tab";
+      b.textContent = t.t;
+      b.addEventListener("click", function () {
+        cur = (cur === t.k) ? "all" : t.k;
+        render2();
+      });
+      tabBtns[t.k] = b;
+      bar2.appendChild(b);
+    });
+    var anchor = document.querySelector("section[style*='margin-top:36px']");
+    if (anchor && anchor.parentNode) anchor.parentNode.insertBefore(bar2, anchor);
+
+    var render2 = function () {
+      Object.keys(tabBtns).forEach(function (k) {
+        tabBtns[k].classList.toggle("on", cur === k);
+      });
+      var counts = { all: 0, unread: 0, fav: 0, read: 0, hidden: 0 };
+      items.forEach(function (it) {
+        var isR = !!state.read[it.id], isF = !!state.fav[it.id], isH = !!state.hidden[it.id];
+        it.tag.textContent = "";
+        it.tag.classList.toggle("m-read", isR);
+        it.tag.classList.toggle("m-fav", isF);
+        it.tag.classList.toggle("m-hidden", isH);
+        if (isF) it.tag.textContent = "★";
+        else if (isH) it.tag.textContent = "藏";
+        else if (isR) it.tag.textContent = "读";
+        it.el.classList.toggle("is-fav", isF);
+        it.el.classList.toggle("is-hidden", isH);
+        var visible = true;
+        if (isH && !showHidden && cur !== "hidden") visible = false;
+        if (cur === "unread" && (isR || isH)) visible = false;
+        if (cur === "fav" && !isF) visible = false;
+        if (cur === "read" && !isR) visible = false;
+        if (cur === "hidden" && !isH) visible = false;
+        it.el.style.display = visible ? "" : "none";
+        if (visible) {
+          if (isH) counts.hidden++;
+          else if (isF) counts.fav++;
+          else if (isR) counts.read++;
+          else counts.unread++;
+          counts.all++;
+        }
+      });
+      tabBtns.all.textContent = "全部(" + counts.all + ")";
+      tabBtns.unread.textContent = "未读(" + counts.unread + ")";
+      tabBtns.fav.textContent = "收藏(" + counts.fav + ")";
+      tabBtns.read.textContent = "已读(" + counts.read + ")";
+      tabBtns.hidden.textContent = "已隐藏(" + counts.hidden + ")";
+    };
+    var reveal = document.createElement("button");
+    reveal.type = "button";
+    reveal.className = "reader-tab reader-reveal";
+    reveal.textContent = "显示隐藏卷";
+    reveal.addEventListener("click", function () {
+      showHidden = !showHidden;
+      reveal.classList.toggle("on", showHidden);
+      render2();
+    });
+    bar2.appendChild(reveal);
+    render2();
+  }
+})();
